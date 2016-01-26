@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "IOS-Geolive"
   s.version          = "0.1.0"
-  s.summary          = "A short description of IOS-Geolive."
+  s.summary          = "Geolive Framework"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,16 +17,17 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+a collection of libraries for interacting with a Geolive Server
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/IOS-Geolive"
+  s.homepage         = "https://github.com/nickolanack/IOS-Geolive"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "nickolanack" => "nickblackwell82@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/IOS-Geolive.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/nickolanack/IOS-Geolive.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -36,5 +37,7 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'IOSQlite'
+  # s.dependency 'IOSQlite', :path => '~/git/IOS-Pods/IOSQlite'
+  # :git => 'https://github.com/nickolanack/IOSQLite.git', :branch => 'master'
 end

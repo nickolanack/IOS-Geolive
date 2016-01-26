@@ -1,0 +1,14 @@
+PODS:
+  - IOS-Geolive (0.1.0)
+
+DEPENDENCIES:
+  - IOS-Geolive (from `../`)
+
+EXTERNAL SOURCES:
+  IOS-Geolive:
+    :path: ../
+
+SPEC CHECKSUMS:
+  IOS-Geolive: 95daa34680c3c79cee23375e2a461dac9a10946c
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,25 @@
+{
+  "name": "IOS-Geolive",
+  "version": "0.1.0",
+  "summary": "A short description of IOS-Geolive.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/IOS-Geolive",
+  "license": "MIT",
+  "authors": {
+    "nickolanack": "nickblackwell82@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/IOS-Geolive.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "IOS-Geolive": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
