@@ -7,185 +7,268 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		071055B272E3485ED6D06C032F29ABB0 /* IOS-Geolive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BFD6E15DC14159CBF6A5145F2408D66 /* IOS-Geolive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FF59E83FFA8B07BBC1B4ACFEEB29446 /* IOS-Geolive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9802D0D9432CFF7039858D404EBD7A91 /* IOS-Geolive-dummy.m */; };
-		64F5A3752404B46A176D9CE780F37A19 /* Pods-IOS-Geolive_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 571EC8CA5CC7F96894DCF2F077689C5A /* Pods-IOS-Geolive_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7965D0B44EDAC511EE8FEB82F66378A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		901F8BE51C5801B700216360 /* SystemEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8BDC1C5801B700216360 /* SystemEventDelegate.h */; };
-		901F8BE61C5801B700216360 /* JsonSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8BDD1C5801B700216360 /* JsonSocket.h */; };
-		901F8BE71C5801B700216360 /* JsonSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8BDE1C5801B700216360 /* JsonSocket.m */; };
-		901F8BE81C5801B700216360 /* ConnectionListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8BDF1C5801B700216360 /* ConnectionListener.h */; };
-		901F8BE91C5801B700216360 /* ConnectionListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8BE01C5801B700216360 /* ConnectionListener.m */; };
-		901F8BEA1C5801B700216360 /* System.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8BE11C5801B700216360 /* System.h */; };
-		901F8BEB1C5801B700216360 /* System.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8BE21C5801B700216360 /* System.m */; };
-		901F8BEC1C5801B700216360 /* Variables.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8BE31C5801B700216360 /* Variables.h */; };
-		901F8BED1C5801B700216360 /* Variables.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8BE41C5801B700216360 /* Variables.m */; };
-		901F8BF21C5801C600216360 /* CacheDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8BEE1C5801C600216360 /* CacheDatabase.h */; };
-		901F8BF31C5801C600216360 /* CacheDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8BEF1C5801C600216360 /* CacheDatabase.m */; };
-		901F8BF41C5801C600216360 /* UserDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8BF01C5801C600216360 /* UserDatabase.h */; };
-		901F8BF51C5801C600216360 /* UserDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8BF11C5801C600216360 /* UserDatabase.m */; };
-		901F8C1C1C5802B500216360 /* defaultMarker.png in Resources */ = {isa = PBXBuildFile; fileRef = 901F8C1B1C5802B500216360 /* defaultMarker.png */; };
-		901F8C391C5802C600216360 /* GeolLayerable.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C2F1C5802C600216360 /* GeolLayerable.h */; };
-		901F8C3A1C5802C600216360 /* GeolLayerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C301C5802C600216360 /* GeolLayerManager.h */; };
-		901F8C3B1C5802C600216360 /* GeolMutableLayerable.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C311C5802C600216360 /* GeolMutableLayerable.h */; };
-		901F8C3C1C5802C600216360 /* GeolRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C321C5802C600216360 /* GeolRenderer.h */; };
-		901F8C3D1C5802C600216360 /* GeolMapRenderable.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C331C5802C600216360 /* GeolMapRenderable.h */; };
-		901F8C3E1C5802C600216360 /* GeolMapRenderableItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C341C5802C600216360 /* GeolMapRenderableItem.h */; };
-		901F8C3F1C5802C600216360 /* GeolMapEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C351C5802C600216360 /* GeolMapEventDelegate.h */; };
-		901F8C401C5802C600216360 /* GeolDraggableItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C361C5802C600216360 /* GeolDraggableItem.h */; };
-		901F8C411C5802C600216360 /* GeolLayerEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C371C5802C600216360 /* GeolLayerEventDelegate.h */; };
-		901F8C571C5802D300216360 /* GeolMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C431C5802D300216360 /* GeolMap.h */; };
-		901F8C581C5802D300216360 /* GeolMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8C441C5802D300216360 /* GeolMap.m */; };
-		901F8C591C5802D300216360 /* GeolLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C451C5802D300216360 /* GeolLayer.h */; };
-		901F8C5A1C5802D300216360 /* GeolLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8C461C5802D300216360 /* GeolLayer.m */; };
-		901F8C5B1C5802D300216360 /* GeolMapItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C471C5802D300216360 /* GeolMapItem.h */; };
-		901F8C5C1C5802D300216360 /* GeolMapItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8C481C5802D300216360 /* GeolMapItem.m */; };
-		901F8C5D1C5802D300216360 /* GeolMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C491C5802D300216360 /* GeolMarker.h */; };
-		901F8C5E1C5802D300216360 /* GeolMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8C4A1C5802D300216360 /* GeolMarker.m */; };
-		901F8C5F1C5802D300216360 /* GeolItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C4B1C5802D300216360 /* GeolItem.h */; };
-		901F8C601C5802D300216360 /* GeolItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8C4C1C5802D300216360 /* GeolItem.m */; };
-		901F8C611C5802D300216360 /* GeolMapPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C4D1C5802D300216360 /* GeolMapPane.h */; };
-		901F8C621C5802D300216360 /* GeolMapPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8C4E1C5802D300216360 /* GeolMapPane.m */; };
-		901F8C651C5802D300216360 /* GeolLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C511C5802D300216360 /* GeolLine.h */; };
-		901F8C661C5802D300216360 /* GeolLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8C521C5802D300216360 /* GeolLine.m */; };
-		901F8C671C5802D300216360 /* GeolPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 901F8C531C5802D300216360 /* GeolPolygon.h */; };
-		901F8C681C5802D300216360 /* GeolPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F8C541C5802D300216360 /* GeolPolygon.m */; };
-		B326BB170E75FD2C97846A351C2F741D /* Pods-IOS-Geolive_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 231DE225622A173EE50E20BCC1C4F8A3 /* Pods-IOS-Geolive_Tests-dummy.m */; };
-		C3F933E1F33CCB0BD263EEDDA3F002BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		E7097A9C883BFDD0E32DEA342FC47B0B /* IOS-Geolive.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 65397E3610006E398E9005B6E8C3A51F /* IOS-Geolive.bundle */; };
+		0228E919AB73C6B161170A8E82020F04 /* GeolLayerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 78EB05039577B123450EE871AA8F215A /* GeolLayerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		085D78F4F31ED16A38783C2529D2FC2B /* IOS-Geolive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9802D0D9432CFF7039858D404EBD7A91 /* IOS-Geolive-dummy.m */; };
+		0D1EC9DDF71E14EC4195459A87613FF1 /* defaultMarker.png in Sources */ = {isa = PBXBuildFile; fileRef = F844946502DE769180DC64288E2FC7C8 /* defaultMarker.png */; };
+		12303DD3C7A46670B02646B46B261A57 /* GeolMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = F0749239E3B0D5A614696B4D0D1A24DB /* GeolMarker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18BCA3EBF35793E9B0E61FD34E2C1077 /* UserDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EC446E8667C0C5CC54DEE37B69DF4508 /* UserDatabase.m */; };
+		18DAAC0C73D8BD15FF2DA0E6F50A8C36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C13B5B981B4C0021C0A278421213522 /* Foundation.framework */; };
+		1A4C3F4F858676FF72F45069C56EBD77 /* GeolMapRenderable.h in Headers */ = {isa = PBXBuildFile; fileRef = 01BE2965494CC4DB30C5C063CD2FEFBC /* GeolMapRenderable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C677464D31843BC204D475B9EE60001 /* IOSQlite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565CC78F7CB2E4716746247010BBDC4F /* IOSQlite.framework */; };
+		2279EB6C1239032CC1BEF2A20556364D /* GeolMapPane.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB7A6B5AAC9AA12CF06E56D560ECC5C /* GeolMapPane.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ACFE5D515D6EAD36C552AB8A527A54C /* ResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACACD76077E522CD956AB149FA7102A /* ResultSet.m */; };
+		2EC1AF98ADBA4CD640D030C6A19B571F /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 603BDF74F67E21A321F823BC02085986 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303725AED68B4C79BC655EFC1647D9EF /* StoredParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = C219679AC754778A2A88106D8323F987 /* StoredParameters.m */; };
+		3300AFC062E49A68BDF9EBB260A802FE /* GeolLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F711C5F7B50EC07B78E33BC597FFFC9 /* GeolLine.m */; };
+		33274E3CBCA9803DC233F77B1BF1E458 /* IOS-Geolive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BFD6E15DC14159CBF6A5145F2408D66 /* IOS-Geolive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A4F2047CBB2EBCCE6EB854C11FAC465 /* GeoliveServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D997E77656073FBA8A4BD6CE2AE628 /* GeoliveServer.m */; };
+		3B9B53D9DAEA539A23709BFC2B765AAE /* sqlite3ext.h in Headers */ = {isa = PBXBuildFile; fileRef = BC326204DEBA43D9F7DFFE011C8D7351 /* sqlite3ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43DE59742C8152C24AD4AA7FDE549956 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C13B5B981B4C0021C0A278421213522 /* Foundation.framework */; };
+		4A7FA763451C86369D99349C0BF1BBE9 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 6CE39700C5834491D92B77EE929E2A0B /* sqlite3.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		50D108485B91341749A479D238A12FAB /* GeolPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A621A1320FD32FC7416EAA7BA23E249 /* GeolPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		510F840D53AD0E0A008E4087984AF357 /* GeolLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3E8786C76DD992B006A98331342F2E /* GeolLayer.m */; };
+		51CD8502818277CBB05DA1DC0F7F2FF7 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C9F9718C328676E99602B6D70293C /* Database.m */; };
+		577E33214175C13342736C435E64AD18 /* GeolRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E05002B3FCF6B42BF85083904E33EE /* GeolRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5801637356340276F299ABB7EBF69986 /* GeolMapItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A51CF73BE62C14C65DE24C714BD58B9 /* GeolMapItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58095605EBC018BA39C4E55FDBE7B79F /* GeolMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D5B83DC0B051A0AD3D481D16BC3F467 /* GeolMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BC0A042ED0D52B8E642ADA387DA5620 /* GeolMutableLayerable.h in Headers */ = {isa = PBXBuildFile; fileRef = 97DA9E744A0AE1CF5A639496C686E1C8 /* GeolMutableLayerable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ED39CAE36F91B6CB10CED91A3ABB155 /* GeolMapPane.m in Sources */ = {isa = PBXBuildFile; fileRef = E20998B4D5EDF01D11AFAB733C2EF850 /* GeolMapPane.m */; };
+		5F9A3627426973CD5AF683327D6D9BF5 /* GeolMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FC33D8EE8822C9D8270FBA5D6A6CA2 /* GeolMap.m */; };
+		6041ADF2C066075C697AA26814F67620 /* GeolDraggableItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2A0DCF393601E6E7EEDEFF000FA5E9 /* GeolDraggableItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		617DB595CD2961CA1F5EC750B50D7B33 /* GeolMapEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F48C422F61535102327882D8E17E09B5 /* GeolMapEventDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61F4C78E384CAC5AF9EAFAE9E97649DB /* GeolItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F72CAE9E367AD9FECE0B4E2812F86139 /* GeolItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DE3594831E8B97C87925D2F0E877D51 /* ResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = C894401218FE51BAA9B98B20F22A7D3F /* ResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		874C32155843678289FDF9DA2DBF11FB /* sqlite3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD983D44799AA5203CCD6F2B4D018637 /* sqlite3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B111EAA953D03058F17CBE7208806A0 /* GeolMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = F873EFC2AC42BFF42184206DD340AC22 /* GeolMarker.m */; };
+		93616BD63B1D209EECB8FBE6205B745B /* CacheDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = F840C559F63939D6732E3C4F20CDBC9A /* CacheDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93B76A9065C7B4623A380A76B4CB72B8 /* GeoliveServer.h in Headers */ = {isa = PBXBuildFile; fileRef = C8AEC74C7B04EF8CA51D8FB514E58FA1 /* GeoliveServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C44FD32EF130052467C05B8CD34DBBB /* ConnectionListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 351A798799F130105E3AF79DA98B6012 /* ConnectionListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A44D6179395866092312A3E616DA8533 /* GeolMapItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C826FD30F6A40E3423307C02B25EB7 /* GeolMapItem.m */; };
+		AA3CECB4F988C179E7075E05A4614DFF /* Pods-IOS-Geolive_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 231DE225622A173EE50E20BCC1C4F8A3 /* Pods-IOS-Geolive_Tests-dummy.m */; };
+		B257A19D71688755C37CF016416855D7 /* IOSQlite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB5A1F1E58DF94537C048E946EE252B /* IOSQlite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B41DFF26C808AEF350FE0B295805531A /* GeolLine.h in Headers */ = {isa = PBXBuildFile; fileRef = C44DCBAE9C52D23DFF3CDDABA91571AE /* GeolLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBF843ADB56DAAB26F62C54988B63E05 /* StoredParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = C383FBDAB68A489AE5A63A346B7F23BD /* StoredParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2600AB72813A1A9AD1A51C188A5D22B /* SystemEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9417A2D3691C8435111F481CC6D85BD2 /* SystemEventDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C48659003C7E959BD3FB709C6A0D9304 /* GeolMapRenderableItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B4DCBD9C0A07DDDFBA5D59898DB50BA /* GeolMapRenderableItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C579245E1B5F1B9C53165393464D4D3F /* IOSQlite.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2A498519F87D5C5D0B9AE49CE06DE8E /* IOSQlite.bundle */; };
+		C69681D2C1928EB499F27BAF0735DD7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C13B5B981B4C0021C0A278421213522 /* Foundation.framework */; };
+		C7643FDF30B75D991D739A08FDE34882 /* GeolLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 504A94ADE09FCA2FD64CEAF5F9F2F4D8 /* GeolLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3FB076DB842B14FD9F1E385FFB3D344 /* ConnectionListener.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE528B4986EB4B54C18DC505DCE463 /* ConnectionListener.m */; };
+		D496F2CF52732C3AD6E528CBCD397111 /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE9DFE446EFEDD7520417B789D99925 /* Database.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7F81F337A7140330D5C75A8AA2FD833 /* IOSQlite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C3397BB960273C7A8803514837E3B /* IOSQlite-dummy.m */; };
+		DAE6A380E2F856029956CA00A6720A97 /* GeolLayerEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A3C01E9E5A1E3B83AEA1DB8B602A824 /* GeolLayerEventDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCA2E8A64C7BFD3D53E0E286EC334917 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C13B5B981B4C0021C0A278421213522 /* Foundation.framework */; };
+		E5400DB2200FE8DCD9461AD6385ECF03 /* sqlite3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0225FCC82010E6905C51052D0A97B2D /* sqlite3-dummy.m */; };
+		E79BB2477D6D3CDB912C4FD47A72E71C /* CacheDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD603B6AEBCF880E1EAF16D5FCB7347 /* CacheDatabase.m */; };
+		E81D6D56A5587DAFEFECA32EE88F0EF3 /* JsonSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 542093DCA982CC4CB6F6680E1DA1F7CA /* JsonSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9003DFDBA49CC6ECC03421E8BE85EAB /* GeolItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6404210D6A9B2A27949754F183F8EA3E /* GeolItem.m */; };
+		EFC063B9CEA8EAB7E584F53956E57496 /* UserDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 312ED978664C9C5ECDE212735896709E /* UserDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F42FEDA78CEF7F490B0905EE0FFB230F /* sqlite3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2242CB9460B991B81EB7D200B652FA /* sqlite3.framework */; };
+		F4B8AD5CB4CDEF738038A7FD3192AE1B /* IOS-Geolive.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 836BCC4BCEC2A95C42596A807C3B7A53 /* IOS-Geolive.bundle */; };
+		F4D0D8E6F975F65C4A31CE23C7E6FE0E /* GeolPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 91466E5C9E7F9F89965090C2577057DC /* GeolPolygon.m */; };
+		F71D70090CC0B252606C59CE6B7C7264 /* GeolLayerable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3288D4186EF7CC79D9DE8BFA2BC525E7 /* GeolLayerable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8C2BD6152C1082106B63A3C77CA0C33 /* JsonSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0FCA73AEFA29DA62FD52B82CD5B9BB /* JsonSocket.m */; };
+		F935D35D75944BDAFC009B3413AE36E7 /* Pods-IOS-Geolive_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 571EC8CA5CC7F96894DCF2F077689C5A /* Pods-IOS-Geolive_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		06BEF2FB2E7356CDDAC5E493705CCDA3 /* PBXContainerItemProxy */ = {
+		0896777639C760C7B5D9EF392FDA9F35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 950D2F93ECC506F020641D98E0755EE9;
+			remoteGlobalIDString = B7F3885904ECDE40870CEBFC08119816;
+			remoteInfo = "IOSQlite-IOSQlite";
+		};
+		124180C5233F70A458FD587F7AC1367F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50D90056A476D6543E47E098BE33EF20;
+			remoteInfo = IOSQlite;
+		};
+		175851092CD04138675F3BEA9C0F788F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50D90056A476D6543E47E098BE33EF20;
+			remoteInfo = IOSQlite;
+		};
+		33B9172342D4909760E61B14BEA76864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 214EB4413D230CA499C43ABD40EAA3E6;
 			remoteInfo = "IOS-Geolive-IOS-Geolive";
 		};
-		61DA9CC4E0474B074E975FA5EF3F638C /* PBXContainerItemProxy */ = {
+		97FAA8E0F49DFAF2B6E61F11C1271C96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C80A7C6DE8175B09E72AB31CD5C5137C;
+			remoteGlobalIDString = 32D3BF9EF507A25823DA7180C782CB79;
+			remoteInfo = sqlite3;
+		};
+		C3D651F2738530A4DC8BB71992D7E5CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D3BF9EF507A25823DA7180C782CB79;
+			remoteInfo = sqlite3;
+		};
+		D96E1F473E5CCA227856A1BB8928EC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AB06B611528614256EE8F25D25EE5EA;
 			remoteInfo = "IOS-Geolive";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01BE2965494CC4DB30C5C063CD2FEFBC /* GeolMapRenderable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolMapRenderable.h; sourceTree = "<group>"; };
 		0C5B7B533F8A6FFDAC328C90F778E304 /* Pods-IOS-Geolive_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IOS-Geolive_Tests-resources.sh"; sourceTree = "<group>"; };
 		1B6B9CEE1E2D6291700F366E861051E5 /* Pods-IOS-Geolive_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IOS-Geolive_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1BA9D45A3F2521D2A28262BFB4E274C7 /* Pods-IOS-Geolive_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOS-Geolive_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1E922B70411BD67F1A4355A422679986 /* Pods_IOS_Geolive_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Geolive_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAF5191F7C3731768E12DA759F3901F /* IOS-Geolive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IOS-Geolive-prefix.pch"; sourceTree = "<group>"; };
 		222E476835B101015881D8308DA65075 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		231DE225622A173EE50E20BCC1C4F8A3 /* Pods-IOS-Geolive_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IOS-Geolive_Tests-dummy.m"; sourceTree = "<group>"; };
+		2924C5C78CA06166A730C8448C71CC50 /* IOSQlite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IOSQlite.modulemap; sourceTree = "<group>"; };
+		29FC33D8EE8822C9D8270FBA5D6A6CA2 /* GeolMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GeolMap.m; sourceTree = "<group>"; };
+		2B4DCBD9C0A07DDDFBA5D59898DB50BA /* GeolMapRenderableItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolMapRenderableItem.h; sourceTree = "<group>"; };
 		2BFD6E15DC14159CBF6A5145F2408D66 /* IOS-Geolive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IOS-Geolive-umbrella.h"; sourceTree = "<group>"; };
+		2C119CA429031E8C9FF27684CE371D8D /* sqlite3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "sqlite3-prefix.pch"; sourceTree = "<group>"; };
+		2C13B5B981B4C0021C0A278421213522 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2E46C94A7325CF6124F7B648E5826A24 /* Pods-IOS-Geolive_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-IOS-Geolive_Tests.modulemap"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		312ED978664C9C5ECDE212735896709E /* UserDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UserDatabase.h; sourceTree = "<group>"; };
+		3288D4186EF7CC79D9DE8BFA2BC525E7 /* GeolLayerable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolLayerable.h; sourceTree = "<group>"; };
+		351A798799F130105E3AF79DA98B6012 /* ConnectionListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConnectionListener.h; sourceTree = "<group>"; };
+		3A3C01E9E5A1E3B83AEA1DB8B602A824 /* GeolLayerEventDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolLayerEventDelegate.h; sourceTree = "<group>"; };
+		3A51CF73BE62C14C65DE24C714BD58B9 /* GeolMapItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolMapItem.h; sourceTree = "<group>"; };
+		40C826FD30F6A40E3423307C02B25EB7 /* GeolMapItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GeolMapItem.m; sourceTree = "<group>"; };
+		47D997E77656073FBA8A4BD6CE2AE628 /* GeoliveServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GeoliveServer.m; sourceTree = "<group>"; };
+		504A94ADE09FCA2FD64CEAF5F9F2F4D8 /* GeolLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolLayer.h; sourceTree = "<group>"; };
+		542093DCA982CC4CB6F6680E1DA1F7CA /* JsonSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JsonSocket.h; sourceTree = "<group>"; };
+		565CC78F7CB2E4716746247010BBDC4F /* IOSQlite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IOSQlite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		571EC8CA5CC7F96894DCF2F077689C5A /* Pods-IOS-Geolive_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IOS-Geolive_Tests-umbrella.h"; sourceTree = "<group>"; };
-		65397E3610006E398E9005B6E8C3A51F /* IOS-Geolive.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS-Geolive.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A621A1320FD32FC7416EAA7BA23E249 /* GeolPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolPolygon.h; sourceTree = "<group>"; };
+		5DB2F65D440D11B305513E74EAB2D7C4 /* IOS_Geolive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IOS_Geolive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DB5A1F1E58DF94537C048E946EE252B /* IOSQlite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IOSQlite-umbrella.h"; sourceTree = "<group>"; };
+		5DE9DFE446EFEDD7520417B789D99925 /* Database.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Database.h; path = Pod/Classes/Database.h; sourceTree = "<group>"; };
+		5F711C5F7B50EC07B78E33BC597FFFC9 /* GeolLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GeolLine.m; sourceTree = "<group>"; };
+		603BDF74F67E21A321F823BC02085986 /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = "sqlite-amalgamation-3100200/sqlite3.h"; sourceTree = "<group>"; };
+		6404210D6A9B2A27949754F183F8EA3E /* GeolItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GeolItem.m; sourceTree = "<group>"; };
+		670FB555D637648DC3BC4269DCE79170 /* IOSQlite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IOSQlite.xcconfig; sourceTree = "<group>"; };
+		684C3397BB960273C7A8803514837E3B /* IOSQlite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IOSQlite-dummy.m"; sourceTree = "<group>"; };
+		6CE39700C5834491D92B77EE929E2A0B /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sqlite3.c; path = "sqlite-amalgamation-3100200/sqlite3.c"; sourceTree = "<group>"; };
 		7159CA0BBE38DE338EFAA2E2B70D4533 /* Pods-IOS-Geolive_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IOS-Geolive_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		901F8BDC1C5801B700216360 /* SystemEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemEventDelegate.h; sourceTree = "<group>"; };
-		901F8BDD1C5801B700216360 /* JsonSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonSocket.h; sourceTree = "<group>"; };
-		901F8BDE1C5801B700216360 /* JsonSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonSocket.m; sourceTree = "<group>"; };
-		901F8BDF1C5801B700216360 /* ConnectionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionListener.h; sourceTree = "<group>"; };
-		901F8BE01C5801B700216360 /* ConnectionListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionListener.m; sourceTree = "<group>"; };
-		901F8BE11C5801B700216360 /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System.h; sourceTree = "<group>"; };
-		901F8BE21C5801B700216360 /* System.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = System.m; sourceTree = "<group>"; };
-		901F8BE31C5801B700216360 /* Variables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variables.h; sourceTree = "<group>"; };
-		901F8BE41C5801B700216360 /* Variables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Variables.m; sourceTree = "<group>"; };
-		901F8BEE1C5801C600216360 /* CacheDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheDatabase.h; sourceTree = "<group>"; };
-		901F8BEF1C5801C600216360 /* CacheDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheDatabase.m; sourceTree = "<group>"; };
-		901F8BF01C5801C600216360 /* UserDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDatabase.h; sourceTree = "<group>"; };
-		901F8BF11C5801C600216360 /* UserDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDatabase.m; sourceTree = "<group>"; };
-		901F8C1B1C5802B500216360 /* defaultMarker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultMarker.png; sourceTree = "<group>"; };
-		901F8C2F1C5802C600216360 /* GeolLayerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolLayerable.h; sourceTree = "<group>"; };
-		901F8C301C5802C600216360 /* GeolLayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolLayerManager.h; sourceTree = "<group>"; };
-		901F8C311C5802C600216360 /* GeolMutableLayerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolMutableLayerable.h; sourceTree = "<group>"; };
-		901F8C321C5802C600216360 /* GeolRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolRenderer.h; sourceTree = "<group>"; };
-		901F8C331C5802C600216360 /* GeolMapRenderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolMapRenderable.h; sourceTree = "<group>"; };
-		901F8C341C5802C600216360 /* GeolMapRenderableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolMapRenderableItem.h; sourceTree = "<group>"; };
-		901F8C351C5802C600216360 /* GeolMapEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolMapEventDelegate.h; sourceTree = "<group>"; };
-		901F8C361C5802C600216360 /* GeolDraggableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolDraggableItem.h; sourceTree = "<group>"; };
-		901F8C371C5802C600216360 /* GeolLayerEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolLayerEventDelegate.h; sourceTree = "<group>"; };
-		901F8C431C5802D300216360 /* GeolMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolMap.h; sourceTree = "<group>"; };
-		901F8C441C5802D300216360 /* GeolMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeolMap.m; sourceTree = "<group>"; };
-		901F8C451C5802D300216360 /* GeolLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolLayer.h; sourceTree = "<group>"; };
-		901F8C461C5802D300216360 /* GeolLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeolLayer.m; sourceTree = "<group>"; };
-		901F8C471C5802D300216360 /* GeolMapItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolMapItem.h; sourceTree = "<group>"; };
-		901F8C481C5802D300216360 /* GeolMapItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeolMapItem.m; sourceTree = "<group>"; };
-		901F8C491C5802D300216360 /* GeolMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolMarker.h; sourceTree = "<group>"; };
-		901F8C4A1C5802D300216360 /* GeolMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeolMarker.m; sourceTree = "<group>"; };
-		901F8C4B1C5802D300216360 /* GeolItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolItem.h; sourceTree = "<group>"; };
-		901F8C4C1C5802D300216360 /* GeolItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeolItem.m; sourceTree = "<group>"; };
-		901F8C4D1C5802D300216360 /* GeolMapPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolMapPane.h; sourceTree = "<group>"; };
-		901F8C4E1C5802D300216360 /* GeolMapPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeolMapPane.m; sourceTree = "<group>"; };
-		901F8C511C5802D300216360 /* GeolLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolLine.h; sourceTree = "<group>"; };
-		901F8C521C5802D300216360 /* GeolLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeolLine.m; sourceTree = "<group>"; };
-		901F8C531C5802D300216360 /* GeolPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolPolygon.h; sourceTree = "<group>"; };
-		901F8C541C5802D300216360 /* GeolPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeolPolygon.m; sourceTree = "<group>"; };
-		939E4CB844248A469B95E62403BB63B5 /* IOS_Geolive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IOS_Geolive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D931C576761190D9D3167978094E32 /* sqlite3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = sqlite3.xcconfig; sourceTree = "<group>"; };
+		78EB05039577B123450EE871AA8F215A /* GeolLayerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolLayerManager.h; sourceTree = "<group>"; };
+		7D0FCA73AEFA29DA62FD52B82CD5B9BB /* JsonSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JsonSocket.m; sourceTree = "<group>"; };
+		836BCC4BCEC2A95C42596A807C3B7A53 /* IOS-Geolive.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS-Geolive.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B86E26EC4BE0F06F4F8032FE4454F5 /* Pods_IOS_Geolive_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Geolive_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ACACD76077E522CD956AB149FA7102A /* ResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ResultSet.m; path = Pod/Classes/ResultSet.m; sourceTree = "<group>"; };
+		8C3E7F8647A8D68B9265141655308F4B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D5B83DC0B051A0AD3D481D16BC3F467 /* GeolMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolMap.h; sourceTree = "<group>"; };
+		91466E5C9E7F9F89965090C2577057DC /* GeolPolygon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GeolPolygon.m; sourceTree = "<group>"; };
+		9417A2D3691C8435111F481CC6D85BD2 /* SystemEventDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SystemEventDelegate.h; sourceTree = "<group>"; };
+		97DA9E744A0AE1CF5A639496C686E1C8 /* GeolMutableLayerable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolMutableLayerable.h; sourceTree = "<group>"; };
 		9802D0D9432CFF7039858D404EBD7A91 /* IOS-Geolive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IOS-Geolive-dummy.m"; sourceTree = "<group>"; };
 		99241CD059BEF930E457B320312034A5 /* IOS-Geolive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "IOS-Geolive.xcconfig"; sourceTree = "<group>"; };
+		9C2C9F9718C328676E99602B6D70293C /* Database.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Database.m; path = Pod/Classes/Database.m; sourceTree = "<group>"; };
+		AAD603B6AEBCF880E1EAF16D5FCB7347 /* CacheDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CacheDatabase.m; sourceTree = "<group>"; };
 		AB067BABD29E166EE929DEF95C30977A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEFE528B4986EB4B54C18DC505DCE463 /* ConnectionListener.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ConnectionListener.m; sourceTree = "<group>"; };
+		B2A498519F87D5C5D0B9AE49CE06DE8E /* IOSQlite.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSQlite.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB2A0DCF393601E6E7EEDEFF000FA5E9 /* GeolDraggableItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolDraggableItem.h; sourceTree = "<group>"; };
+		BC326204DEBA43D9F7DFFE011C8D7351 /* sqlite3ext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqlite3ext.h; path = "sqlite-amalgamation-3100200/sqlite3ext.h"; sourceTree = "<group>"; };
+		BDF7519B8006FF18A0C974454F731FB9 /* sqlite3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = sqlite3.modulemap; sourceTree = "<group>"; };
 		C1F3475FD9AD25EAA8A17DB509779BA2 /* Pods-IOS-Geolive_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IOS-Geolive_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C219679AC754778A2A88106D8323F987 /* StoredParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StoredParameters.m; sourceTree = "<group>"; };
+		C383FBDAB68A489AE5A63A346B7F23BD /* StoredParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StoredParameters.h; sourceTree = "<group>"; };
+		C44DCBAE9C52D23DFF3CDDABA91571AE /* GeolLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolLine.h; sourceTree = "<group>"; };
+		C61D7CCE2087F9F123609CD8F64F1D8E /* IOSQlite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IOSQlite-prefix.pch"; sourceTree = "<group>"; };
+		C894401218FE51BAA9B98B20F22A7D3F /* ResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ResultSet.h; path = Pod/Classes/ResultSet.h; sourceTree = "<group>"; };
+		C8AEC74C7B04EF8CA51D8FB514E58FA1 /* GeoliveServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeoliveServer.h; sourceTree = "<group>"; };
+		D3020FE6E2C9DE36F9D2A6BB779A4CE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA857486822CD0E8B753B9B7D602E09B /* IOSQlite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IOSQlite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB7A6B5AAC9AA12CF06E56D560ECC5C /* GeolMapPane.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolMapPane.h; sourceTree = "<group>"; };
+		DB3E8786C76DD992B006A98331342F2E /* GeolLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GeolLayer.m; sourceTree = "<group>"; };
 		DCA0311FA1FCBE3F1E41F630DCE4DFAF /* IOS-Geolive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "IOS-Geolive.modulemap"; sourceTree = "<group>"; };
+		DD983D44799AA5203CCD6F2B4D018637 /* sqlite3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "sqlite3-umbrella.h"; sourceTree = "<group>"; };
+		E20998B4D5EDF01D11AFAB733C2EF850 /* GeolMapPane.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GeolMapPane.m; sourceTree = "<group>"; };
+		E7D5CD92671F5E79D96872591F81F37C /* sqlite3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = sqlite3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2242CB9460B991B81EB7D200B652FA /* sqlite3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = sqlite3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC446E8667C0C5CC54DEE37B69DF4508 /* UserDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UserDatabase.m; sourceTree = "<group>"; };
+		F0225FCC82010E6905C51052D0A97B2D /* sqlite3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "sqlite3-dummy.m"; sourceTree = "<group>"; };
+		F0749239E3B0D5A614696B4D0D1A24DB /* GeolMarker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolMarker.h; sourceTree = "<group>"; };
+		F48C422F61535102327882D8E17E09B5 /* GeolMapEventDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolMapEventDelegate.h; sourceTree = "<group>"; };
+		F72CAE9E367AD9FECE0B4E2812F86139 /* GeolItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolItem.h; sourceTree = "<group>"; };
+		F7E05002B3FCF6B42BF85083904E33EE /* GeolRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolRenderer.h; sourceTree = "<group>"; };
 		F82441595C15989E3E574DFE236B0D3E /* Pods-IOS-Geolive_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOS-Geolive_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F840C559F63939D6732E3C4F20CDBC9A /* CacheDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CacheDatabase.h; sourceTree = "<group>"; };
+		F844946502DE769180DC64288E2FC7C8 /* defaultMarker.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = defaultMarker.png; sourceTree = "<group>"; };
+		F873EFC2AC42BFF42184206DD340AC22 /* GeolMarker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GeolMarker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7D6EA3AFBA2CBFED5DD57CFF662496E9 /* Frameworks */ = {
+		03DCDAB5C9A8E612D01709B3B2AA848F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7965D0B44EDAC511EE8FEB82F66378A2 /* Foundation.framework in Frameworks */,
+				43DE59742C8152C24AD4AA7FDE549956 /* Foundation.framework in Frameworks */,
+				F42FEDA78CEF7F490B0905EE0FFB230F /* sqlite3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFD8EED227A574F2B0DEF896A3BCB17 /* Frameworks */ = {
+		3DE9CE80F6F23F5820CEF88BE48A3C71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DAAC0C73D8BD15FF2DA0E6F50A8C36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D1EC12CECF8FB8C45181E813638F1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA2E8A64C7BFD3D53E0E286EC334917 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A517172BE28E97787BB5FB7020D3517E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E37DC657B953DC4CD0871262FA828919 /* Frameworks */ = {
+		A75C881952B86A569BE469D859AF8906 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3F933E1F33CCB0BD263EEDDA3F002BE /* Foundation.framework in Frameworks */,
+				C69681D2C1928EB499F27BAF0735DD7A /* Foundation.framework in Frameworks */,
+				1C677464D31843BC204D475B9EE60001 /* IOSQlite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30D74FAE10DB594C6DD790AC665BCF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E52D5A24B33935B8A59EAC98AEC00C0 /* Classes */ = {
+		098F91B3C5D803C065E703486345D1F3 /* sqlite3 */ = {
 			isa = PBXGroup;
 			children = (
-				901F8C6D1C58150D00216360 /* MapInterfaces */,
-				901F8C1B1C5802B500216360 /* defaultMarker.png */,
-				901F8C431C5802D300216360 /* GeolMap.h */,
-				901F8C441C5802D300216360 /* GeolMap.m */,
-				901F8C451C5802D300216360 /* GeolLayer.h */,
-				901F8C461C5802D300216360 /* GeolLayer.m */,
-				901F8C471C5802D300216360 /* GeolMapItem.h */,
-				901F8C481C5802D300216360 /* GeolMapItem.m */,
-				901F8C491C5802D300216360 /* GeolMarker.h */,
-				901F8C4A1C5802D300216360 /* GeolMarker.m */,
-				901F8C4B1C5802D300216360 /* GeolItem.h */,
-				901F8C4C1C5802D300216360 /* GeolItem.m */,
-				901F8C4D1C5802D300216360 /* GeolMapPane.h */,
-				901F8C4E1C5802D300216360 /* GeolMapPane.m */,
-				901F8C511C5802D300216360 /* GeolLine.h */,
-				901F8C521C5802D300216360 /* GeolLine.m */,
-				901F8C531C5802D300216360 /* GeolPolygon.h */,
-				901F8C541C5802D300216360 /* GeolPolygon.m */,
-				901F8BF61C5801DC00216360 /* Core */,
+				467452265D176060A6FE3CC7D79AB320 /* common */,
+				361FD80F745088CFA848E0B2F45C3F08 /* Support Files */,
 			);
-			path = Classes;
+			path = sqlite3;
 			sourceTree = "<group>";
 		};
 		2B0F7D2C18C0CD1458DD3A2E4912F748 /* Development Pods */ = {
@@ -194,6 +277,70 @@
 				68F02A4118DCACEA299A434C16C573AE /* IOS-Geolive */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		324DA3735960BFB18979007E325471DA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				908264641C5945A9009053AC /* Network */,
+				908264631C59456C009053AC /* Databases */,
+				F844946502DE769180DC64288E2FC7C8 /* defaultMarker.png */,
+				BB2A0DCF393601E6E7EEDEFF000FA5E9 /* GeolDraggableItem.h */,
+				F72CAE9E367AD9FECE0B4E2812F86139 /* GeolItem.h */,
+				6404210D6A9B2A27949754F183F8EA3E /* GeolItem.m */,
+				504A94ADE09FCA2FD64CEAF5F9F2F4D8 /* GeolLayer.h */,
+				DB3E8786C76DD992B006A98331342F2E /* GeolLayer.m */,
+				3288D4186EF7CC79D9DE8BFA2BC525E7 /* GeolLayerable.h */,
+				3A3C01E9E5A1E3B83AEA1DB8B602A824 /* GeolLayerEventDelegate.h */,
+				78EB05039577B123450EE871AA8F215A /* GeolLayerManager.h */,
+				C44DCBAE9C52D23DFF3CDDABA91571AE /* GeolLine.h */,
+				5F711C5F7B50EC07B78E33BC597FFFC9 /* GeolLine.m */,
+				8D5B83DC0B051A0AD3D481D16BC3F467 /* GeolMap.h */,
+				29FC33D8EE8822C9D8270FBA5D6A6CA2 /* GeolMap.m */,
+				F48C422F61535102327882D8E17E09B5 /* GeolMapEventDelegate.h */,
+				3A51CF73BE62C14C65DE24C714BD58B9 /* GeolMapItem.h */,
+				40C826FD30F6A40E3423307C02B25EB7 /* GeolMapItem.m */,
+				DAB7A6B5AAC9AA12CF06E56D560ECC5C /* GeolMapPane.h */,
+				E20998B4D5EDF01D11AFAB733C2EF850 /* GeolMapPane.m */,
+				01BE2965494CC4DB30C5C063CD2FEFBC /* GeolMapRenderable.h */,
+				2B4DCBD9C0A07DDDFBA5D59898DB50BA /* GeolMapRenderableItem.h */,
+				F0749239E3B0D5A614696B4D0D1A24DB /* GeolMarker.h */,
+				F873EFC2AC42BFF42184206DD340AC22 /* GeolMarker.m */,
+				97DA9E744A0AE1CF5A639496C686E1C8 /* GeolMutableLayerable.h */,
+				5A621A1320FD32FC7416EAA7BA23E249 /* GeolPolygon.h */,
+				91466E5C9E7F9F89965090C2577057DC /* GeolPolygon.m */,
+				F7E05002B3FCF6B42BF85083904E33EE /* GeolRenderer.h */,
+				C8AEC74C7B04EF8CA51D8FB514E58FA1 /* GeoliveServer.h */,
+				47D997E77656073FBA8A4BD6CE2AE628 /* GeoliveServer.m */,
+				9417A2D3691C8435111F481CC6D85BD2 /* SystemEventDelegate.h */,
+				C383FBDAB68A489AE5A63A346B7F23BD /* StoredParameters.h */,
+				C219679AC754778A2A88106D8323F987 /* StoredParameters.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		361FD80F745088CFA848E0B2F45C3F08 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C3E7F8647A8D68B9265141655308F4B /* Info.plist */,
+				BDF7519B8006FF18A0C974454F731FB9 /* sqlite3.modulemap */,
+				76D931C576761190D9D3167978094E32 /* sqlite3.xcconfig */,
+				F0225FCC82010E6905C51052D0A97B2D /* sqlite3-dummy.m */,
+				2C119CA429031E8C9FF27684CE371D8D /* sqlite3-prefix.pch */,
+				DD983D44799AA5203CCD6F2B4D018637 /* sqlite3-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/sqlite3";
+			sourceTree = "<group>";
+		};
+		467452265D176060A6FE3CC7D79AB320 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				6CE39700C5834491D92B77EE929E2A0B /* sqlite3.c */,
+				603BDF74F67E21A321F823BC02085986 /* sqlite3.h */,
+				BC326204DEBA43D9F7DFFE011C8D7351 /* sqlite3ext.h */,
+			);
+			name = common;
 			sourceTree = "<group>";
 		};
 		4F4331A15BB045283EF0A06FC2AAE0BE /* Pods-IOS-Geolive_Tests */ = {
@@ -214,14 +361,34 @@
 			path = "Target Support Files/Pods-IOS-Geolive_Tests";
 			sourceTree = "<group>";
 		};
+		5FCEEE6FD2A270625AC91B73217ED0E1 /* IOSQlite */ = {
+			isa = PBXGroup;
+			children = (
+				5DE9DFE446EFEDD7520417B789D99925 /* Database.h */,
+				9C2C9F9718C328676E99602B6D70293C /* Database.m */,
+				C894401218FE51BAA9B98B20F22A7D3F /* ResultSet.h */,
+				8ACACD76077E522CD956AB149FA7102A /* ResultSet.m */,
+				B2D5D84D263E0187EFA25E4B233CAF8E /* Support Files */,
+			);
+			path = IOSQlite;
+			sourceTree = "<group>";
+		};
 		68F02A4118DCACEA299A434C16C573AE /* IOS-Geolive */ = {
 			isa = PBXGroup;
 			children = (
-				ADB5AE070BC878DFA0C836B8DE109687 /* Pod */,
+				73870B398E5001E2D3A48449B7554089 /* Pod */,
 				8C438A5B09F399455375861FE057C868 /* Support Files */,
 			);
 			name = "IOS-Geolive";
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		73870B398E5001E2D3A48449B7554089 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				324DA3735960BFB18979007E325471DA /* Classes */,
+			);
+			path = Pod;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -229,8 +396,9 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				2B0F7D2C18C0CD1458DD3A2E4912F748 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B18B87840E4233D68398C9B190B79EEF /* Products */,
+				AC1488CB41F0E0E7C15AA7ABC6C5A95E /* Frameworks */,
+				C66C9B69E5C3FC2DF753B6B2162FCBDA /* Pods */,
+				EB079E78DA12D1B56B4857B928F61A85 /* Products */,
 				D1ADD66BE249BAB6014D1D3AF4868750 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -249,74 +417,59 @@
 			path = "Example/Pods/Target Support Files/IOS-Geolive";
 			sourceTree = "<group>";
 		};
-		901F8BF61C5801DC00216360 /* Core */ = {
+		908264631C59456C009053AC /* Databases */ = {
 			isa = PBXGroup;
 			children = (
-				901F8BEE1C5801C600216360 /* CacheDatabase.h */,
-				901F8BEF1C5801C600216360 /* CacheDatabase.m */,
-				901F8BF01C5801C600216360 /* UserDatabase.h */,
-				901F8BF11C5801C600216360 /* UserDatabase.m */,
-				901F8BDC1C5801B700216360 /* SystemEventDelegate.h */,
-				901F8BDD1C5801B700216360 /* JsonSocket.h */,
-				901F8BDE1C5801B700216360 /* JsonSocket.m */,
-				901F8BDF1C5801B700216360 /* ConnectionListener.h */,
-				901F8BE01C5801B700216360 /* ConnectionListener.m */,
-				901F8BE11C5801B700216360 /* System.h */,
-				901F8BE21C5801B700216360 /* System.m */,
-				901F8BE31C5801B700216360 /* Variables.h */,
-				901F8BE41C5801B700216360 /* Variables.m */,
+				312ED978664C9C5ECDE212735896709E /* UserDatabase.h */,
+				EC446E8667C0C5CC54DEE37B69DF4508 /* UserDatabase.m */,
+				F840C559F63939D6732E3C4F20CDBC9A /* CacheDatabase.h */,
+				AAD603B6AEBCF880E1EAF16D5FCB7347 /* CacheDatabase.m */,
 			);
-			name = Core;
+			name = Databases;
 			sourceTree = "<group>";
 		};
-		901F8C6D1C58150D00216360 /* MapInterfaces */ = {
+		908264641C5945A9009053AC /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				901F8C2F1C5802C600216360 /* GeolLayerable.h */,
-				901F8C301C5802C600216360 /* GeolLayerManager.h */,
-				901F8C311C5802C600216360 /* GeolMutableLayerable.h */,
-				901F8C321C5802C600216360 /* GeolRenderer.h */,
-				901F8C331C5802C600216360 /* GeolMapRenderable.h */,
-				901F8C341C5802C600216360 /* GeolMapRenderableItem.h */,
-				901F8C351C5802C600216360 /* GeolMapEventDelegate.h */,
-				901F8C361C5802C600216360 /* GeolDraggableItem.h */,
-				901F8C371C5802C600216360 /* GeolLayerEventDelegate.h */,
+				542093DCA982CC4CB6F6680E1DA1F7CA /* JsonSocket.h */,
+				7D0FCA73AEFA29DA62FD52B82CD5B9BB /* JsonSocket.m */,
+				351A798799F130105E3AF79DA98B6012 /* ConnectionListener.h */,
+				AEFE528B4986EB4B54C18DC505DCE463 /* ConnectionListener.m */,
 			);
-			name = MapInterfaces;
+			name = Network;
 			sourceTree = "<group>";
 		};
-		ADB5AE070BC878DFA0C836B8DE109687 /* Pod */ = {
+		AC1488CB41F0E0E7C15AA7ABC6C5A95E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E52D5A24B33935B8A59EAC98AEC00C0 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		B18B87840E4233D68398C9B190B79EEF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				65397E3610006E398E9005B6E8C3A51F /* IOS-Geolive.bundle */,
-				939E4CB844248A469B95E62403BB63B5 /* IOS_Geolive.framework */,
-				1E922B70411BD67F1A4355A422679986 /* Pods_IOS_Geolive_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+				565CC78F7CB2E4716746247010BBDC4F /* IOSQlite.framework */,
+				EB2242CB9460B991B81EB7D200B652FA /* sqlite3.framework */,
+				F22DD9FBAE58302D0B97D298EBF5DC44 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+		B2D5D84D263E0187EFA25E4B233CAF8E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+				D3020FE6E2C9DE36F9D2A6BB779A4CE7 /* Info.plist */,
+				2924C5C78CA06166A730C8448C71CC50 /* IOSQlite.modulemap */,
+				670FB555D637648DC3BC4269DCE79170 /* IOSQlite.xcconfig */,
+				684C3397BB960273C7A8803514837E3B /* IOSQlite-dummy.m */,
+				C61D7CCE2087F9F123609CD8F64F1D8E /* IOSQlite-prefix.pch */,
+				5DB5A1F1E58DF94537C048E946EE252B /* IOSQlite-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/IOSQlite";
+			sourceTree = "<group>";
+		};
+		C66C9B69E5C3FC2DF753B6B2162FCBDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FCEEE6FD2A270625AC91B73217ED0E1 /* IOSQlite */,
+				098F91B3C5D803C065E703486345D1F3 /* sqlite3 */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		D1ADD66BE249BAB6014D1D3AF4868750 /* Targets Support Files */ = {
@@ -327,77 +480,120 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		EB079E78DA12D1B56B4857B928F61A85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				836BCC4BCEC2A95C42596A807C3B7A53 /* IOS-Geolive.bundle */,
+				5DB2F65D440D11B305513E74EAB2D7C4 /* IOS_Geolive.framework */,
+				B2A498519F87D5C5D0B9AE49CE06DE8E /* IOSQlite.bundle */,
+				DA857486822CD0E8B753B9B7D602E09B /* IOSQlite.framework */,
+				87B86E26EC4BE0F06F4F8032FE4454F5 /* Pods_IOS_Geolive_Tests.framework */,
+				E7D5CD92671F5E79D96872591F81F37C /* sqlite3.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F22DD9FBAE58302D0B97D298EBF5DC44 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2C13B5B981B4C0021C0A278421213522 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5F1B1F985B1FD2E80D926F75DA5A780A /* Headers */ = {
+		3A5AC432A59F61554165016B796B34C9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				901F8BF41C5801C600216360 /* UserDatabase.h in Headers */,
-				901F8C411C5802C600216360 /* GeolLayerEventDelegate.h in Headers */,
-				901F8C611C5802D300216360 /* GeolMapPane.h in Headers */,
-				901F8C671C5802D300216360 /* GeolPolygon.h in Headers */,
-				901F8BEC1C5801B700216360 /* Variables.h in Headers */,
-				901F8C401C5802C600216360 /* GeolDraggableItem.h in Headers */,
-				901F8C651C5802D300216360 /* GeolLine.h in Headers */,
-				901F8BF21C5801C600216360 /* CacheDatabase.h in Headers */,
-				901F8C3C1C5802C600216360 /* GeolRenderer.h in Headers */,
-				901F8C3F1C5802C600216360 /* GeolMapEventDelegate.h in Headers */,
-				901F8BE81C5801B700216360 /* ConnectionListener.h in Headers */,
-				901F8C5B1C5802D300216360 /* GeolMapItem.h in Headers */,
-				071055B272E3485ED6D06C032F29ABB0 /* IOS-Geolive-umbrella.h in Headers */,
-				901F8C5F1C5802D300216360 /* GeolItem.h in Headers */,
-				901F8BE51C5801B700216360 /* SystemEventDelegate.h in Headers */,
-				901F8C3B1C5802C600216360 /* GeolMutableLayerable.h in Headers */,
-				901F8BE61C5801B700216360 /* JsonSocket.h in Headers */,
-				901F8C391C5802C600216360 /* GeolLayerable.h in Headers */,
-				901F8BEA1C5801B700216360 /* System.h in Headers */,
-				901F8C5D1C5802D300216360 /* GeolMarker.h in Headers */,
-				901F8C571C5802D300216360 /* GeolMap.h in Headers */,
-				901F8C591C5802D300216360 /* GeolLayer.h in Headers */,
-				901F8C3E1C5802C600216360 /* GeolMapRenderableItem.h in Headers */,
-				901F8C3A1C5802C600216360 /* GeolLayerManager.h in Headers */,
-				901F8C3D1C5802C600216360 /* GeolMapRenderable.h in Headers */,
+				F935D35D75944BDAFC009B3413AE36E7 /* Pods-IOS-Geolive_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3210403C495AD342D8A2A2455C66FFF /* Headers */ = {
+		C4327341CDADFC33CA8058C1FAC8BE40 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64F5A3752404B46A176D9CE780F37A19 /* Pods-IOS-Geolive_Tests-umbrella.h in Headers */,
+				93616BD63B1D209EECB8FBE6205B745B /* CacheDatabase.h in Headers */,
+				9C44FD32EF130052467C05B8CD34DBBB /* ConnectionListener.h in Headers */,
+				6041ADF2C066075C697AA26814F67620 /* GeolDraggableItem.h in Headers */,
+				61F4C78E384CAC5AF9EAFAE9E97649DB /* GeolItem.h in Headers */,
+				C7643FDF30B75D991D739A08FDE34882 /* GeolLayer.h in Headers */,
+				F71D70090CC0B252606C59CE6B7C7264 /* GeolLayerable.h in Headers */,
+				DAE6A380E2F856029956CA00A6720A97 /* GeolLayerEventDelegate.h in Headers */,
+				0228E919AB73C6B161170A8E82020F04 /* GeolLayerManager.h in Headers */,
+				B41DFF26C808AEF350FE0B295805531A /* GeolLine.h in Headers */,
+				58095605EBC018BA39C4E55FDBE7B79F /* GeolMap.h in Headers */,
+				617DB595CD2961CA1F5EC750B50D7B33 /* GeolMapEventDelegate.h in Headers */,
+				5801637356340276F299ABB7EBF69986 /* GeolMapItem.h in Headers */,
+				2279EB6C1239032CC1BEF2A20556364D /* GeolMapPane.h in Headers */,
+				1A4C3F4F858676FF72F45069C56EBD77 /* GeolMapRenderable.h in Headers */,
+				C48659003C7E959BD3FB709C6A0D9304 /* GeolMapRenderableItem.h in Headers */,
+				12303DD3C7A46670B02646B46B261A57 /* GeolMarker.h in Headers */,
+				5BC0A042ED0D52B8E642ADA387DA5620 /* GeolMutableLayerable.h in Headers */,
+				50D108485B91341749A479D238A12FAB /* GeolPolygon.h in Headers */,
+				577E33214175C13342736C435E64AD18 /* GeolRenderer.h in Headers */,
+				33274E3CBCA9803DC233F77B1BF1E458 /* IOS-Geolive-umbrella.h in Headers */,
+				E81D6D56A5587DAFEFECA32EE88F0EF3 /* JsonSocket.h in Headers */,
+				93B76A9065C7B4623A380A76B4CB72B8 /* GeoliveServer.h in Headers */,
+				C2600AB72813A1A9AD1A51C188A5D22B /* SystemEventDelegate.h in Headers */,
+				EFC063B9CEA8EAB7E584F53956E57496 /* UserDatabase.h in Headers */,
+				BBF843ADB56DAAB26F62C54988B63E05 /* StoredParameters.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61B63809F1FFCCCFC1BCF28F813C443 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874C32155843678289FDF9DA2DBF11FB /* sqlite3-umbrella.h in Headers */,
+				2EC1AF98ADBA4CD640D030C6A19B571F /* sqlite3.h in Headers */,
+				3B9B53D9DAEA539A23709BFC2B765AAE /* sqlite3ext.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F43F33293119F2CBF5AEF1F7380A7DF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D496F2CF52732C3AD6E528CBCD397111 /* Database.h in Headers */,
+				B257A19D71688755C37CF016416855D7 /* IOSQlite-umbrella.h in Headers */,
+				6DE3594831E8B97C87925D2F0E877D51 /* ResultSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5735C7557E3D5A0396DB4B3984CE8E9B /* Pods-IOS-Geolive_Tests */ = {
+		0AB06B611528614256EE8F25D25EE5EA /* IOS-Geolive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AACE36A43A330DE135CC3C38F45ED57 /* Build configuration list for PBXNativeTarget "Pods-IOS-Geolive_Tests" */;
+			buildConfigurationList = 667402D2CCC795898FD0671BC621F09C /* Build configuration list for PBXNativeTarget "IOS-Geolive" */;
 			buildPhases = (
-				DBCC3030C190FE324A74AE18CC495B60 /* Sources */,
-				7D6EA3AFBA2CBFED5DD57CFF662496E9 /* Frameworks */,
-				C3210403C495AD342D8A2A2455C66FFF /* Headers */,
+				372E8957BD5289D2112DF16DC4187CA7 /* Sources */,
+				A75C881952B86A569BE469D859AF8906 /* Frameworks */,
+				54ADACEDE373C42B53BB76EC22337205 /* Resources */,
+				C4327341CDADFC33CA8058C1FAC8BE40 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EB5C4AEF23D10B386BB8D663DF1B21DD /* PBXTargetDependency */,
+				3FDECBA3D5BE9E031C0C5A852C9049E0 /* PBXTargetDependency */,
+				4CBBAB932A1A6D5EED1CC8B6201DD6A4 /* PBXTargetDependency */,
 			);
-			name = "Pods-IOS-Geolive_Tests";
-			productName = "Pods-IOS-Geolive_Tests";
-			productReference = 1E922B70411BD67F1A4355A422679986 /* Pods_IOS_Geolive_Tests.framework */;
+			name = "IOS-Geolive";
+			productName = "IOS-Geolive";
+			productReference = 5DB2F65D440D11B305513E74EAB2D7C4 /* IOS_Geolive.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		950D2F93ECC506F020641D98E0755EE9 /* IOS-Geolive-IOS-Geolive */ = {
+		214EB4413D230CA499C43ABD40EAA3E6 /* IOS-Geolive-IOS-Geolive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10036F03249F50676C92E9C2C00FA06D /* Build configuration list for PBXNativeTarget "IOS-Geolive-IOS-Geolive" */;
+			buildConfigurationList = 9F91D9990027CE1A16C1717501D967EA /* Build configuration list for PBXNativeTarget "IOS-Geolive-IOS-Geolive" */;
 			buildPhases = (
-				6251755A0871EEB337C03598A6C62C3F /* Sources */,
-				DDFD8EED227A574F2B0DEF896A3BCB17 /* Frameworks */,
-				B5E1E8C44FB0E9027E59A559CF1C25A9 /* Resources */,
+				FAB726B59C58891E3DC3117DF7558F12 /* Sources */,
+				F30D74FAE10DB594C6DD790AC665BCF6 /* Frameworks */,
+				6A41DF74C5275E2E041A2421006AAC71 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -405,27 +601,82 @@
 			);
 			name = "IOS-Geolive-IOS-Geolive";
 			productName = "IOS-Geolive-IOS-Geolive";
-			productReference = 65397E3610006E398E9005B6E8C3A51F /* IOS-Geolive.bundle */;
+			productReference = 836BCC4BCEC2A95C42596A807C3B7A53 /* IOS-Geolive.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		C80A7C6DE8175B09E72AB31CD5C5137C /* IOS-Geolive */ = {
+		32D3BF9EF507A25823DA7180C782CB79 /* sqlite3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BC27C90236A0765E392D38AB08044C5 /* Build configuration list for PBXNativeTarget "IOS-Geolive" */;
+			buildConfigurationList = 018E33343AE2CC75CE23D1FDFE51E6D9 /* Build configuration list for PBXNativeTarget "sqlite3" */;
 			buildPhases = (
-				5A8693FBA98C10FB579B227B8512B676 /* Sources */,
-				E37DC657B953DC4CD0871262FA828919 /* Frameworks */,
-				ACE1275200C12D5F4BDBEE0972093E24 /* Resources */,
-				5F1B1F985B1FD2E80D926F75DA5A780A /* Headers */,
+				E41E927350440F48F793A10D3C57D51B /* Sources */,
+				3DE9CE80F6F23F5820CEF88BE48A3C71 /* Frameworks */,
+				D61B63809F1FFCCCFC1BCF28F813C443 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0B3E19E9278462CED03FE12724E6633C /* PBXTargetDependency */,
 			);
-			name = "IOS-Geolive";
-			productName = "IOS-Geolive";
-			productReference = 939E4CB844248A469B95E62403BB63B5 /* IOS_Geolive.framework */;
+			name = sqlite3;
+			productName = sqlite3;
+			productReference = E7D5CD92671F5E79D96872591F81F37C /* sqlite3.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		50D90056A476D6543E47E098BE33EF20 /* IOSQlite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AFF334477F7F815D1CDEE50E9527FBE /* Build configuration list for PBXNativeTarget "IOSQlite" */;
+			buildPhases = (
+				8A03F92D5D9794E1DC08EC104EE4A050 /* Sources */,
+				03DCDAB5C9A8E612D01709B3B2AA848F /* Frameworks */,
+				A4435D443A37FABFCCF6A2315BC4B565 /* Resources */,
+				F43F33293119F2CBF5AEF1F7380A7DF5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C2CB2F3E3C5238533DDA97E1359B586 /* PBXTargetDependency */,
+				9CBD89870A2753A906F2E08674FA716A /* PBXTargetDependency */,
+			);
+			name = IOSQlite;
+			productName = IOSQlite;
+			productReference = DA857486822CD0E8B753B9B7D602E09B /* IOSQlite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6492491972779794211F20E488959FE4 /* Pods-IOS-Geolive_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3D1510030AE4AC3F93B4A3496E7AC3 /* Build configuration list for PBXNativeTarget "Pods-IOS-Geolive_Tests" */;
+			buildPhases = (
+				F16E9448666D29D8A6922AA2B857EA56 /* Sources */,
+				73D1EC12CECF8FB8C45181E813638F1B /* Frameworks */,
+				3A5AC432A59F61554165016B796B34C9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3C26613AF0966D812F00B1C7EB18CB5 /* PBXTargetDependency */,
+				F5B6CFA3322849079F230F65B361EBEC /* PBXTargetDependency */,
+				02B2BEB10AEA70792050BBA498A223D8 /* PBXTargetDependency */,
+			);
+			name = "Pods-IOS-Geolive_Tests";
+			productName = "Pods-IOS-Geolive_Tests";
+			productReference = 87B86E26EC4BE0F06F4F8032FE4454F5 /* Pods_IOS_Geolive_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B7F3885904ECDE40870CEBFC08119816 /* IOSQlite-IOSQlite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2748DA146DD96F8E84D23DE82E5AFDD /* Build configuration list for PBXNativeTarget "IOSQlite-IOSQlite" */;
+			buildPhases = (
+				13C3686B90A20957C92DBE9723DFEA76 /* Sources */,
+				A517172BE28E97787BB5FB7020D3517E /* Frameworks */,
+				BFDBE289E17A0A1B00122A6EE8297A6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IOSQlite-IOSQlite";
+			productName = "IOSQlite-IOSQlite";
+			productReference = B2A498519F87D5C5D0B9AE49CE06DE8E /* IOSQlite.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -444,28 +695,45 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B18B87840E4233D68398C9B190B79EEF /* Products */;
+			productRefGroup = EB079E78DA12D1B56B4857B928F61A85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C80A7C6DE8175B09E72AB31CD5C5137C /* IOS-Geolive */,
-				950D2F93ECC506F020641D98E0755EE9 /* IOS-Geolive-IOS-Geolive */,
-				5735C7557E3D5A0396DB4B3984CE8E9B /* Pods-IOS-Geolive_Tests */,
+				0AB06B611528614256EE8F25D25EE5EA /* IOS-Geolive */,
+				214EB4413D230CA499C43ABD40EAA3E6 /* IOS-Geolive-IOS-Geolive */,
+				50D90056A476D6543E47E098BE33EF20 /* IOSQlite */,
+				B7F3885904ECDE40870CEBFC08119816 /* IOSQlite-IOSQlite */,
+				6492491972779794211F20E488959FE4 /* Pods-IOS-Geolive_Tests */,
+				32D3BF9EF507A25823DA7180C782CB79 /* sqlite3 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ACE1275200C12D5F4BDBEE0972093E24 /* Resources */ = {
+		54ADACEDE373C42B53BB76EC22337205 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7097A9C883BFDD0E32DEA342FC47B0B /* IOS-Geolive.bundle in Resources */,
-				901F8C1C1C5802B500216360 /* defaultMarker.png in Resources */,
+				F4B8AD5CB4CDEF738038A7FD3192AE1B /* IOS-Geolive.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5E1E8C44FB0E9027E59A559CF1C25A9 /* Resources */ = {
+		6A41DF74C5275E2E041A2421006AAC71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4435D443A37FABFCCF6A2315BC4B565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C579245E1B5F1B9C53165393464D4D3F /* IOSQlite.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDBE289E17A0A1B00122A6EE8297A6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -475,64 +743,121 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5A8693FBA98C10FB579B227B8512B676 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				901F8C581C5802D300216360 /* GeolMap.m in Sources */,
-				901F8BE71C5801B700216360 /* JsonSocket.m in Sources */,
-				901F8BE91C5801B700216360 /* ConnectionListener.m in Sources */,
-				901F8C5A1C5802D300216360 /* GeolLayer.m in Sources */,
-				4FF59E83FFA8B07BBC1B4ACFEEB29446 /* IOS-Geolive-dummy.m in Sources */,
-				901F8C601C5802D300216360 /* GeolItem.m in Sources */,
-				901F8C621C5802D300216360 /* GeolMapPane.m in Sources */,
-				901F8C661C5802D300216360 /* GeolLine.m in Sources */,
-				901F8BED1C5801B700216360 /* Variables.m in Sources */,
-				901F8BF31C5801C600216360 /* CacheDatabase.m in Sources */,
-				901F8C5E1C5802D300216360 /* GeolMarker.m in Sources */,
-				901F8BF51C5801C600216360 /* UserDatabase.m in Sources */,
-				901F8C5C1C5802D300216360 /* GeolMapItem.m in Sources */,
-				901F8C681C5802D300216360 /* GeolPolygon.m in Sources */,
-				901F8BEB1C5801B700216360 /* System.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6251755A0871EEB337C03598A6C62C3F /* Sources */ = {
+		13C3686B90A20957C92DBE9723DFEA76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBCC3030C190FE324A74AE18CC495B60 /* Sources */ = {
+		372E8957BD5289D2112DF16DC4187CA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B326BB170E75FD2C97846A351C2F741D /* Pods-IOS-Geolive_Tests-dummy.m in Sources */,
+				E79BB2477D6D3CDB912C4FD47A72E71C /* CacheDatabase.m in Sources */,
+				D3FB076DB842B14FD9F1E385FFB3D344 /* ConnectionListener.m in Sources */,
+				0D1EC9DDF71E14EC4195459A87613FF1 /* defaultMarker.png in Sources */,
+				E9003DFDBA49CC6ECC03421E8BE85EAB /* GeolItem.m in Sources */,
+				510F840D53AD0E0A008E4087984AF357 /* GeolLayer.m in Sources */,
+				3300AFC062E49A68BDF9EBB260A802FE /* GeolLine.m in Sources */,
+				5F9A3627426973CD5AF683327D6D9BF5 /* GeolMap.m in Sources */,
+				A44D6179395866092312A3E616DA8533 /* GeolMapItem.m in Sources */,
+				5ED39CAE36F91B6CB10CED91A3ABB155 /* GeolMapPane.m in Sources */,
+				8B111EAA953D03058F17CBE7208806A0 /* GeolMarker.m in Sources */,
+				F4D0D8E6F975F65C4A31CE23C7E6FE0E /* GeolPolygon.m in Sources */,
+				085D78F4F31ED16A38783C2529D2FC2B /* IOS-Geolive-dummy.m in Sources */,
+				F8C2BD6152C1082106B63A3C77CA0C33 /* JsonSocket.m in Sources */,
+				3A4F2047CBB2EBCCE6EB854C11FAC465 /* GeoliveServer.m in Sources */,
+				18BCA3EBF35793E9B0E61FD34E2C1077 /* UserDatabase.m in Sources */,
+				303725AED68B4C79BC655EFC1647D9EF /* StoredParameters.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A03F92D5D9794E1DC08EC104EE4A050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51CD8502818277CBB05DA1DC0F7F2FF7 /* Database.m in Sources */,
+				D7F81F337A7140330D5C75A8AA2FD833 /* IOSQlite-dummy.m in Sources */,
+				2ACFE5D515D6EAD36C552AB8A527A54C /* ResultSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41E927350440F48F793A10D3C57D51B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5400DB2200FE8DCD9461AD6385ECF03 /* sqlite3-dummy.m in Sources */,
+				4A7FA763451C86369D99349C0BF1BBE9 /* sqlite3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F16E9448666D29D8A6922AA2B857EA56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3CECB4F988C179E7075E05A4614DFF /* Pods-IOS-Geolive_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB726B59C58891E3DC3117DF7558F12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0B3E19E9278462CED03FE12724E6633C /* PBXTargetDependency */ = {
+		02B2BEB10AEA70792050BBA498A223D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlite3;
+			target = 32D3BF9EF507A25823DA7180C782CB79 /* sqlite3 */;
+			targetProxy = C3D651F2738530A4DC8BB71992D7E5CC /* PBXContainerItemProxy */;
+		};
+		2C2CB2F3E3C5238533DDA97E1359B586 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "IOSQlite-IOSQlite";
+			target = B7F3885904ECDE40870CEBFC08119816 /* IOSQlite-IOSQlite */;
+			targetProxy = 0896777639C760C7B5D9EF392FDA9F35 /* PBXContainerItemProxy */;
+		};
+		3FDECBA3D5BE9E031C0C5A852C9049E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "IOS-Geolive-IOS-Geolive";
-			target = 950D2F93ECC506F020641D98E0755EE9 /* IOS-Geolive-IOS-Geolive */;
-			targetProxy = 06BEF2FB2E7356CDDAC5E493705CCDA3 /* PBXContainerItemProxy */;
+			target = 214EB4413D230CA499C43ABD40EAA3E6 /* IOS-Geolive-IOS-Geolive */;
+			targetProxy = 33B9172342D4909760E61B14BEA76864 /* PBXContainerItemProxy */;
 		};
-		EB5C4AEF23D10B386BB8D663DF1B21DD /* PBXTargetDependency */ = {
+		4CBBAB932A1A6D5EED1CC8B6201DD6A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IOSQlite;
+			target = 50D90056A476D6543E47E098BE33EF20 /* IOSQlite */;
+			targetProxy = 124180C5233F70A458FD587F7AC1367F /* PBXContainerItemProxy */;
+		};
+		9CBD89870A2753A906F2E08674FA716A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlite3;
+			target = 32D3BF9EF507A25823DA7180C782CB79 /* sqlite3 */;
+			targetProxy = 97FAA8E0F49DFAF2B6E61F11C1271C96 /* PBXContainerItemProxy */;
+		};
+		F3C26613AF0966D812F00B1C7EB18CB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "IOS-Geolive";
-			target = C80A7C6DE8175B09E72AB31CD5C5137C /* IOS-Geolive */;
-			targetProxy = 61DA9CC4E0474B074E975FA5EF3F638C /* PBXContainerItemProxy */;
+			target = 0AB06B611528614256EE8F25D25EE5EA /* IOS-Geolive */;
+			targetProxy = D96E1F473E5CCA227856A1BB8928EC51 /* PBXContainerItemProxy */;
+		};
+		F5B6CFA3322849079F230F65B361EBEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IOSQlite;
+			target = 50D90056A476D6543E47E098BE33EF20 /* IOSQlite */;
+			targetProxy = 175851092CD04138675F3BEA9C0F788F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03165E76B39482AD826BDD271DBB284B /* Release */ = {
+		06EC0738E1D629F87AD052D2D4022E77 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F82441595C15989E3E574DFE236B0D3E /* Pods-IOS-Geolive_Tests.release.xcconfig */;
+			baseConfigurationReference = 76D931C576761190D9D3167978094E32 /* sqlite3.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -541,17 +866,65 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-IOS-Geolive_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/sqlite3/sqlite3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/sqlite3/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IOS-Geolive_Tests/Pods-IOS-Geolive_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/sqlite3/sqlite3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = sqlite3;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1137300B386B318FA96EB11684B41D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670FB555D637648DC3BC4269DCE79170 /* IOSQlite.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = IOSQlite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		4DB25D1296B89ECEF6BA62B20529F3C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99241CD059BEF930E457B320312034A5 /* IOS-Geolive.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = "IOS-Geolive";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		4FB3E4C59E1F035B7DDC6D0ABABFC5A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99241CD059BEF930E457B320312034A5 /* IOS-Geolive.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IOS-Geolive/IOS-Geolive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IOS-Geolive/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IOS-Geolive/IOS-Geolive.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_IOS_Geolive_Tests;
+				PRODUCT_NAME = IOS_Geolive;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -560,41 +933,7 @@
 			};
 			name = Release;
 		};
-		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -626,14 +965,102 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		4C5741B7FF3AC950889E85D962AB2528 /* Debug */ = {
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CF8B5D2E3C9608897425AE9B35F566B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99241CD059BEF930E457B320312034A5 /* IOS-Geolive.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IOS-Geolive/IOS-Geolive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IOS-Geolive/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IOS-Geolive/IOS-Geolive.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = IOS_Geolive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9044C0B303B5CBBD650F2C42C34C49C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670FB555D637648DC3BC4269DCE79170 /* IOSQlite.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IOSQlite/IOSQlite-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IOSQlite/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IOSQlite/IOSQlite.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = IOSQlite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A326557583C00B602357ACA4BE75542F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1BA9D45A3F2521D2A28262BFB4E274C7 /* Pods-IOS-Geolive_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -646,7 +1073,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-IOS-Geolive_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-IOS-Geolive_Tests/Pods-IOS-Geolive_Tests.modulemap";
@@ -663,33 +1090,9 @@
 			};
 			name = Debug;
 		};
-		A394A75E352071930963FFA6D19319E4 /* Debug */ = {
+		C4ED87ABF993E6FCE283CB9CD48EC6E3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99241CD059BEF930E457B320312034A5 /* IOS-Geolive.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = "IOS-Geolive";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		BBAC02FE2C07BE1D86629058C6FDCB21 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99241CD059BEF930E457B320312034A5 /* IOS-Geolive.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = "IOS-Geolive";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		DC308A05037B46E8ED867FE1A68FADBB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99241CD059BEF930E457B320312034A5 /* IOS-Geolive.xcconfig */;
+			baseConfigurationReference = F82441595C15989E3E574DFE236B0D3E /* Pods-IOS-Geolive_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -698,14 +1101,17 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/IOS-Geolive/IOS-Geolive-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IOS-Geolive/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-IOS-Geolive_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/IOS-Geolive/IOS-Geolive.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IOS-Geolive_Tests/Pods-IOS-Geolive_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = IOS_Geolive;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_IOS_Geolive_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -714,9 +1120,21 @@
 			};
 			name = Release;
 		};
-		DE53D6822FC0A89324526240EF0EEA57 /* Debug */ = {
+		D94B7CED00BFCAB3BCDC08E146DDD8EF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99241CD059BEF930E457B320312034A5 /* IOS-Geolive.xcconfig */;
+			baseConfigurationReference = 670FB555D637648DC3BC4269DCE79170 /* IOSQlite.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = IOSQlite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DE79F2F63E6623E0791DE2C2B54000C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D931C576761190D9D3167978094E32 /* sqlite3.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -725,14 +1143,41 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/IOS-Geolive/IOS-Geolive-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IOS-Geolive/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/sqlite3/sqlite3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/sqlite3/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/IOS-Geolive/IOS-Geolive.modulemap";
+				MODULEMAP_FILE = "Target Support Files/sqlite3/sqlite3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = sqlite3;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E3506DDE7BC7261E86518A9B2A978F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670FB555D637648DC3BC4269DCE79170 /* IOSQlite.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IOSQlite/IOSQlite-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IOSQlite/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IOSQlite/IOSQlite.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = IOS_Geolive;
+				PRODUCT_NAME = IOSQlite;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -740,15 +1185,27 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		F9904CF2F3C626AEB4C92BC6A053BFB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99241CD059BEF930E457B320312034A5 /* IOS-Geolive.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = "IOS-Geolive";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		10036F03249F50676C92E9C2C00FA06D /* Build configuration list for PBXNativeTarget "IOS-Geolive-IOS-Geolive" */ = {
+		018E33343AE2CC75CE23D1FDFE51E6D9 /* Build configuration list for PBXNativeTarget "sqlite3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A394A75E352071930963FFA6D19319E4 /* Debug */,
-				BBAC02FE2C07BE1D86629058C6FDCB21 /* Release */,
+				06EC0738E1D629F87AD052D2D4022E77 /* Debug */,
+				DE79F2F63E6623E0791DE2C2B54000C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -756,26 +1213,53 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
-				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BC27C90236A0765E392D38AB08044C5 /* Build configuration list for PBXNativeTarget "IOS-Geolive" */ = {
+		5AFF334477F7F815D1CDEE50E9527FBE /* Build configuration list for PBXNativeTarget "IOSQlite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE53D6822FC0A89324526240EF0EEA57 /* Debug */,
-				DC308A05037B46E8ED867FE1A68FADBB /* Release */,
+				E3506DDE7BC7261E86518A9B2A978F6F /* Debug */,
+				9044C0B303B5CBBD650F2C42C34C49C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AACE36A43A330DE135CC3C38F45ED57 /* Build configuration list for PBXNativeTarget "Pods-IOS-Geolive_Tests" */ = {
+		667402D2CCC795898FD0671BC621F09C /* Build configuration list for PBXNativeTarget "IOS-Geolive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C5741B7FF3AC950889E85D962AB2528 /* Debug */,
-				03165E76B39482AD826BDD271DBB284B /* Release */,
+				7CF8B5D2E3C9608897425AE9B35F566B /* Debug */,
+				4FB3E4C59E1F035B7DDC6D0ABABFC5A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F91D9990027CE1A16C1717501D967EA /* Build configuration list for PBXNativeTarget "IOS-Geolive-IOS-Geolive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DB25D1296B89ECEF6BA62B20529F3C6 /* Debug */,
+				F9904CF2F3C626AEB4C92BC6A053BFB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA3D1510030AE4AC3F93B4A3496E7AC3 /* Build configuration list for PBXNativeTarget "Pods-IOS-Geolive_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A326557583C00B602357ACA4BE75542F /* Debug */,
+				C4ED87ABF993E6FCE283CB9CD48EC6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2748DA146DD96F8E84D23DE82E5AFDD /* Build configuration list for PBXNativeTarget "IOSQlite-IOSQlite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1137300B386B318FA96EB11684B41D91 /* Debug */,
+				D94B7CED00BFCAB3BCDC08E146DDD8EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

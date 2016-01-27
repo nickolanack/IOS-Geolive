@@ -85,7 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-IOS-Geolive_Tests/IOS_Geolive.framework"
+  install_framework "Pods-IOS-Geolive_Tests/IOSQlite.framework"
+  install_framework "Pods-IOS-Geolive_Tests/sqlite3.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-IOS-Geolive_Tests/IOS_Geolive.framework"
+  install_framework "Pods-IOS-Geolive_Tests/IOSQlite.framework"
+  install_framework "Pods-IOS-Geolive_Tests/sqlite3.framework"
 fi

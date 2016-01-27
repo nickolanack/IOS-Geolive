@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "GeolLayer.h"
 #import "GeolRenderer.h"
-#import <GeoliveFramework/Variables.h>
+#import "StoredParameters.h"
 
 @implementation GeolMarker
 @synthesize latlng;
@@ -33,26 +33,26 @@
     
    
     
-    NSDictionary *result=[[[Variables GetObjectForKey:@"System"] getJson] queryTask:([self hasGeoliveID]?@"marker_save":@"marker_new") WithJson:json];
+    NSDictionary *result=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] queryTask:([self hasGeoliveID]?@"marker_save":@"marker_new") WithJson:json];
     NSLog(@"%@",result);
     
     if(result!=nil&&[[result valueForKey:@"success"] boolValue]){
         if(![self hasGeoliveID])self.ID=[NSString stringWithFormat:@"%@",[result valueForKey:@"id"]];
     }else{
-        NSString *lastResponse=[[[Variables GetObjectForKey:@"System"] getJson] lastResponse];
+        NSString *lastResponse=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] lastResponse];
         NSLog(@"%s: %@",__PRETTY_FUNCTION__, lastResponse);
     }
     return true;
 }
 
 -(NSDictionary *)getAttributeValueTable:(NSString *)table field:(NSString *)field{
-    NSDictionary *result=[[[Variables GetObjectForKey:@"System"] getJson] queryTask:@"get_attribute_value" WithJson:@{@"plugin":@"Attributes", @"table":table, @"field":field, @"itemType":@"marker", @"itemId":[self getID]}];
+    NSDictionary *result=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] queryTask:@"get_attribute_value" WithJson:@{@"plugin":@"Attributes", @"table":table, @"field":field, @"itemType":@"marker", @"itemId":[self getID]}];
     if([[result objectForKey:@"success"] boolValue]){
         
         return result;
     
     }
-    NSString *lastResult=[[[Variables GetObjectForKey:@"System"] getJson] lastQuery];
+    NSString *lastResult=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] lastQuery];
     NSLog(@"%@",lastResult);
     return nil;
 }
@@ -66,7 +66,7 @@
         @throw [[NSException alloc] initWithName:@"Marker Set Attributes Exception" reason:@"Attribute value can only be a string or an array of strings" userInfo:nil];
         
     }
-    NSDictionary *result=[[[Variables GetObjectForKey:@"System"] getJson] queryTask:@"save_attributes" WithJson:@{@"plugin":@"Attributes", @"table":table, @"fieldValues":@{field:value}, @"itemId":[self getID], @"itemType":@"marker"}];
+    NSDictionary *result=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] queryTask:@"save_attributes" WithJson:@{@"plugin":@"Attributes", @"table":table, @"fieldValues":@{field:value}, @"itemId":[self getID], @"itemType":@"marker"}];
     if([[result objectForKey:@"success"] boolValue]){
         return true;
     }
@@ -74,12 +74,12 @@
 }
 -(bool)setAttributesArray:(NSDictionary *)values table:(NSString *)table{
    
-    NSDictionary *result=[[[Variables GetObjectForKey:@"System"] getJson] queryTask:@"save_attribute_value_list" WithJson:@{@"plugin":@"Attributes", @"table":table, @"fieldValues":values, @"itemType":@"marker", @"itemId":[self getID]}];
+    NSDictionary *result=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] queryTask:@"save_attribute_value_list" WithJson:@{@"plugin":@"Attributes", @"table":table, @"fieldValues":values, @"itemType":@"marker", @"itemId":[self getID]}];
     if([[result objectForKey:@"success"] boolValue]){
         return true;
     }
-    NSString *lastQuery=[[[Variables GetObjectForKey:@"System"] getJson] lastQuery];
-    NSString *lastResponse=[[[Variables GetObjectForKey:@"System"] getJson] lastResponse];
+    NSString *lastQuery=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] lastQuery];
+    NSString *lastResponse=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] lastResponse];
     NSLog(@"%@ : %@", lastQuery, lastResponse);
     return false;
 }
@@ -92,11 +92,11 @@
         @throw [[NSException alloc] initWithName:@"Marker Set Attributes Exception" reason:@"Attribute value can only be a string or an array of strings" userInfo:nil];
         
     }
-    NSDictionary *result=[[[Variables GetObjectForKey:@"System"] getJson] queryTask:@"add_attribute" WithJson:@{@"plugin":@"Attributes", @"table":table, @"attribute":field, @"value":value, @"itemType":@"marker", @"itemId":[self getID]}];
+    NSDictionary *result=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] queryTask:@"add_attribute" WithJson:@{@"plugin":@"Attributes", @"table":table, @"attribute":field, @"value":value, @"itemType":@"marker", @"itemId":[self getID]}];
     if([[result objectForKey:@"success"] boolValue]){
         return true;
     }
-    NSString *lastResult=[[[Variables GetObjectForKey:@"System"] getJson] lastResponse];
+    NSString *lastResult=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] lastResponse];
     NSLog(@"%@",lastResult);
     
     return false;
@@ -107,22 +107,22 @@
         @throw [[NSException alloc] initWithName:@"Marker Set Attributes Exception" reason:@"Attribute value can only be a string or an array of strings" userInfo:nil];
         
     }
-    NSDictionary *result=[[[Variables GetObjectForKey:@"System"] getJson] queryTask:@"remove_attribute" WithJson:@{@"plugin":@"Attributes", @"table":table, @"attributes":@{field:value}, @"itemType":@"marker", @"itemId":[self getID]}];
+    NSDictionary *result=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] queryTask:@"remove_attribute" WithJson:@{@"plugin":@"Attributes", @"table":table, @"attributes":@{field:value}, @"itemType":@"marker", @"itemId":[self getID]}];
     if([[result objectForKey:@"success"] boolValue]){
         return true;
     }
-    NSString *lastResult=[[[Variables GetObjectForKey:@"System"] getJson] lastResponse];
+    NSString *lastResult=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] lastResponse];
     NSLog(@"%@",lastResult);
     return false;
 }
 -(int)countAttributesTable:(NSString *)table field:(NSString *)field{
-    NSDictionary *result=[[[Variables GetObjectForKey:@"System"] getJson] queryTask:@"count_attribute_values" WithJson:@{@"plugin":@"Attributes", @"table":table, @"field":field, @"itemType":@"marker", @"itemId":[self getID]}];
+    NSDictionary *result=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] queryTask:@"count_attribute_values" WithJson:@{@"plugin":@"Attributes", @"table":table, @"field":field, @"itemType":@"marker", @"itemId":[self getID]}];
     if([[result objectForKey:@"success"] boolValue]){
         
         return [[result objectForKey:@"count"] intValue];
         
     }
-    NSString *lastResult=[[[Variables GetObjectForKey:@"System"] getJson] lastResponse];
+    NSString *lastResult=[[[StoredParameters GetObjectForKey:@"GeoliveServer"] getJson] lastResponse];
     NSLog(@"%@",lastResult);
     return -1;
 }
