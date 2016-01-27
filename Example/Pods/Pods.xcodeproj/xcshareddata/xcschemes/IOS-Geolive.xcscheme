@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0AB06B611528614256EE8F25D25EE5EA"
+               BlueprintIdentifier = "81801A8D380A21454D4C0DF38CCCBE23"
                BuildableName = "IOS_Geolive.framework"
                BlueprintName = "IOS-Geolive"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0AB06B611528614256EE8F25D25EE5EA"
+            BlueprintIdentifier = "81801A8D380A21454D4C0DF38CCCBE23"
             BuildableName = "IOS_Geolive.framework"
             BlueprintName = "IOS-Geolive"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -64,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0AB06B611528614256EE8F25D25EE5EA"
+            BlueprintIdentifier = "81801A8D380A21454D4C0DF38CCCBE23"
             BuildableName = "IOS_Geolive.framework"
             BlueprintName = "IOS-Geolive"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -82,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0AB06B611528614256EE8F25D25EE5EA"
+            BlueprintIdentifier = "81801A8D380A21454D4C0DF38CCCBE23"
             BuildableName = "IOS_Geolive.framework"
             BlueprintName = "IOS-Geolive"
             ReferencedContainer = "container:Pods.xcodeproj">

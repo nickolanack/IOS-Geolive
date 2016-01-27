@@ -1,6 +1,4 @@
-//
-//  GeolLayerEventDelegate.h
-//  Abbisure
+
 //
 //  Created by Nick Blackwell on 2013-07-25.
 //

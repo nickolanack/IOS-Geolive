@@ -1,6 +1,4 @@
-//
-//  AGlUserDatabase.h
-//  Abbisure
+
 //
 //  Created by Nick Blackwell on 2013-05-12.
 //

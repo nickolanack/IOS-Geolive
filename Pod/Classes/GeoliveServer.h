@@ -1,7 +1,4 @@
 //
-//  GeoliveServer.h
-//  Abbisure
-//
 //  Created by Nick Blackwell on 2013-05-12.
 //
 //
@@ -26,7 +23,7 @@
 -(bool)attemptConnectionTo:(NSString *)server;
 -(JsonSocket *) getJson;
 
-+(GeoliveServer *)GetInstance;
+
 
 -(bool) registerDevice;
 -(bool) loginDevice;
@@ -41,5 +38,8 @@
 -(void)clearApplicationMode:(NSString *)mode;
 -(NSArray *)getApplicationModes;
 -(bool)hasApplicationMode:(NSString *)mode;
+
+
++(GeoliveServer *) SharedInstance;
 
 @end

@@ -1,6 +1,4 @@
-//
-//  GeolDraggableItem.h
-//  Abbisure
+
 //
 //  Created by Nicholas Blackwell on 2013-06-11.
 //

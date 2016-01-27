@@ -1,6 +1,4 @@
-//
-//  GeoliveServer.m
-//  Abbisure
+
 //
 //  Created by Nick Blackwell on 2013-05-12.
 //
@@ -16,6 +14,7 @@
 #import "StoredParameters.h"
 #import "UserDatabase.h"
 #import "CacheDatabase.h"
+#import "DatabaseStorage.h"
 #import <UIKit/UIKit.h>
 
 
@@ -61,7 +60,7 @@ static GeoliveServer *instance;
         //[self.database execute:@"DROP table users;"];
         [StoredParameters SetObject:[[UserDatabase alloc] initWithName:name] ForKey:@"UsersDatabase"];
         //create a cache database
-        [StoredParameters SetDatabase:[[CacheDatabase alloc] initWithName:name]];
+        [StoredParameters SetPermanentStorageHandler:[[DatabaseStorage alloc] initWithDatabase:[[CacheDatabase alloc] initWithName:name] AndTable:@"variable"]];
         self.connectionInterval=10.0;
         
         NSLog(@"%s: Initialzing Database Tables: [User, Cache]", __PRETTY_FUNCTION__);
@@ -399,9 +398,6 @@ static GeoliveServer *instance;
     
     
 }
-+(GeoliveServer *) GetInstance{
-    return instance;
-}
 
 
 -(Database *)getDBObject{
@@ -454,46 +450,11 @@ static GeoliveServer *instance;
 }
 
 
-
--(void)setApplicationMode:(NSString *)mode{
-    if(![self hasApplicationMode:mode]){
-
-        [self.applicationModes addObject:[NSString stringWithString:mode]];
-        NSEnumerator *e = [self.systemEventDelegates objectEnumerator];
-        id<SystemEventDelegate> item;
-        while ((item = (id<SystemEventDelegate>)[e nextObject])) {
-            //NSLog(@"%s: %@",__PRETTY_FUNCTION__, [e class]);
-            if([item respondsToSelector:@selector(systemSetApplicationMode:)]){
-                //NSLog(@"%@: Execute Map Type Change Delegate: %@",[self class], [item class]);
-                [item performSelector:@selector(systemSetApplicationMode:) withObject:[NSString stringWithString:mode]];
-            }
-        }
++(GeoliveServer *) SharedInstance{
+    if(!instance){
+        @throw [[NSException alloc] initWithName:@"No GeoliveServer Instance" reason:@"Expected GeoliveServer to be instantiated by Application Delegate" userInfo:nil];
     }
-}
-
-
--(void)clearApplicationMode:(NSString *)mode{
-    if([self hasApplicationMode:mode]){
-        [self.applicationModes removeObject:[NSString stringWithString:mode]];
-        NSEnumerator *e = [self.systemEventDelegates objectEnumerator];
-        id<SystemEventDelegate> item;
-        while ((item = (id<SystemEventDelegate>)[e nextObject])) {
-            //NSLog(@"%s: %@",__PRETTY_FUNCTION__, [e class]);
-            if([item respondsToSelector:@selector(systemClearedApplicationMode:)]){
-                //NSLog(@"%@: Execute Map Type Change Delegate: %@",[self class], [item class]);
-                [item performSelector:@selector(systemClearedApplicationMode:) withObject:[NSString stringWithString:mode]];
-            }
-        }
-    
-    }
-
-}
--(NSArray *)getApplicationModes{
-    return [NSArray arrayWithArray:self.applicationModes];
-
-}
--(bool)hasApplicationMode:(NSString *)mode{
-    return ([self.applicationModes indexOfObject: mode]!=NSNotFound);
+    return instance;
 }
 
 @end

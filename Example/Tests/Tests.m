@@ -31,6 +31,8 @@
 {
     
     GeoliveServer *system=[[GeoliveServer alloc] initWithName:@"Test_"];
+    XCTAssert(system==[GeoliveServer SharedInstance], @"");
+    XCTAssert(system!=[[GeoliveServer alloc] initWithName:@"Test_"], @"");
     
     
 }

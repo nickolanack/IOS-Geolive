@@ -2,8 +2,10 @@
 
 #import "CacheDatabase.h"
 #import "ConnectionListener.h"
+#import "DatabaseStorage.h"
 #import "GeolDraggableItem.h"
 #import "GeolItem.h"
+#import "GeoliveServer.h"
 #import "GeolLayer.h"
 #import "GeolLayerable.h"
 #import "GeolLayerEventDelegate.h"
@@ -20,10 +22,10 @@
 #import "GeolPolygon.h"
 #import "GeolRenderer.h"
 #import "JsonSocket.h"
-#import "GeoliveServer.h"
+#import "PermanentObjectStorage.h"
+#import "StoredParameters.h"
 #import "SystemEventDelegate.h"
 #import "UserDatabase.h"
-#import "StoredParameters.h"
 
 FOUNDATION_EXPORT double IOS_GeoliveVersionNumber;
 FOUNDATION_EXPORT const unsigned char IOS_GeoliveVersionString[];
