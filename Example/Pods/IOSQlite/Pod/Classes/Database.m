@@ -1,7 +1,3 @@
-
-//
-//  Database.m
-//  Abbisure
 //
 //  Created by Nick Blackwell on 2013-05-10.
 //
@@ -44,8 +40,7 @@
     return dictionary;
 }
 /*
- * opening a database that is already open, will result in two Database objects sharing the sqlite_3 db. otherwise 
- * databases queries may become thread locked...
+ * opening a database that is already open, will result in two Database objects sharing the sqlite_3 db. it is possible for queries may become thread locked...
  */
 -(bool)open:(NSString *)name{
     sqlite3* db=nil;
@@ -112,6 +107,31 @@
     }
     return nil;
 }
+
+-(void *)query:(NSString *)query iterate:(void (^)(NSDictionary *))callback{
+    ResultSet *r=[self query:query];
+    if(r){
+        [r iterate:callback];
+    }else{
+        @throw [[NSException alloc] initWithName:@"Sql Error" reason:[self error] userInfo:nil];
+    }
+}
+
+-(void *)query:(NSString *)query first:(void (^)(NSDictionary *))callback{
+    
+    ResultSet *r=[self query:query];
+    if(r){
+        if([r hasNext]){
+            callback([r nextAssoc]);
+        }else{
+            callback(nil);
+        }
+    }else{
+        @throw [[NSException alloc] initWithName:@"Sql Error" reason:[self error] userInfo:nil];
+    }
+    
+}
+
 
 
 -(bool)execute:(NSString *)command{
@@ -268,6 +288,7 @@
    
     return [NSArray arrayWithArray:array];
 }
+
 -(NSArray *)listTableFieldsMetadata:(NSString *)table{
     NSMutableArray *array=[[NSMutableArray alloc] init];
     ResultSet *results;
@@ -310,6 +331,9 @@
 
 
 -(void) checkTables{
+    
+    //TODO: move this somewhere
+    
     NSArray *tables=[self listTables];
     NSArray *keys=[self.tableDefinitions allKeys];
     //NSLog(@"All Tables %@, Expected Tables: %@",tables, keys);
@@ -420,7 +444,7 @@
 }
 +(NSString *)Escape:(NSString *)s{
   
-    //TODO: escape other characters.
+    // TODO: escape other characters.
     /*
     
     s=[s stringByReplacingOccurrencesOfString:@"\\" withString:@"\\\\"];
@@ -428,6 +452,7 @@
     s=[s stringByReplacingOccurrencesOfString:@"\n" withString:@"\\n"];
     s=[s stringByReplacingOccurrencesOfString:@"\r" withString:@"\\r"];
     s=[s stringByReplacingOccurrencesOfString:@"\n" withString:@"\\n"];
+     
     */
     
     s=[s stringByReplacingOccurrencesOfString:@"'" withString:@"''"];

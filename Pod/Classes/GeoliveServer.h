@@ -34,12 +34,6 @@
 -(void)addSystemEventDelegate:(id<SystemEventDelegate>)delegate;
 -(void)removeSystemEventDelegate:(id<SystemEventDelegate>)delegate;
 
--(void)setApplicationMode:(NSString *)mode;
--(void)clearApplicationMode:(NSString *)mode;
--(NSArray *)getApplicationModes;
--(bool)hasApplicationMode:(NSString *)mode;
-
-
 +(GeoliveServer *) SharedInstance;
 
 @end

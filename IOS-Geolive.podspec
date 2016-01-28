@@ -27,7 +27,7 @@ a collection of libraries for interacting with a Geolive Server
   s.source           = { :git => "https://github.com/nickolanack/IOS-Geolive.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '9.0'
+  s.platform     = :ios, '8.1'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
