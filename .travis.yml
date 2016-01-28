@@ -11,5 +11,5 @@ before_install:
 - pod install --project-directory=Example
 script:
 # - set -o pipefail && xcodebuild test -workspace Example/IOS-Geolive.xcworkspace -scheme IOS-Geolive-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-- set -o pipefail && xcodebuild test -workspace Example/IOS-Geolive.xcworkspace -scheme IOS-Geolive-Example -destination 'platform=iOS Simulator,name=iPhone 6' | xcpretty
+- set -o pipefail && xcodebuild test -workspace Example/IOS-Geolive.xcworkspace -scheme IOS-Geolive-Example -destination 'platform=iOS Simulator,name=iPhone 6'
 - pod lib lint --allow-warnings
