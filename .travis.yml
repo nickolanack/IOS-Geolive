@@ -3,10 +3,11 @@
 # * https://github.com/supermarin/xcpretty#usage
 
 language: objective-c
-# cache: cocoapods
+cache: cocoapods
 # podfile: Example/Podfile
 before_install:
-- gem install cocoapods -v '= 0.34.0'# Since Travis is not always on latest version
+- gem install cocoapods 
+# Since Travis is not always on latest version
 - pod install --project-directory=Example
 script:
 # - set -o pipefail && xcodebuild test -workspace Example/IOS-Geolive.xcworkspace -scheme IOS-Geolive-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
