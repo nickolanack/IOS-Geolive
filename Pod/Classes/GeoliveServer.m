@@ -450,6 +450,32 @@ static GeoliveServer *instance;
 }
 
 
+
+-(void)performDefaultDeviceLogin:(NSString *) serverUrl WithCompletion:(void (^)(NSError *)) completion{
+    if([self attemptConnectionTo:serverUrl]){
+        //connect to the geolive server for this app, establish session. or try to go into offline mode.
+        if([self registerDevice]){
+            
+            if([self loginDevice]){
+                NSLog(@"%s: %@", __PRETTY_FUNCTION__, [[self getJson] lastQuery]);
+                NSLog(@"%s: %@", __PRETTY_FUNCTION__,[[self getJson] lastResponse]);
+                completion(nil);
+            }
+            completion([[NSError alloc] initWithDomain:@"Failed to login" code:1 userInfo:nil]);
+        }else{
+            
+            
+            NSLog(@"%s: %@", __PRETTY_FUNCTION__, [[self getJson] lastQuery]);
+            NSLog(@"%s: %@", __PRETTY_FUNCTION__, [[self getJson] lastResponse]);
+            completion([[NSError alloc] initWithDomain:@"Failed to register device" code:1 userInfo:nil]);
+        }
+    }else{
+        completion([[NSError alloc] initWithDomain:@"Failed to connect to server" code:1 userInfo:nil]);
+    }
+
+}
+
+
 +(GeoliveServer *) SharedInstance{
     if(!instance){
         @throw [[NSException alloc] initWithName:@"No GeoliveServer Instance" reason:@"Expected GeoliveServer to be instantiated by Application Delegate" userInfo:nil];

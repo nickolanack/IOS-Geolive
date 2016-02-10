@@ -34,12 +34,11 @@
 -(void)addSystemEventDelegate:(id<SystemEventDelegate>)delegate;
 -(void)removeSystemEventDelegate:(id<SystemEventDelegate>)delegate;
 
--(void)setApplicationMode:(NSString *)mode;
--(void)clearApplicationMode:(NSString *)mode;
--(NSArray *)getApplicationModes;
--(bool)hasApplicationMode:(NSString *)mode;
 
+-(void)performDefaultDeviceLogin:(NSString *) server WithCompletion:(void (^)(NSError *)) completion;
 
 +(GeoliveServer *) SharedInstance;
+
+
 
 @end
