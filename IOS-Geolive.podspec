@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-a collection of libraries for interacting with a Geolive Server
+A collection of libraries for interacting with a Geolive Server, and display on a MKMap
                        DESC
 
   s.homepage         = "https://github.com/nickolanack/IOS-Geolive"
@@ -27,7 +27,7 @@ a collection of libraries for interacting with a Geolive Server
   s.source           = { :git => "https://github.com/nickolanack/IOS-Geolive.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '9.0'
+  s.platform     = :ios, '8.1'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'

@@ -34,8 +34,8 @@
 -(void)addSystemEventDelegate:(id<SystemEventDelegate>)delegate;
 -(void)removeSystemEventDelegate:(id<SystemEventDelegate>)delegate;
 
-
 -(void)performDefaultDeviceLogin:(NSString *) server WithCompletion:(void (^)(NSError *)) completion;
+
 
 +(GeoliveServer *) SharedInstance;
 
