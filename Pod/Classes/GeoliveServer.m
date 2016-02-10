@@ -15,6 +15,7 @@
 #import "UserDatabase.h"
 #import "CacheDatabase.h"
 #import "DatabaseStorage.h"
+#import "GeoliveServerDelegate.h"
 #import <UIKit/UIKit.h>
 
 
@@ -24,6 +25,7 @@ static GeoliveServer *instance;
 
 @property  Database * database;
 @property  JsonSocket *json;
+@property id<GeoliveServerDelegate> delegate;
 
 /*
  *
@@ -51,6 +53,11 @@ static GeoliveServer *instance;
     
     self=[super init];
     if(self){
+        
+        if([[UIApplication sharedApplication].delegate conformsToProtocol:@protocol(GeoliveServerDelegate)]){
+            _delegate=[UIApplication sharedApplication].delegate;
+        }
+        
         if(!instance)instance=self;
         connected=false;
         self.database=[[Database alloc] init];
@@ -65,6 +72,9 @@ static GeoliveServer *instance;
         
         NSLog(@"%s: Initialzing Database Tables: [User, Cache]", __PRETTY_FUNCTION__);
         //NSLog(@"%@: User ID: %d Name:%@, FullName: %@, DeviceId: %d GeoliveAccountId: %d", [self class], [self.userDatabase getCurrentUserId], [self.userDatabase getUsersName], [self.userDatabase getUsersFullname], [self.userDatabase getDeviceId], [self.userDatabase getUsersGeoliveId]);
+        
+        
+        
         
     }
     return self;
@@ -122,46 +132,52 @@ static GeoliveServer *instance;
 }
 
 
-
--(bool) registerDevice{
+-(void) registerDeviceWithCompletion:(void (^)(NSError *))completion{
     
     
     UserDatabase *u=(UserDatabase *)[StoredParameters GetObjectForKey:@"UsersDatabase"];
     long myDeviceId=[u getDeviceId];
     //int myGeoliveId=[u getUsersGeoliveId];
-
+    
     
     if(myDeviceId<=0){
         
-        NSDictionary * registration = [[self getJson] queryTask:@"register_device" WithJson:@{@"plugin":@"IOSApplication", @"deviceName":[[UIDevice currentDevice]  name]}];
-        // NSLog(@"%s: register_device response_json:%@ response_raw:%@ query:%@", __PRETTY_FUNCTION__, registration, [[self getJson]lastResponse ], [[self getJson] lastQuery]);
-        NSArray *keys=[registration allKeys];
-        if([keys indexOfObject:@"success"]!=NSNotFound){
-            if([(NSNumber *)[registration valueForKey:@"success"] boolValue]){
-                long myNewDeviceId=[(NSNumber *) [registration valueForKey:@"id"] integerValue];
-                
-                if(![u setDeviceId:myNewDeviceId]){
-                    NSLog(@"%s: sql error %@, %d",__PRETTY_FUNCTION__,[u error], [u errorNum]);
-                }
-                if(![u setUsersGeoliveId:-1]){
-                    NSLog(@"%s: sql error",__PRETTY_FUNCTION__);
-                }
-                
-                return true;
-            }
+        
+        
+        
+        [[self getJson] queryTask:@"register_device" WithJson:@{@"plugin":@"IOSApplication", @"deviceName":[[UIDevice currentDevice]  name]} completion:^(NSDictionary * registration){
             
-        }
-        NSLog(@"Register Fail: %@",registration);
+            // NSLog(@"%s: register_device response_json:%@ response_raw:%@ query:%@", __PRETTY_FUNCTION__, registration, [[self getJson]lastResponse ], [[self getJson] lastQuery]);
+            NSArray *keys=[registration allKeys];
+            if([keys indexOfObject:@"success"]!=NSNotFound){
+                if([(NSNumber *)[registration valueForKey:@"success"] boolValue]){
+                    long myNewDeviceId=[(NSNumber *) [registration valueForKey:@"id"] integerValue];
+                    
+                    if(![u setDeviceId:myNewDeviceId]){
+                        NSLog(@"%s: sql error %@, %d",__PRETTY_FUNCTION__,[u error], [u errorNum]);
+                    }
+                    if(![u setUsersGeoliveId:-1]){
+                        NSLog(@"%s: sql error",__PRETTY_FUNCTION__);
+                    }
+                    
+                    completion(nil);
+                }
+                
+            }
+            NSLog(@"Register Fail: %@",registration);
+            completion([[NSError alloc]initWithDomain:@"Failed to register" code:1 userInfo:nil]);
+            
+        }];
+        
         
         
     }else{
-        return true;
+        completion(nil);
     }
     
-    return false;
     
 }
--(bool)createAccount{
+-(void)createAccountWithCompletion:(void (^)(NSError *))completion{
     
     UserDatabase *u=(UserDatabase *)[StoredParameters GetObjectForKey:@"UsersDatabase"];
     long myDeviceId=[u getDeviceId];
@@ -169,189 +185,256 @@ static GeoliveServer *instance;
     
     if(myGeoliveId<=0){
         
-        NSDictionary * registration =[[self getJson] queryTask:@"create_account" WithJson:@{@"plugin":@"IOSApplication", @"deviceId":[NSNumber numberWithLong:myDeviceId]}];
-        NSLog(@"%s: %@", __PRETTY_FUNCTION__, registration);
+        [[self getJson] queryTask:@"create_account" WithJson:@{@"plugin":@"IOSApplication", @"deviceId":[NSNumber numberWithLong:myDeviceId]} completion:^(NSDictionary * registration) {
+            
+            NSLog(@"%s: %@", __PRETTY_FUNCTION__, registration);
+            
+            if(registration!=nil&&[(NSNumber *)[registration valueForKey:@"success"] boolValue]){
+                
+                long myNewGeoliveId=[(NSNumber *) [registration valueForKey:@"id"] integerValue];
+                NSString *myNewUserName=(NSString *) [registration valueForKey:@"username"];
+                NSString *myNewPassword=(NSString *) [registration valueForKey:@"password"];
+                
+                [u setUsersName:myNewUserName];
+                [u setUsersPassword:myNewPassword];
+                [u setUsersGeoliveId:myNewGeoliveId];
+                
+                NSLog(@"%s: Updated Account. You should attempt to login", __PRETTY_FUNCTION__);
+                completion(nil);
+            }else{
+                NSLog(@"Create Acount Failed: %@", registration);
+                completion([[NSError alloc] initWithDomain:@"Failed to create account" code:1 userInfo:nil]);
+            }
+       
+        }];
         
-        if(registration!=nil&&[(NSNumber *)[registration valueForKey:@"success"] boolValue]){
-            
-            long myNewGeoliveId=[(NSNumber *) [registration valueForKey:@"id"] integerValue];
-            NSString *myNewUserName=(NSString *) [registration valueForKey:@"username"];
-            NSString *myNewPassword=(NSString *) [registration valueForKey:@"password"];
-            
-            [u setUsersName:myNewUserName];
-            [u setUsersPassword:myNewPassword];
-            [u setUsersGeoliveId:myNewGeoliveId];
-            
-            NSLog(@"%s: Updated Account. You should attempt to login", __PRETTY_FUNCTION__);
-            return true;
-        }else{
-            NSLog(@"Create Acount Failed: %@", registration);
-        }
         
     }else{
         
         NSLog(@"%s: Geoforms account already exists. You should attempt login.", __PRETTY_FUNCTION__);
-        return true;
+        completion(nil);
         
     }
-    return false;
 }
--(bool)loginDevice{
+-(void)loginDeviceWithCompletion:(void (^)(NSError *))completion{
     
     UserDatabase *u=(UserDatabase *)[StoredParameters GetObjectForKey:@"UsersDatabase"];
     long myDeviceId=[u getDeviceId];
     long myGeoliveId=[u getUsersGeoliveId];
     
     NSLog(@"%s: Attempting Login [%ld, %ld]",__PRETTY_FUNCTION__,myDeviceId, myGeoliveId);
-    if(myGeoliveId>=0||[self createAccount]){
-        long myGeoliveId=[u getUsersGeoliveId];
-        if(myDeviceId>0&&myGeoliveId>0){
-            NSDictionary *json=@{@"plugin":@"IOSApplication", @"deviceId":[NSNumber numberWithLong:myDeviceId], @"accountId":[NSNumber numberWithLong:myGeoliveId], @"username":[((UserDatabase *)[StoredParameters GetObjectForKey:@"UsersDatabase"]) getUsersName], @"password":[((UserDatabase *)[StoredParameters GetObjectForKey:@"UsersDatabase"]) getUsersPassword]};
-           
-            
-            
-            if([[json objectForKey:@"username"] isEqualToString:@"empty"]){
-                NSLog(@"Empty Username");
-                //this probably means that the server failed to generate an acount for this device/localuser
-                //the local user database creates a placeholder uname='empty' and then askes the server to provide usable values.
-            }
-            
-            NSDictionary *login=[[self getJson] queryTask:@"login_device" WithJson: json];
-            NSLog(@"%@",[[self getJson] lastQuery]);
-            
-            if(login!=nil&&[(NSNumber *)[login valueForKey:@"success"] boolValue]!=true){
+    if(myGeoliveId>=0){
+        [self createAccountWithCompletion:^(NSError * err) {
+            if(err){
                 
-                switch ([(NSNumber *)[login valueForKey:@"code"] integerValue]) {
-                    case 2:
-                    {
-                        UIAlertView *message=[[UIAlertView alloc] initWithTitle:@"Server Communication Error" message:[NSString stringWithFormat:@"%@",[login valueForKey:@"error"]] delegate:nil cancelButtonTitle:@"close" otherButtonTitles:nil];
-                        [message show];
-                    }
-                        break;
-                    case 3:
-                        
-                    {
-                        if(![u setUsersGeoliveId:-1]){
-                            NSLog(@"%s: sql error",__PRETTY_FUNCTION__);
-                        }
-                        
-                        if(![u setDeviceId:-1]){
-                            NSLog(@"%s: sql error",__PRETTY_FUNCTION__);
-                        }
-                        
-                        [self registerDevice];
-                    }
-                        
-                        break;
-                        
-                    case 4:
-                    {
-                        [[self getJson] queryTask:@"get_activation_type" WithJson: @{@"plugin":@"IOSApplication"} completion:^(NSDictionary * activation) {
-                            NSLog(@"%s: %@, %@", __PRETTY_FUNCTION__, [[self getJson] lastQuery],[[self getJson] lastResponse]);
-                            NSLog(@"Activation Type: %@",activation);
-                            if(activation!=nil&&[(NSNumber *)[activation valueForKey:@"success"] boolValue]==true){
-                                
-                                if([[activation valueForKey:@"activation"] isEqualToString:@"none"]){
-                                    NSString *code;
-                                    if([StoredParameters HasCachedKey:@"activation_code"]){
-                                        code=[StoredParameters GetObjectForKey:@"activation_code"];
-                                    }else{
-                                        
-                                        NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-                                        NSMutableString *one = [NSMutableString stringWithCapacity: 5];
-                                        NSMutableString *two = [NSMutableString stringWithCapacity: 5];
-                                        
-                                        for (int i=0; i<5; i++) {
-                                            [one appendFormat: @"%C", [letters characterAtIndex: arc4random() % [letters length]]];
-                                            [two appendFormat: @"%C", [letters characterAtIndex: arc4random() % [letters length]]];
-                                        }
-                                        //really just disguising the activation code. the device and account should be activatable by an administrator with
-                                        //the device id and the geolive id.
-                                        code=[NSString stringWithFormat:@"%@.%ld_%ld.%@", one,myDeviceId, myGeoliveId,two];
-                                        [StoredParameters SetAndCacheObject:code ForKey:@"activation_code"];
-                                    }
-                                    
-                                    
-                                    
-                                    //notify user that application has not been authenticated
-                                    UIAlertView *message=[[UIAlertView alloc] initWithTitle:@"This Device Requires Activation" message:[NSString stringWithFormat:@"Activation Code: %@",code] delegate:nil cancelButtonTitle:@"close" otherButtonTitles:nil];
-                                    [message show];
-                                    
-                                }
-                                if([[activation valueForKey:@"activation"] isEqualToString:@"email"]){
-                                    
-                                    //notify user that application has not been authenticated
-                                    UIAlertView *message=[[UIAlertView alloc] initWithTitle:@"Activate This Device" message:@"please enter your email address" delegate:self cancelButtonTitle:@"later" otherButtonTitles:@"activate",nil];
-                                    [message setAlertViewStyle:UIAlertViewStylePlainTextInput];
-                                    [message textFieldAtIndex:0].text=@"nickblackwell82@gmail.com";
-                                    [message show];
-                                    
-                                }
-                                
-                            }else{
-                                NSLog(@"%s: %@, %@", __PRETTY_FUNCTION__, [[self getJson] lastQuery],[[self getJson] lastResponse]);
-                            }
+                if(myDeviceId>0&&myGeoliveId<=0){
+                    
+                    [self createAccountWithCompletion:^(NSError * err) {
+                        if(err){
+                            if(myDeviceId<=0)NSLog(@"Invalid Device ID: %ld", myDeviceId);
+                            if(myGeoliveId<=0)NSLog(@"Invalid Geolive ID: %ld", myGeoliveId);
+                            NSLog(@"%s: Failed Login Invalid IDs",__PRETTY_FUNCTION__);
+                            loggedIn=false;
+                            [self systemDidChangeUserLoginStatus];
+                            completion(err);
+                        }else{
+                            //recurse
+                            [self loginDeviceWithCompletion:completion];
                             
-                            
-                        }];
-                    }
-                        break;
-                    case 5:
-                    {
-                        
-                        UIAlertView *message=[[UIAlertView alloc] initWithTitle:@"Activation Email Sent" message:@"go to your email inbox and activate this device" delegate:self cancelButtonTitle:@"close" otherButtonTitles:@"send again",nil];
-                        [message show];
-                    }
-                        break;
-                    default:
-                        
-                        NSLog(@"%@",login);
-                        
-                        break;
-                        
-                        
+                        }
+                    }];
+                }else{
+                    completion(err);
                 }
                 
                 
-            }else if([(NSNumber *)[login valueForKey:@"success"] boolValue]){
-                //request a new session key after login, this might have changed.
-                NSLog(@"%s: You are logged in!",__PRETTY_FUNCTION__);
-                loggedIn=true;
-                [self systemDidChangeUserLoginStatus];
-                [[self getJson] requestServerSession];
-                return true;
+                
             }else{
-                NSLog(@"%s: Failed Login Attempt %@, %@",__PRETTY_FUNCTION__ ,[[self getJson] lastQuery], [[self getJson] lastResponse]);
-            }
-            
-        }else{
-            
-            
-            
-            if(myDeviceId>0&&myGeoliveId<=0&&[self createAccount]){
-                return [self loginDevice];
-            }else{
-            
-                if(myDeviceId<=0)NSLog(@"Invalid Device ID: %ld", myDeviceId);
-                if(myGeoliveId<=0)NSLog(@"Invalid Geolive ID: %ld", myGeoliveId);
-                NSLog(@"%s: Failed Login Invalid IDs",__PRETTY_FUNCTION__);
-                loggedIn=false;
-                [self systemDidChangeUserLoginStatus];
+                
+                
+                
+                long myGeoliveId=[u getUsersGeoliveId];
+                if(myDeviceId>0&&myGeoliveId>0){
+                    NSDictionary *json=@{@"plugin":@"IOSApplication", @"deviceId":[NSNumber numberWithLong:myDeviceId], @"accountId":[NSNumber numberWithLong:myGeoliveId], @"username":[((UserDatabase *)[StoredParameters GetObjectForKey:@"UsersDatabase"]) getUsersName], @"password":[((UserDatabase *)[StoredParameters GetObjectForKey:@"UsersDatabase"]) getUsersPassword]};
+                    
+                    
+                    
+                    if([[json objectForKey:@"username"] isEqualToString:@"empty"]){
+                        NSLog(@"Empty Username");
+                        //this probably means that the server failed to generate an acount for this device/localuser
+                        //the local user database creates a placeholder uname='empty' and then askes the server to provide usable values.
+                    }
+                    
+                    NSDictionary *login=[[self getJson] queryTask:@"login_device" WithJson: json];
+                    NSLog(@"%@",[[self getJson] lastQuery]);
+                    
+                    if(login!=nil&&[(NSNumber *)[login valueForKey:@"success"] boolValue]!=true){
+                        
+                        switch ([(NSNumber *)[login valueForKey:@"code"] integerValue]) {
+                            case 2:
+                            {
+                                
+                                
+                                UIAlertView *message=[[UIAlertView alloc] initWithTitle:@"Server Communication Error" message:[NSString stringWithFormat:@"%@",[login valueForKey:@"error"]] delegate:nil cancelButtonTitle:@"close" otherButtonTitles:nil];
+                                [message show];
+                                
+                                completion([[NSError alloc] initWithDomain:@"Server Communication Error" code:5 userInfo:nil]);
+
+                                
+                            }
+                                break;
+                            case 3:
+                                
+                            {
+                                if(![u setUsersGeoliveId:-1]){
+                                    NSLog(@"%s: sql error",__PRETTY_FUNCTION__);
+                                }
+                                
+                                if(![u setDeviceId:-1]){
+                                    NSLog(@"%s: sql error",__PRETTY_FUNCTION__);
+                                }
+                                
+                                [self registerDeviceWithCompletion:^(NSError * err) {
+                                    //TODO: move code here
+                                    if(err){
+                                        completion(err);
+                                    }else{
+                                        //recurse
+                                        [self loginDeviceWithCompletion:completion];
+                                    }
+                                    
+                                }];
+                            }
+                                
+                                break;
+                                
+                            case 4:
+                            {
+                                [[self getJson] queryTask:@"get_activation_type" WithJson: @{@"plugin":@"IOSApplication"} completion:^(NSDictionary * activation) {
+                                    completion([self checkActivation:activation]);
+                                    
+                                }];
+                            }
+                                break;
+                            case 5:
+                            {
+                                
+                               
+                                UIAlertView *message=[[UIAlertView alloc] initWithTitle:@"Activation Email Sent" message:@"go to your email inbox and activate this device" delegate:self cancelButtonTitle:@"close" otherButtonTitles:@"send again",nil];
+                                [message show];
+                                
+                                completion([[NSError alloc] initWithDomain:@"Requires Email Verification" code:5 userInfo:nil]);
+                                
+                            }
+                                break;
+                            default:
+                                
+                                NSLog(@"%@",login);
+                                completion([[NSError alloc] initWithDomain:@"Unknown Error" code:1 userInfo:nil]);
+                                break;
+                                
+                                
+                        }
+                        
+                        
+                    }else if([(NSNumber *)[login valueForKey:@"success"] boolValue]){
+                        //request a new session key after login, this might have changed.
+                        NSLog(@"%s: You are logged in!",__PRETTY_FUNCTION__);
+                        loggedIn=true;
+                        [self systemDidChangeUserLoginStatus];
+                        [[self getJson] requestServerSession];
+                        completion(nil);
+                    }else{
+                        NSLog(@"%s: Failed Login Attempt %@, %@",__PRETTY_FUNCTION__ ,[[self getJson] lastQuery], [[self getJson] lastResponse]);
+                        completion([[NSError alloc] initWithDomain:@"Failed Login Attempt" code:1 userInfo:nil]);
+                    }
+                    
+                }else{
+                    
+                    NSLog(@"%s: Cannot Login [%ld, %ld]",__PRETTY_FUNCTION__,[u getDeviceId], [u getUsersGeoliveId]);
+                    loggedIn=false;
+                    [self systemDidChangeUserLoginStatus];
+                    completion([[NSError alloc] initWithDomain:@"Cannot Login" code:1 userInfo:nil]);
+                    
+                }
+                
+                
+                
+                
+                
                 
             }
-            
-           
-            
-        }
+        }];
     }
     
-    NSLog(@"%s: Cannot Login [%ld, %ld]",__PRETTY_FUNCTION__,[u getDeviceId], [u getUsersGeoliveId]);
-    loggedIn=false;
-    [self systemDidChangeUserLoginStatus];
-    
-    return false;
     
     
+    
+    
+}
+
+
+-(NSError *)checkActivation:(NSDictionary *)activation{
+    
+    UserDatabase *u=(UserDatabase *)[StoredParameters GetObjectForKey:@"UsersDatabase"];
+    long myDeviceId=[u getDeviceId];
+    long myGeoliveId=[u getUsersGeoliveId];
+
+    NSLog(@"%s: %@, %@", __PRETTY_FUNCTION__, [[self getJson] lastQuery],[[self getJson] lastResponse]);
+    NSLog(@"Activation Type: %@",activation);
+    if(activation!=nil&&[(NSNumber *)[activation valueForKey:@"success"] boolValue]==true){
+        
+        if([[activation valueForKey:@"activation"] isEqualToString:@"none"]){
+            NSString *code;
+            if([StoredParameters HasCachedKey:@"activation_code"]){
+                code=[StoredParameters GetObjectForKey:@"activation_code"];
+            }else{
+                
+                NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                NSMutableString *one = [NSMutableString stringWithCapacity: 5];
+                NSMutableString *two = [NSMutableString stringWithCapacity: 5];
+                
+                for (int i=0; i<5; i++) {
+                    [one appendFormat: @"%C", [letters characterAtIndex: arc4random() % [letters length]]];
+                    [two appendFormat: @"%C", [letters characterAtIndex: arc4random() % [letters length]]];
+                }
+                //really just disguising the activation code. the device and account should be activatable by an administrator with
+                //the device id and the geolive id.
+                code=[NSString stringWithFormat:@"%@.%ld_%ld.%@", one, myDeviceId, myGeoliveId,two];
+                [StoredParameters SetAndCacheObject:code ForKey:@"activation_code"];
+            }
+            
+            
+            
+            //notify user that application has not been authenticated
+            UIAlertView *message=[[UIAlertView alloc] initWithTitle:@"This Device Requires Activation" message:[NSString stringWithFormat:@"Activation Code: %@",code] delegate:nil cancelButtonTitle:@"close" otherButtonTitles:nil];
+            [message show];
+            
+            return [[NSError alloc] initWithDomain:@"Requires Administrator Activation" code:4 userInfo:nil];
+            
+        }
+        if([[activation valueForKey:@"activation"] isEqualToString:@"email"]){
+            
+            //notify user that application has not been authenticated
+            UIAlertView *message=[[UIAlertView alloc] initWithTitle:@"Activate This Device" message:@"please enter your email address" delegate:self cancelButtonTitle:@"later" otherButtonTitles:@"activate",nil];
+            [message setAlertViewStyle:UIAlertViewStylePlainTextInput];
+            [message textFieldAtIndex:0].text=@"nickblackwell82@gmail.com";
+            [message show];
+            
+            
+            return [[NSError alloc] initWithDomain:@"Requires Email Activation" code:4 userInfo:nil];
+            
+        }
+        
+        
+        
+    }else{
+        NSLog(@"%s: %@, %@", __PRETTY_FUNCTION__, [[self getJson] lastQuery],[[self getJson] lastResponse]);
+    }
+    
+    
+    return nil;
+
 }
 
 
@@ -400,6 +483,7 @@ static GeoliveServer *instance;
 }
 
 
+
 -(Database *)getDBObject{
     return self.database;
 }
@@ -433,8 +517,8 @@ static GeoliveServer *instance;
             [item performSelector:@selector(systemDidChangeUserLoginStatus:) withObject:[NSNumber numberWithBool: loggedIn]];
         }
     }
-
-
+    
+    
 }
 
 -(void) systemDidChangeConnectionStatus{
@@ -451,28 +535,36 @@ static GeoliveServer *instance;
 
 
 
--(void)performDefaultDeviceLogin:(NSString *) serverUrl WithCompletion:(void (^)(NSError *)) completion{
+-(void)performDefaultDeviceLogin:(NSString *) serverUrl withCompletion:(void (^)(NSError *)) completion{
     if([self attemptConnectionTo:serverUrl]){
         //connect to the geolive server for this app, establish session. or try to go into offline mode.
-        if([self registerDevice]){
-            
-            if([self loginDevice]){
-                NSLog(@"%s: %@", __PRETTY_FUNCTION__, [[self getJson] lastQuery]);
-                NSLog(@"%s: %@", __PRETTY_FUNCTION__,[[self getJson] lastResponse]);
-                completion(nil);
+        [self registerDeviceWithCompletion:^(NSError * err) {
+            if(err){
+                completion(err);
+            }else{
+                
+                [self loginDeviceWithCompletion:^(NSError * err) {
+                    if(err){
+                        completion(err);
+                        
+                    }else{
+                        NSLog(@"%s: %@", __PRETTY_FUNCTION__, [[self getJson] lastQuery]);
+                        NSLog(@"%s: %@", __PRETTY_FUNCTION__,[[self getJson] lastResponse]);
+                        completion(nil);
+                    }
+                }];
+                
+                
             }
-            completion([[NSError alloc] initWithDomain:@"Failed to login" code:1 userInfo:nil]);
-        }else{
             
             
-            NSLog(@"%s: %@", __PRETTY_FUNCTION__, [[self getJson] lastQuery]);
-            NSLog(@"%s: %@", __PRETTY_FUNCTION__, [[self getJson] lastResponse]);
-            completion([[NSError alloc] initWithDomain:@"Failed to register device" code:1 userInfo:nil]);
-        }
+        }];
+        
+        
     }else{
-        completion([[NSError alloc] initWithDomain:@"Failed to connect to server" code:1 userInfo:nil]);
+        completion([[NSError alloc] initWithDomain:@"Failed connection to server" code:1 userInfo:nil]);
     }
-
+    
 }
 
 -(bool)isPreparedToRunOffline{

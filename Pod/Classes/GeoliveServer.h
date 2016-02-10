@@ -25,16 +25,16 @@
 
 
 
--(bool) registerDevice;
--(bool) loginDevice;
--(bool) createAccount;
+-(void) registerDeviceWithCompletion:(void (^)(NSError * )) completion;
+-(void) loginDeviceWithCompletion:(void (^)(NSError * )) completion;
+-(void) createAccountWithCompletion:(void (^)(NSError * )) completion;
 
 
 
 -(void)addSystemEventDelegate:(id<SystemEventDelegate>)delegate;
 -(void)removeSystemEventDelegate:(id<SystemEventDelegate>)delegate;
 
--(void)performDefaultDeviceLogin:(NSString *) server WithCompletion:(void (^)(NSError *)) completion;
+-(void)performDefaultDeviceLogin:(NSString *) serverUrl withCompletion:(void (^)(NSError *)) completion;
 -(bool)isPreparedToRunOffline;
 
 +(GeoliveServer *) SharedInstance;

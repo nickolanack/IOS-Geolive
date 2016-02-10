@@ -181,6 +181,7 @@
 		8B3322D62E868E794FAB93CCECAEC6E0 /* GeolMapItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GeolMapItem.m; sourceTree = "<group>"; };
 		8BCA2313C634C45EC5128C7A80275349 /* PermanentObjectStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PermanentObjectStorage.h; sourceTree = "<group>"; };
 		8C3E7F8647A8D68B9265141655308F4B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		908264711C6BDD5A009053AC /* GeoliveServerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoliveServerDelegate.h; sourceTree = "<group>"; };
 		947F77BB4E3460BE806BD668A15B5E04 /* GeolDraggableItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeolDraggableItem.h; sourceTree = "<group>"; };
 		9802D0D9432CFF7039858D404EBD7A91 /* IOS-Geolive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IOS-Geolive-dummy.m"; sourceTree = "<group>"; };
 		99241CD059BEF930E457B320312034A5 /* IOS-Geolive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "IOS-Geolive.xcconfig"; sourceTree = "<group>"; };
@@ -292,6 +293,7 @@
 				0961F6B99F18DE5F77AE5467EA443BAE /* GeolItem.m */,
 				3A2D6273FF6F1C2EA8D63A26B07081FB /* GeoliveServer.h */,
 				42C9A7396EDBDCB2FD81E1987130370D /* GeoliveServer.m */,
+				908264711C6BDD5A009053AC /* GeoliveServerDelegate.h */,
 				12A64E5719521E8AC37013E9067A8660 /* GeolLayer.h */,
 				6B15D95CC9D5CC678B4556F5602088F8 /* GeolLayer.m */,
 				DDBADAABA4DF0E7D41059E13CF981B9D /* GeolLayerable.h */,
