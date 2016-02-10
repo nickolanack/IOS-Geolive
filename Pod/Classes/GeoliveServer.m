@@ -475,6 +475,14 @@ static GeoliveServer *instance;
 
 }
 
+-(bool)isPreparedToRunOffline{
+    //TODO: should check that user should be able to login.
+    // should check that network is actually unavailable.
+    // should check that details are cached.
+    return false;
+    
+}
+
 
 +(GeoliveServer *) SharedInstance{
     if(!instance){

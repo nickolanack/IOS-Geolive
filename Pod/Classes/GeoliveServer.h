@@ -35,7 +35,7 @@
 -(void)removeSystemEventDelegate:(id<SystemEventDelegate>)delegate;
 
 -(void)performDefaultDeviceLogin:(NSString *) server WithCompletion:(void (^)(NSError *)) completion;
-
+-(bool)isPreparedToRunOffline;
 
 +(GeoliveServer *) SharedInstance;
 
