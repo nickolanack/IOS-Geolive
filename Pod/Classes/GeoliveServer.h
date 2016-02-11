@@ -35,10 +35,24 @@
 -(void)removeSystemEventDelegate:(id<SystemEventDelegate>)delegate;
 
 -(void)performDefaultDeviceLogin:(NSString *) serverUrl withCompletion:(void (^)(NSError *)) completion;
+
+/*
+ loads default settings from server, returns the settings as argument to completion, if you alter the settings you should call setApplicationSettings
+ with the altered settings.
+ */
+-(void)loadDefaultApplicationSettingsWithCompletion:(void (^)(NSError *, NSDictionary *)) completion;
+-(void)setApplicationSettings:(NSDictionary *) settings;
+
+-(void)activateAccountWithEmailAddress:(NSString *)email withCompletion:(void (^)(NSError *))completion;
+
 -(bool)isPreparedToRunOffline;
 
 +(GeoliveServer *) SharedInstance;
 
+-(NSString *)getDefaultLayer;
+-(NSString *)getDefaultIcon;
+-(NSString *)getDefaultAttributeFields;
+-(NSString *)getDefaultAttributeTable;
 
 
 @end

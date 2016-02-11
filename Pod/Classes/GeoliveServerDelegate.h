@@ -12,6 +12,9 @@
 
 @optional
 
+-(void)geoliveUserAccountRequiresEmailActivation;
+-(void)geoliveUserAccountRequiresEmailVerification;
+-(void)geoliveUserAccountRequiresAdministratorActivationWithCode:(NSString *) code;
 
 
 @end
