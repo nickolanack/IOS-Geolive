@@ -16,7 +16,7 @@
 @end
 @implementation ConnectionListener
 
-@synthesize connection, callback, progressHandler, nameForQueue, callbackTarget;
+@synthesize connection, callback, progressHandler, nameForQueue;
 
 
 -(void)start{
@@ -39,13 +39,13 @@
     connection=con;
     if(self.shouldStart)[self start];
 }
--(void)startWithTarget:(id)target andCallback:(void (^)(NSDictionary * response, id target)) completion{
-    [self setCallbackTarget:target];
+-(void)startWithCompletion:(void (^)(NSDictionary * response)) completion{
+
     [self setCallback:completion];
     [self start];
 }
--(void)startWithTarget:(id)target callback:(void (^)(NSDictionary * response, id target)) completion andProgressHandler:(void (^)(float percentFinished, id target)) progress{
-    [self setCallbackTarget:target];
+-(void)startWithProgressHandler:(void (^)(float percentFinished)) progress andCompletion:(void (^)(NSDictionary * response)) completion {
+    
     [self setCallback:completion];
     [self setProgressHandler:progress];
     [self start];
@@ -67,7 +67,7 @@
         
         if(self.callback!=nil){
             dispatch_async(dispatch_get_main_queue(), ^{
-                self.callback(json, self.callbackTarget);
+                self.callback(json);
             });
             
         }else{
@@ -94,7 +94,7 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite{
         self.sent=s;
         if(self.progressHandler!=nil){
             dispatch_async(dispatch_get_main_queue(), ^{
-                self.progressHandler(s/(float)unit, self.callbackTarget);
+                self.progressHandler(s/(float)unit);
             });
         }
     }
