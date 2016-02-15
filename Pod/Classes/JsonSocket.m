@@ -200,8 +200,9 @@
     
     //[[self getQueue]  addOperationWithBlock:^{
 
+    JsonSocket * __weak me=self;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-        NSDictionary *i=[self queryTask:task WithJson:json];
+        NSDictionary *i=[me queryTask:task WithJson:json];
         dispatch_async(dispatch_get_main_queue(), ^{
             result(i);
         });
@@ -219,6 +220,7 @@
 +(void)QueryServer:(NSString *)server Task:(NSString *)task WithJson:(NSDictionary *)json Completion:(void (^)(NSDictionary *))result{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         NSDictionary *i=[JsonSocket QueryServer:server Task:task WithJson:json];
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             result(i);
         });
@@ -297,7 +299,9 @@
 
 -(ConnectionListener *)uploadImage:(UIImage *)image{
     
-    __block ConnectionListener *connectionListener=[[ConnectionListener alloc] init];
+    ConnectionListener * connectionListener=[[ConnectionListener alloc] init];
+    JsonSocket * __weak me=self;
+    ConnectionListener *__weak listener =connectionListener;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
     // encode the image as PNG
     NSData *imageData = UIImagePNGRepresentation(image);
@@ -305,7 +309,7 @@
     // set up the request
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     NSString *url=[NSString stringWithFormat:@"%@%@&task=image_upload", self.server,@"/index.php?option=com_geolive&forcedebug=off&format=ajax"];
-    if(self.sessionKey&&self.sessionKeyValue){
+    if(me.sessionKey&&me.sessionKeyValue){
         url=[NSString stringWithFormat:@"%@&%@=%@", url, self.sessionKey,self.sessionKeyValue];
         //NSLog(@"SessionKey: %@ SessionKeyValue: %@",self.sessionKey,self.sessionKeyValue);
     }else{
@@ -369,9 +373,9 @@
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:body];
 
-    NSURLConnection *urlConnection = [[NSURLConnection alloc ] initWithRequest:request delegate:connectionListener startImmediately:NO];
-    [connectionListener setNameForQueue:[NSString stringWithFormat:@"%@:Image Upload Queue",[self class]]];
-    [connectionListener setConnection:urlConnection];
+    NSURLConnection *urlConnection = [[NSURLConnection alloc ] initWithRequest:request delegate:listener startImmediately:NO];
+    [listener setNameForQueue:[NSString stringWithFormat:@"%@:Image Upload Queue",[self class]]];
+    [listener setConnection:urlConnection];
     
     });
     return connectionListener;
@@ -379,8 +383,9 @@
 
 
 -(ConnectionListener *)uploadVideo:(NSURL *)file{
-    __block ConnectionListener *connectionListener=[[ConnectionListener alloc] init];
-    
+     ConnectionListener *connectionListener=[[ConnectionListener alloc] init];
+     JsonSocket * __weak me=self;
+    ConnectionListener *__weak listener =connectionListener;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         NSData *videoData = [NSData dataWithContentsOfURL:file];
         
@@ -390,9 +395,9 @@
         
         // set up the request
         NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-        NSString *url=[NSString stringWithFormat:@"%@%@&task=video_upload", self.server,@"/index.php?option=com_geolive&forcedebug=off&format=ajax"];
-        if(self.sessionKey&&self.sessionKeyValue){
-            url=[NSString stringWithFormat:@"%@&%@=%@", url, self.sessionKey,self.sessionKeyValue];
+        NSString *url=[NSString stringWithFormat:@"%@%@&task=video_upload", me.server,@"/index.php?option=com_geolive&forcedebug=off&format=ajax"];
+        if(me.sessionKey&&me.sessionKeyValue){
+            url=[NSString stringWithFormat:@"%@&%@=%@", url, me.sessionKey,me.sessionKeyValue];
             //NSLog(@"SessionKey: %@ SessionKeyValue: %@",self.sessionKey,self.sessionKeyValue);
         }else{
             NSLog(@"Warn: session key not set");
@@ -456,9 +461,9 @@
         [request setHTTPBody:body];
         
         
-        NSURLConnection *urlConnection = [[NSURLConnection alloc ] initWithRequest:request delegate:connectionListener startImmediately:NO];
-        [connectionListener setNameForQueue:[NSString stringWithFormat:@"%@:Video Upload Queue",[self class]]];
-        [connectionListener setConnection:urlConnection];
+        NSURLConnection *urlConnection = [[NSURLConnection alloc ] initWithRequest:request delegate:listener startImmediately:NO];
+        [listener setNameForQueue:[NSString stringWithFormat:@"%@:Video Upload Queue",[me class]]];
+        [listener setConnection:urlConnection];
         
     });
     

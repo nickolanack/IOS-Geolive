@@ -7,16 +7,38 @@
 //
 
 #import "ConnectionListener.h"
+
+static NSMutableArray *connections;
+
 @interface ConnectionListener()
 
 @property int sent;
 
 @property bool shouldStart;
 
+
 @end
 @implementation ConnectionListener
 
 @synthesize connection, callback, progressHandler, nameForQueue;
+
+-(instancetype)init{
+
+    self=[super init];
+    
+    
+    if(!connections){
+        //keep track of connections otherwise they will likely be deallocated before they are completed
+        connections=[[NSMutableArray alloc] init];
+    }
+    
+    [connections addObject:self];
+    
+    
+    return self;
+
+
+}
 
 
 -(void)start{
@@ -66,8 +88,10 @@
     if(!decodeError){
         
         if(self.callback!=nil){
+            ConnectionListener *c __weak =self;
             dispatch_async(dispatch_get_main_queue(), ^{
-                self.callback(json);
+                c.callback(json);
+                [connections removeObject:self];
             });
             
         }else{
@@ -93,8 +117,10 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite{
     if(self.sent!=s){
         self.sent=s;
         if(self.progressHandler!=nil){
+            
+            ConnectionListener *c __weak =self;
             dispatch_async(dispatch_get_main_queue(), ^{
-                self.progressHandler(s/(float)unit);
+                c.progressHandler(s/(float)unit);
             });
         }
     }
