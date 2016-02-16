@@ -8,6 +8,7 @@
 
 #import "ConnectionListener.h"
 
+
 static NSMutableArray *connections;
 
 @interface ConnectionListener()
@@ -25,15 +26,11 @@ static NSMutableArray *connections;
 -(instancetype)init{
 
     self=[super init];
-    
-    
     if(!connections){
-        //keep track of connections otherwise they will likely be deallocated before they are completed
-        connections=[[NSMutableArray alloc] init];
+        connections =[[NSMutableArray alloc] init];
     }
     
     [connections addObject:self];
-    
     
     return self;
 
@@ -88,11 +85,8 @@ static NSMutableArray *connections;
     if(!decodeError){
         
         if(self.callback!=nil){
-            ConnectionListener *c __weak =self;
-            dispatch_async(dispatch_get_main_queue(), ^{
-                c.callback(json);
-                [connections removeObject:self];
-            });
+            self.callback(json);
+             [connections removeObject:self];
             
         }else{
             NSLog(@"%s: Finished without data handler",__PRETTY_FUNCTION__);
@@ -117,11 +111,7 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite{
     if(self.sent!=s){
         self.sent=s;
         if(self.progressHandler!=nil){
-            
-            ConnectionListener *c __weak =self;
-            dispatch_async(dispatch_get_main_queue(), ^{
-                c.progressHandler(s/(float)unit);
-            });
+            self.progressHandler(s/(float)unit);
         }
     }
 }

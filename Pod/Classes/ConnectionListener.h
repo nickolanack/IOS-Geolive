@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface ConnectionListener : NSObject<NSURLConnectionDelegate>
-@property (weak, nonatomic) void (^callback)(NSDictionary * response);
-@property (weak, nonatomic) void (^progressHandler)(float percentFinished);
-@property (weak, nonatomic) NSURLConnection *connection;
+@property (strong, nonatomic) void (^callback)(NSDictionary * response);
+@property (strong, nonatomic) void (^progressHandler)(float percentFinished);
+@property (strong, nonatomic) NSURLConnection *connection;
 
 @property NSString *nameForQueue;
 
