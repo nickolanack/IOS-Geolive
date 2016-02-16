@@ -16,19 +16,22 @@
 
 -(id) initWithServer:(NSString *)url;
 
-- (NSDictionary *) queryTask:(NSString *)task;
-- (void) queryTask:(NSString *)task completion: (void (^)(NSDictionary *))result;
+- (NSDictionary *) requestJsonTask:(NSString *)task;
+- (void) requestJsonTask:(NSString *)task completion: (void (^)(NSDictionary *))result;
 
 
-- (NSDictionary *) queryTask:(NSString *)task WithJson:(NSDictionary *) json;
-- (void) queryTask:(NSString *)task WithJson:(NSDictionary *) json completion: (void (^)(NSDictionary *))result;
+- (NSDictionary *) requestJsonTask:(NSString *)task WithParameters:(NSDictionary *) json;
+- (void) requestJsonTask:(NSString *)task WithParameters:(NSDictionary *) json completion: (void (^)(NSDictionary *))result;
+
+- (NSString *) requestPlainTextTask:(NSString *)task WithParameters:(NSDictionary *) json;
+- (void) requestPlainTextTask:(NSString *)task WithParameters:(NSDictionary *) json completion: (void (^)(NSString *))result;
 
 - (bool) requestServerSession;
 
-+(NSDictionary *) QueryServer:(NSString *)server Task:(NSString *)task WithJson:(NSDictionary *)json;
++(NSDictionary *) QueryServer:(NSString *)server Task:(NSString *)task WithParameters:(NSDictionary *)json;
 +(NSDictionary *) QueryServer:(NSString *)server Task:(NSString *)task;
 
-+(void)QueryServer:(NSString *)server Task:(NSString *)task WithJson:(NSDictionary *)json Completion:(void (^)(NSDictionary *))result;
++(void)QueryServer:(NSString *)server Task:(NSString *)task WithParameters:(NSDictionary *)json Completion:(void (^)(NSDictionary *))result;
 +(void)QueryServer:(NSString *)server Task:(NSString *)task Completion:(void (^)(NSDictionary *))result;
 
 

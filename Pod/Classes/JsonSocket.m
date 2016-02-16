@@ -45,7 +45,7 @@
 
 - (bool) requestServerSession{
     
-    NSDictionary *json=[self queryTask:@"session_key"];
+    NSDictionary *json=[self requestJsonTask:@"session_key"];
     if(json){
         
         self.sessionKey=[json valueForKey:@"key"];
@@ -72,12 +72,11 @@
     
 }
 
-- (NSDictionary *) queryTask:(NSString *)task{
+- (NSDictionary *) requestJsonTask:(NSString *)task{
     
-    return [self queryTask:task WithJson:nil];
+    return [self requestJsonTask:task WithParameters:nil];
 }
-
-- (NSDictionary *) queryTask:(NSString *)task WithJson:(NSDictionary *) json{
+- (NSData *) executeTask:(NSString *)task WithParameters:(NSDictionary *) json{
     
     //NSLog(@"%s: %@ %@ %@",__PRETTY_FUNCTION__,task,json,[json class]);
     NSError *encodeError = nil;
@@ -93,7 +92,7 @@
     }else if(![task isEqualToString:@"session_key"]){
         NSLog(@"Warn: session key not set");
     }
-   
+    
     if(json!=nil&&[json count]>0){
         
         NSData *data=[NSJSONSerialization dataWithJSONObject:[NSDictionary dictionaryWithDictionary:json] options:0 error:&encodeError];
@@ -105,17 +104,17 @@
                 if(j!=nil){
                     url=[NSString stringWithFormat:@"%@&json=%@", url, j];
                 }else{
-                     @throw [[NSException alloc] initWithName:[NSString stringWithFormat:@"%@: Json Convert Exception: Data conversion to string returned nil",[self class]] reason:@"Json data to string returned nil" userInfo: nil];
+                    @throw [[NSException alloc] initWithName:[NSString stringWithFormat:@"%@: Json Convert Exception: Data conversion to string returned nil",[self class]] reason:@"Json data to string returned nil" userInfo: nil];
                 }
             }else{
                 @throw [[NSException alloc] initWithName:[NSString stringWithFormat:@"%@: Json Encode (%@) Exception: NSJSONSerialization returned nil",[self class], [json class]] reason:@"Json Encoder returned nil" userInfo: nil];
             }
-        
+            
         }else{
             @throw [[NSException alloc] initWithName:[NSString stringWithFormat:@"%@: Json Encode (%@) Exception: %@",[self class], [json class], encodeError.domain] reason:encodeError.description userInfo: encodeError.userInfo];
         }
         
-      NSLog(@"%s: AJAX:  %@", __PRETTY_FUNCTION__, [[NSString alloc] initWithFormat:@"%@ %@", task, json]);
+        NSLog(@"%s: AJAX:  %@", __PRETTY_FUNCTION__, [[NSString alloc] initWithFormat:@"%@ %@", task, json]);
     }
     lastQuery=[NSString stringWithFormat:@"%@", url];
     //NSLog(@"%@",url);
@@ -137,21 +136,11 @@
     //[request drain]; //I'm worried about memory leaks, since when i profile it is telling me that NSMutableURLRequest is leaking.
     
     // NSLog(@"Response:  %@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
-    lastResponse=[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+   lastResponse=[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
     
     if(queryError.code==0){
         
-        NSError *decodeError=nil;
-        NSDictionary *json =[NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableLeaves error:&decodeError];
-        
-        if(decodeError.code==0){
-            return json;
-        }else{
-            NSLog(@"%s: Response:  %@", __PRETTY_FUNCTION__, [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
-            NSLog(@"%s: Error %li %@ %@ for[%@]", __PRETTY_FUNCTION__, (long)[decodeError code],[decodeError description],[decodeError debugDescription],url );
-            
-            // @throw [[NSException alloc] initWithName:[NSString stringWithFormat:@"%@: Json Query Exception: %@ - %@",[self class], decodeError.domain, url] reason:decodeError.description userInfo: decodeError.userInfo];
-        }
+        return responseData;
         
     }else{
         //NSLog(@"%@: Error %i %@ %@ for[%@]", [self class], [queryError code],[queryError description],[queryError debugDescription],url);
@@ -162,6 +151,30 @@
     
     
     return nil;
+}
+- (NSDictionary *) requestJsonTask:(NSString *)task WithParameters:(NSDictionary *) json{
+    
+    NSData *responseData=[self executeTask:task WithParameters:json];
+  
+        
+    NSError *decodeError=nil;
+    NSDictionary *response =[NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableLeaves error:&decodeError];
+    
+    if(decodeError.code==0){
+        return response;
+    }else{
+        NSLog(@"%s: Response:  %@", __PRETTY_FUNCTION__, [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+        NSLog(@"%s: Error %li %@ %@ for[%@]", __PRETTY_FUNCTION__, (long)[decodeError code],[decodeError description],[decodeError debugDescription],lastQuery );
+        
+        // @throw [[NSException alloc] initWithName:[NSString stringWithFormat:@"%@: Json Query Exception: %@ - %@",[self class], decodeError.domain, url] reason:decodeError.description userInfo: decodeError.userInfo];
+    }
+   
+    
+    return nil;
+}
+- (NSString *) requestPlainTextTask:(NSString *)task WithParameters:(NSDictionary *) json{
+    NSData *responseData=[self executeTask:task WithParameters:json];
+    return [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
 }
 - (NSString *)urlencode:(NSString *)string {
     NSMutableString *output = [NSMutableString string];
@@ -182,11 +195,11 @@
     }
     return output;
 }
--(void)queryTask:(NSString *)task completion:(void (^)(NSDictionary *))result{
+-(void)requestJsonTask:(NSString *)task completion:(void (^)(NSDictionary *))result{
 
     //[[self getQueue] addOperationWithBlock:^{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-        NSDictionary *i=[self queryTask:task];
+        NSDictionary *i=[self requestJsonTask:task];
         dispatch_async(dispatch_get_main_queue(), ^{
             result(i);
         });
@@ -198,13 +211,30 @@
     
     
 }
--(void)queryTask:(NSString *)task WithJson:(NSDictionary *)json completion:(void (^)(NSDictionary *))result{
+-(void)requestJsonTask:(NSString *)task WithParameters:(NSDictionary *)json completion:(void (^)(NSDictionary *))result{
     
     //[[self getQueue]  addOperationWithBlock:^{
 
     JsonSocket * __weak me=self;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-        NSDictionary *i=[me queryTask:task WithJson:json];
+        NSDictionary *i=[me requestJsonTask:task WithParameters:json];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            result(i);
+        });
+    });
+    //}];
+    
+    
+}
+
+
+-(void)requestPlainTextTask:(NSString *)task WithParameters:(NSDictionary *)json completion:(void (^)(NSString *))result{
+    
+    //[[self getQueue]  addOperationWithBlock:^{
+    
+    JsonSocket * __weak me=self;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        NSString *i=[me requestPlainTextTask:task WithParameters:json];
         dispatch_async(dispatch_get_main_queue(), ^{
             result(i);
         });
@@ -217,11 +247,11 @@
 
 
 +(void)QueryServer:(NSString *)server Task:(NSString *)task Completion:(void (^)(NSDictionary *))result{
-    [JsonSocket QueryServer:server Task:task WithJson:nil Completion:result];
+    [JsonSocket QueryServer:server Task:task WithParameters:nil Completion:result];
 }
-+(void)QueryServer:(NSString *)server Task:(NSString *)task WithJson:(NSDictionary *)json Completion:(void (^)(NSDictionary *))result{
++(void)QueryServer:(NSString *)server Task:(NSString *)task WithParameters:(NSDictionary *)json Completion:(void (^)(NSDictionary *))result{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-        NSDictionary *i=[JsonSocket QueryServer:server Task:task WithJson:json];
+        NSDictionary *i=[JsonSocket QueryServer:server Task:task WithParameters:json];
         
         dispatch_async(dispatch_get_main_queue(), ^{
             result(i);
@@ -231,13 +261,13 @@
 }
 
 +(NSDictionary *) QueryServer:(NSString *)server Task:(NSString *)task{
-    return [JsonSocket QueryServer:server Task:task WithJson:nil];
+    return [JsonSocket QueryServer:server Task:task WithParameters:nil];
 }
 
 /*
  *  Static method to execute json, must not require session, must not require custom timeout(30). and does not provide lastQuery lastResult
  */
-+(NSDictionary *) QueryServer:(NSString *)server Task:(NSString *)task WithJson:(NSDictionary *)json{
++(NSDictionary *) QueryServer:(NSString *)server Task:(NSString *)task WithParameters:(NSDictionary *)json{
  
     NSError *encodeError = nil;
     NSString *url=[NSString stringWithFormat:@"%@%@&task=%@", server, @"/index.php?option=com_geolive&forcedebug=off&format=ajax",task];

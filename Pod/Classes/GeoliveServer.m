@@ -89,7 +89,7 @@ static GeoliveServer *instance;
 
 -(bool)confirmConnection{
     @try{
-        NSDictionary *dictionary = (NSDictionary *)[self.json queryTask:@"echo" WithJson:@{@"success": [NSNumber numberWithBool:true]}];
+        NSDictionary *dictionary = (NSDictionary *)[self.json requestJsonTask:@"echo" WithParameters:@{@"success": [NSNumber numberWithBool:true]}];
         //NSLog(@"%@", dictionary);
         NSNumber *echo;
         if((echo=[dictionary valueForKey:@"success"])!=nil&&[echo boolValue]!=connected){
@@ -146,7 +146,7 @@ static GeoliveServer *instance;
         
         
         
-        [[self getJson] queryTask:@"register_device" WithJson:@{@"plugin":@"IOSApplication", @"deviceName":[[UIDevice currentDevice]  name]} completion:^(NSDictionary * registration){
+        [[self getJson] requestJsonTask:@"register_device" WithParameters:@{@"plugin":@"IOSApplication", @"deviceName":[[UIDevice currentDevice]  name]} completion:^(NSDictionary * registration){
             
             // NSLog(@"%s: register_device response_json:%@ response_raw:%@ query:%@", __PRETTY_FUNCTION__, registration, [[self getJson]lastResponse ], [[self getJson] lastQuery]);
             NSArray *keys=[registration allKeys];
@@ -186,7 +186,7 @@ static GeoliveServer *instance;
     
     if(myGeoliveId<=0){
         
-        [[self getJson] queryTask:@"create_account" WithJson:@{@"plugin":@"IOSApplication", @"deviceId":[NSNumber numberWithLong:myDeviceId]} completion:^(NSDictionary * registration) {
+        [[self getJson] requestJsonTask:@"create_account" WithParameters:@{@"plugin":@"IOSApplication", @"deviceId":[NSNumber numberWithLong:myDeviceId]} completion:^(NSDictionary * registration) {
             
             NSLog(@"%s: %@", __PRETTY_FUNCTION__, registration);
             
@@ -239,7 +239,7 @@ static GeoliveServer *instance;
                 //the local user database creates a placeholder uname='empty' and then askes the server to provide usable values.
             }
             
-            NSDictionary *login=[[self getJson] queryTask:@"login_device" WithJson: json];
+            NSDictionary *login=[[self getJson] requestJsonTask:@"login_device" WithParameters: json];
             NSLog(@"%@",[[self getJson] lastQuery]);
             
             if(login!=nil&&[(NSNumber *)[login valueForKey:@"success"] boolValue]!=true){
@@ -280,7 +280,7 @@ static GeoliveServer *instance;
                         
                     case 4:
                     {
-                        [[self getJson] queryTask:@"get_activation_type" WithJson: @{@"plugin":@"IOSApplication"} completion:^(NSDictionary * activation) {
+                        [[self getJson] requestJsonTask:@"get_activation_type" WithParameters: @{@"plugin":@"IOSApplication"} completion:^(NSDictionary * activation) {
                             completion([self checkActivation:activation]);
                             
                         }];
@@ -494,7 +494,7 @@ static GeoliveServer *instance;
     NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     if([emailTest evaluateWithObject:email]){
-        [[self getJson] queryTask:@"activate" WithJson: @{@"plugin":@"IOSApplication", @"email":email, @"deviceId":[NSNumber numberWithLong:myDeviceId], @"accountId":[NSNumber numberWithLong:myGeoliveId]} completion:^(NSDictionary * activation) {
+        [[self getJson] requestJsonTask:@"activate" WithParameters: @{@"plugin":@"IOSApplication", @"email":email, @"deviceId":[NSNumber numberWithLong:myDeviceId], @"accountId":[NSNumber numberWithLong:myGeoliveId]} completion:^(NSDictionary * activation) {
             
             NSLog(@"%@", activation);
             completion(nil);
@@ -589,7 +589,7 @@ static GeoliveServer *instance;
 }
 
 -(void)loadDefaultApplicationSettingsWithCompletion:(void (^)(NSError *, NSDictionary *)) completion{
-    [[self getJson] queryTask:@"get_application_settings" WithJson: @{@"plugin":@"IOSApplication"} completion:^(NSDictionary * settings) {
+    [[self getJson] requestJsonTask:@"get_application_settings" WithParameters: @{@"plugin":@"IOSApplication"} completion:^(NSDictionary * settings) {
     
         NSLog(@"%@", settings);
         if(settings&&[settings isKindOfClass:[NSDictionary class]]&&[[settings objectForKey:@"settings"] isKindOfClass:[NSDictionary class]]){
