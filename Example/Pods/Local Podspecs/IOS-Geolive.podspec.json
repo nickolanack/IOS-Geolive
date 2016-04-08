@@ -2,7 +2,7 @@
   "name": "IOS-Geolive",
   "version": "0.1.0",
   "summary": "Geolive Framework",
-  "description": "a collection of libraries for interacting with a Geolive Server",
+  "description": "A collection of libraries for interacting with a Geolive Server, and display on a MKMap",
   "homepage": "https://github.com/nickolanack/IOS-Geolive",
   "license": "MIT",
   "authors": {

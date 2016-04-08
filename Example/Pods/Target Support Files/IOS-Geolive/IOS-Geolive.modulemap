@@ -1,6 +1,0 @@
-framework module IOS_Geolive {
-  umbrella header "IOS-Geolive-umbrella.h"
-
-  export *
-  module * { export * }
-}
