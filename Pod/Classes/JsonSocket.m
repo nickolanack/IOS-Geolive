@@ -100,7 +100,7 @@
             if(data!=nil){
                 //data=nil;
                 NSString *j=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-                j=[self urlencode:j]; //[j stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+                j=[self urlencode:j]; 
                 if(j!=nil){
                     url=[NSString stringWithFormat:@"%@&json=%@", url, j];
                 }else{
