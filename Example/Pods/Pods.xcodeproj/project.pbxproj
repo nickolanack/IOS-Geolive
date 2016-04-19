@@ -86,12 +86,41 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>0849519ADD48A2784653A38699A99A06</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>sqlite3ext.h</string>
+			<key>path</key>
+			<string>sqlite-amalgamation-3120200/sqlite3ext.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>0C8DDED5A7EF6938B80CBD539F742E94</key>
 		<dict>
 			<key>fileRef</key>
 			<string>7A92B5E47D59207D90F9DEAD202A914A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>0D3AA7E27202E5125145734B95908603</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0849519ADD48A2784653A38699A99A06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>0ED64B82F64F98F6B386E2A42B467859</key>
 		<dict>
@@ -195,19 +224,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>16DE0A376128C4589775FA32FBE78E14</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>sqlite3.c</string>
-			<key>path</key>
-			<string>sqlite-amalgamation-3120100/sqlite3.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>199B3E70977C209B7E7F047691DF7F72</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -222,20 +238,6 @@
 			<string>Pod/Classes/ResultSet.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>19E482A14A3279A2E25E542939C73255</key>
-		<dict>
-			<key>fileRef</key>
-			<string>798464E17747C6DB88B6C0D88E9B4736</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>221980E3042715E11F5379410BE10181</key>
 		<dict>
@@ -381,21 +383,6 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>2F38CFE8C754C76E2F02EE049D3D149B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>sqlite3.h</string>
-			<key>path</key>
-			<string>sqlite-amalgamation-3120100/sqlite3.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>2F886355F02DA6CE4FCB30B13504906E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -521,6 +508,21 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>3EB54D6ECCA2148971184E80E2EDFB20</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8B6E1BCE2D3AA03505D3B43A66374B98</string>
+				<string>C23216081ADADC69B6620E2C2351F88B</string>
+				<string>0849519ADD48A2784653A38699A99A06</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>common</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3F106A7AA2A318E032944D8D84623EC3</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -533,21 +535,6 @@
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
-		</dict>
-		<key>41258810C94AF08DBB9CABBB493122F0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>16DE0A376128C4589775FA32FBE78E14</string>
-				<string>2F38CFE8C754C76E2F02EE049D3D149B</string>
-				<string>798464E17747C6DB88B6C0D88E9B4736</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>common</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>43B8A42B927045991093A657ED3198FD</key>
 		<dict>
@@ -1032,21 +1019,6 @@
 			<key>remoteInfo</key>
 			<string>sqlite3</string>
 		</dict>
-		<key>798464E17747C6DB88B6C0D88E9B4736</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>sqlite3ext.h</string>
-			<key>path</key>
-			<string>sqlite-amalgamation-3120100/sqlite3ext.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>7A0543D640C1D664AAE3A0505DD999FD</key>
 		<dict>
 			<key>fileRef</key>
@@ -1112,7 +1084,7 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>41258810C94AF08DBB9CABBB493122F0</string>
+				<string>3EB54D6ECCA2148971184E80E2EDFB20</string>
 				<string>6C028DD54DD3F729D9B45E2107A5E404</string>
 			</array>
 			<key>isa</key>
@@ -1219,6 +1191,19 @@
 			<string>ABC18F35E79EE146AE3069714AE6A380</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>8B6E1BCE2D3AA03505D3B43A66374B98</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>sqlite3.c</string>
+			<key>path</key>
+			<string>sqlite-amalgamation-3120200/sqlite3.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>8BCD4110AB5E45223513AC8CD5EE0E59</key>
 		<dict>
@@ -1825,6 +1810,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>C23216081ADADC69B6620E2C2351F88B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>sqlite3.h</string>
+			<key>path</key>
+			<string>sqlite-amalgamation-3120200/sqlite3.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>C2977863345E0407E98824DC0508FAA5</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -1837,20 +1837,6 @@
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
-		</dict>
-		<key>C4ADA38BFB78010EE50D188E798C3B3D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2F38CFE8C754C76E2F02EE049D3D149B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>C551974C4D2DB7876D14FDB8DABDCDD9</key>
 		<dict>
@@ -1873,7 +1859,7 @@
 			<key>files</key>
 			<array>
 				<string>6C92F3DC6DDA947E3F02FB75BD032B2F</string>
-				<string>E388BBD12D1EBC3EA8E7CE6877CD259D</string>
+				<string>CB27EEDC67994777F6231C6D5B4976BE</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
@@ -1906,6 +1892,18 @@
 			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB27EEDC67994777F6231C6D5B4976BE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8B6E1BCE2D3AA03505D3B43A66374B98</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
 		</dict>
 		<key>CB32B93E64763596EB0F65768C5A32D7</key>
 		<dict>
@@ -2074,8 +2072,8 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>C4ADA38BFB78010EE50D188E798C3B3D</string>
-				<string>19E482A14A3279A2E25E542939C73255</string>
+				<string>F0621D987E3611DF430265F070C4D156</string>
+				<string>0D3AA7E27202E5125145734B95908603</string>
 			</array>
 			<key>isa</key>
 			<string>PBXHeadersBuildPhase</string>
@@ -2134,18 +2132,6 @@
 			<string>sqlite3-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E388BBD12D1EBC3EA8E7CE6877CD259D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>16DE0A376128C4589775FA32FBE78E14</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fno-objc-arc</string>
-			</dict>
 		</dict>
 		<key>E39CD1E764776175CB82EEC82A6C9948</key>
 		<dict>
@@ -2342,6 +2328,20 @@
 			<string>BD10391CC0C6B09E4159D1A4C237E921</string>
 			<key>productType</key>
 			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>F0621D987E3611DF430265F070C4D156</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C23216081ADADC69B6620E2C2351F88B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>F12EADB24397E815C0BE644D071610FD</key>
 		<dict>
