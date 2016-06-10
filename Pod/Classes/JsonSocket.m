@@ -26,9 +26,9 @@
 
 -(id) initWithServer:(NSString *)url{
     self=[super init];
- 
+    self.timeout=10;
     [self setServerRoot:url];
-    
+    self.timeout=60;
     
     return self;
 

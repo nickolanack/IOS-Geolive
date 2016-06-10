@@ -119,7 +119,7 @@ static GeoliveServer *instance;
     }
     @catch(NSException *e){
         NSLog(@"%s: %@",__PRETTY_FUNCTION__, e.userInfo);
-        [[[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Unable to connect to: %@",server] message:[NSString stringWithFormat:@"%@ Attempting to run in offline mode.", [e.userInfo valueForKey:@"NSLocalizedDescription"]] delegate:self cancelButtonTitle:@"continue" otherButtonTitles:nil] show];
+        [[[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Unable to connect to server"] message:[NSString stringWithFormat:@"%@ Attempting to run in offline mode.", [e.userInfo valueForKey:@"NSLocalizedDescription"]] delegate:self cancelButtonTitle:@"continue" otherButtonTitles:nil] show];
         connected=false;
         [self systemDidChangeConnectionStatus];
         return false;
@@ -643,7 +643,7 @@ static GeoliveServer *instance;
     //TODO: should check that user should be able to login.
     // should check that network is actually unavailable.
     // should check that details are cached.
-    return false;
+    return true;
     
 }
 
