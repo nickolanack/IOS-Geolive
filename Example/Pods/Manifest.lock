@@ -3,9 +3,9 @@ PODS:
     - IOSQlite
   - IOSQlite (0.1.1):
     - sqlite3
-  - sqlite3 (3.12.2):
-    - sqlite3/common (= 3.12.2)
-  - sqlite3/common (3.12.2)
+  - sqlite3 (3.13.0):
+    - sqlite3/common (= 3.13.0)
+  - sqlite3/common (3.13.0)
 
 DEPENDENCIES:
   - IOS-Geolive (from `../`)
@@ -17,6 +17,6 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   IOS-Geolive: d4d7a7ad49a2d0bb720bbd508b3645c10116e439
   IOSQlite: 933c0a254a8eadec5bf3e02bf86cf6947713bf0e
-  sqlite3: 5724400abcbfbc8d13c60d6a4123361faf0c62e3
+  sqlite3: c8b1b937fe823ab46411e471cdc1aa92d1b106ce
 
 COCOAPODS: 0.39.0
