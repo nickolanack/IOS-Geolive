@@ -12,9 +12,11 @@
 @optional
 
 -(void) systemDidChangeConnectionStatus:(NSNumber *) connected;
+
 -(void) systemDidChangeUserLoginStatus:(NSNumber *) loggedIn;
 
 -(void) systemSetApplicationMode:(NSString *) mode;
+
 -(void) systemClearedApplicationMode:(NSString *) mode;
 
 @end
