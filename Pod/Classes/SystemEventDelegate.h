@@ -11,9 +11,9 @@
 
 @optional
 
--(void) systemDidChangeConnectionStatus:(NSNumber *) connected;
+-(void) systemDidChangeConnectionStatus:(bool) connected;
 
--(void) systemDidChangeUserLoginStatus:(NSNumber *) loggedIn;
+-(void) systemDidChangeUserLoginStatus:(bool) loggedIn;
 
 -(void) systemSetApplicationMode:(NSString *) mode;
 

@@ -28,6 +28,11 @@ static GeoliveServer *instance;
 @property id<GeoliveServerDelegate> delegate;
 @property NSDictionary *applicationSettings;
 
+@property bool alwaysStayOnline;
+@property bool currentlyAttemptingConnection;
+@property bool currentlyAttemptinglogin;
+@property bool attemptedFirstConnection;
+
 /*
  *
  * contains strings defining modes that the application is in
@@ -53,48 +58,56 @@ static GeoliveServer *instance;
 -(id)initWithName:(NSString *)name{
     
     self=[super init];
-    if(self){
+    
+    _alwaysStayOnline=true;
+  
         
-        if([[UIApplication sharedApplication].delegate conformsToProtocol:@protocol(GeoliveServerDelegate)]){
-            _delegate=[UIApplication sharedApplication].delegate;
-        }
-        
-        if(!instance)instance=self;
-        connected=false;
-        self.database=[[Database alloc] init];
-        self.systemEventDelegates= [[NSMutableArray alloc] init];
-        
-        
-        //[self.database execute:@"DROP table users;"];
-        [StoredParameters SetObject:[[UserDatabase alloc] initWithName:name] ForKey:@"UsersDatabase"];
-        //create a cache database
-        [StoredParameters SetPermanentStorageHandler:[[DatabaseStorage alloc] initWithDatabase:[[CacheDatabase alloc] initWithName:name] AndTable:@"variable"]];
-        self.connectionInterval=10.0;
-        
-        NSLog(@"%s: Initialzing Database Tables: [User, Cache]", __PRETTY_FUNCTION__);
-        //NSLog(@"%@: User ID: %d Name:%@, FullName: %@, DeviceId: %d GeoliveAccountId: %d", [self class], [self.userDatabase getCurrentUserId], [self.userDatabase getUsersName], [self.userDatabase getUsersFullname], [self.userDatabase getDeviceId], [self.userDatabase getUsersGeoliveId]);
-        
-        
-        
-        
+    if([[UIApplication sharedApplication].delegate conformsToProtocol:@protocol(GeoliveServerDelegate)]){
+        _delegate=[UIApplication sharedApplication].delegate;
     }
+    
+    if(!instance)instance=self;
+    connected=false;
+    self.database=[[Database alloc] init];
+    self.systemEventDelegates= [[NSMutableArray alloc] init];
+    
+    
+    //[self.database execute:@"DROP table users;"];
+    [StoredParameters SetObject:[[UserDatabase alloc] initWithName:name] ForKey:@"UsersDatabase"];
+    //create a cache database
+    [StoredParameters SetPermanentStorageHandler:[[DatabaseStorage alloc] initWithDatabase:[[CacheDatabase alloc] initWithName:name] AndTable:@"variable"]];
+    self.connectionInterval=10.0;
+    
+    NSLog(@"%s: Initialzing Database Tables: [User, Cache]", __PRETTY_FUNCTION__);
+    //NSLog(@"%@: User ID: %d Name:%@, FullName: %@, DeviceId: %d GeoliveAccountId: %d", [self class], [self.userDatabase getCurrentUserId], [self.userDatabase getUsersName], [self.userDatabase getUsersFullname], [self.userDatabase getDeviceId], [self.userDatabase getUsersGeoliveId]);
+    
+        
+  
     return self;
 }
 
--(void)connectionStatusUpdateLoop{
+-(void)connectionStatusUpdateLoop:(id)object{
     
     // NSLog(@"%s Heartbeat: thu-thump", __PRETTY_FUNCTION__);
     [self confirmConnection];
+    if(_alwaysStayOnline){
+        [self performSelector:@selector(connectionStatusUpdateLoop:) withObject:nil afterDelay:self.connectionInterval];
+    }
 }
 
 -(bool)confirmConnection{
     @try{
+        
+        if(!_json){
+            _json =[[JsonSocket alloc] initWithServer:server];
+        }
+        
         NSDictionary *dictionary = (NSDictionary *)[self.json requestJsonTask:@"echo" WithParameters:@{@"success": [NSNumber numberWithBool:true]}];
         //NSLog(@"%@", dictionary);
-        NSNumber *echo;
-        if((echo=[dictionary valueForKey:@"success"])!=nil&&[echo boolValue]!=connected){
+        bool *echo=[[dictionary valueForKey:@"success"] boolValue];
+        if(echo&&echo!=connected){
             //if key exists 'success', then we are still connected as this method mirrors our ajax variables (adds a few info vars)
-            connected=[echo boolValue];
+            connected=true;
             [self systemDidChangeConnectionStatus];
         }
         
@@ -102,34 +115,49 @@ static GeoliveServer *instance;
         //NSLog(@"%@: %@",[self class], e.userInfo);
         
         if(connected){
-            NSLog(@"%s: %@",__PRETTY_FUNCTION__, @" Offline Error");
+            NSLog(@"%s: Offline Error",__PRETTY_FUNCTION__);
             connected=false;
             [self systemDidChangeConnectionStatus];
         }
         return false;
     }
+    
+    return true;
 }
 
 -(bool)attemptConnectionTo:(NSString *)url{
+    
+    _currentlyAttemptingConnection=true;
+     server=url;
+    
     @try{
-        self.json =[[JsonSocket alloc] initWithServer:url];
+        _json =[[JsonSocket alloc] initWithServer:server];
         NSLog(@"%s: Server connection appears successful",__PRETTY_FUNCTION__);
         connected=true;
-        server=url;
+       
     }
     @catch(NSException *e){
         NSLog(@"%s: %@",__PRETTY_FUNCTION__, e.userInfo);
         [[[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Unable to connect to server"] message:[NSString stringWithFormat:@"%@ Attempting to run in offline mode.", [e.userInfo valueForKey:@"NSLocalizedDescription"]] delegate:self cancelButtonTitle:@"continue" otherButtonTitles:nil] show];
         connected=false;
-        [self systemDidChangeConnectionStatus];
-        return false;
-        server=nil;
-    }
-    [self systemDidChangeConnectionStatus];
-    //connection was successful. start conenction loop.
-    [NSTimer scheduledTimerWithTimeInterval:self.connectionInterval target:self selector:@selector(connectionStatusUpdateLoop) userInfo:nil repeats:YES];
     
-    return true;
+    }
+    
+    if(!_attemptedFirstConnection){
+    
+    [self systemDidChangeConnectionStatus];
+        _attemptedFirstConnection=true;
+    
+    }
+    //connection was successful. start conenction loop.
+    _currentlyAttemptingConnection=false;
+    
+    if(_alwaysStayOnline){
+        
+        [self performSelector:@selector(connectionStatusUpdateLoop:) withObject:nil afterDelay:self.connectionInterval];
+        //[NSTimer scheduledTimerWithTimeInterval:self.connectionInterval target:self selector:@selector(connectionStatusUpdateLoop) userInfo:nil repeats:YES];
+    }
+    return connected;
 }
 
 
@@ -539,7 +567,7 @@ static GeoliveServer *instance;
         NSLog(@"%s: %@",__PRETTY_FUNCTION__, [e class]);
         if([item respondsToSelector:@selector(systemDidChangeUserLoginStatus:)]){
             //NSLog(@"%@: Execute Map Type Change Delegate: %@",[self class], [item class]);
-            [item performSelector:@selector(systemDidChangeUserLoginStatus:) withObject:[NSNumber numberWithBool: loggedIn]];
+            [item systemDidChangeUserLoginStatus:loggedIn];
         }
     }
     
@@ -553,14 +581,30 @@ static GeoliveServer *instance;
         //NSLog(@"%s: %@",__PRETTY_FUNCTION__, [e class]);
         if([item respondsToSelector:@selector(systemDidChangeConnectionStatus:)]){
             //NSLog(@"%@: Execute Map Type Change Delegate: %@",[self class], [item class]);
-            [item performSelector:@selector(systemDidChangeConnectionStatus:) withObject:[NSNumber numberWithBool: connected]];
+            [item systemDidChangeConnectionStatus:connected];
         }
+    }
+    
+    
+    if(_alwaysStayOnline&&(!_currentlyAttemptinglogin)){
+        
+        if(connected){
+            [self loginDeviceWithCompletion:^(NSError * e){
+                NSLog(@"Re-Login");
+            }];
+        }else{
+            _json=nil;
+        }
+        
     }
 }
 
 
 
 -(void)performDefaultDeviceLogin:(NSString *) serverUrl withCompletion:(void (^)(NSError *)) completion{
+    
+    _currentlyAttemptinglogin=true;
+    
     if([self attemptConnectionTo:serverUrl]){
         //connect to the geolive server for this app, establish session. or try to go into offline mode.
         [self registerDeviceWithCompletion:^(NSError * err) {
@@ -570,13 +614,16 @@ static GeoliveServer *instance;
                 
                 [self loginDeviceWithCompletion:^(NSError * err) {
                     if(err){
+                    
                         completion(err);
                         
                     }else{
                         NSLog(@"%s: %@", __PRETTY_FUNCTION__, [[self getJson] lastQuery]);
                         NSLog(@"%s: %@", __PRETTY_FUNCTION__,[[self getJson] lastResponse]);
                         completion(nil);
+                       
                     }
+                     _currentlyAttemptinglogin=false;
                 }];
             }
         }];
@@ -584,11 +631,16 @@ static GeoliveServer *instance;
         
     }else{
         completion([[NSError alloc] initWithDomain:@"Failed connection to server" code:1 userInfo:nil]);
+        _currentlyAttemptinglogin=false;
+
     }
     
 }
 
 -(void)loadDefaultApplicationSettingsWithCompletion:(void (^)(NSError *, NSDictionary *)) completion{
+    
+    
+    
     [[self getJson] requestJsonTask:@"get_application_settings" WithParameters: @{@"plugin":@"IOSApplication"} completion:^(NSDictionary * settings) {
     
         NSLog(@"%@", settings);

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5F700C77877D84306A268916'
+               BlueprintIdentifier = '4545326CD1719A277F05B84A'
                BlueprintName = 'IOS-Geolive'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libIOS-Geolive.a'>
