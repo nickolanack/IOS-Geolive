@@ -60,8 +60,8 @@ static GeoliveServer *instance;
     self=[super init];
     
     _alwaysStayOnline=true;
-  
-        
+    
+    
     if([[UIApplication sharedApplication].delegate conformsToProtocol:@protocol(GeoliveServerDelegate)]){
         _delegate=[UIApplication sharedApplication].delegate;
     }
@@ -81,8 +81,8 @@ static GeoliveServer *instance;
     NSLog(@"%s: Initialzing Database Tables: [User, Cache]", __PRETTY_FUNCTION__);
     //NSLog(@"%@: User ID: %d Name:%@, FullName: %@, DeviceId: %d GeoliveAccountId: %d", [self class], [self.userDatabase getCurrentUserId], [self.userDatabase getUsersName], [self.userDatabase getUsersFullname], [self.userDatabase getDeviceId], [self.userDatabase getUsersGeoliveId]);
     
-        
-  
+    
+    
     return self;
 }
 
@@ -91,63 +91,81 @@ static GeoliveServer *instance;
     // NSLog(@"%s Heartbeat: thu-thump", __PRETTY_FUNCTION__);
     [self confirmConnection];
     if(_alwaysStayOnline){
+        
         [self performSelector:@selector(connectionStatusUpdateLoop:) withObject:nil afterDelay:self.connectionInterval];
     }
 }
 
--(bool)confirmConnection{
-    @try{
-        
-        if(!_json){
-            _json =[[JsonSocket alloc] initWithServer:server];
-        }
-        
-        NSDictionary *dictionary = (NSDictionary *)[self.json requestJsonTask:@"echo" WithParameters:@{@"success": [NSNumber numberWithBool:true]}];
-        //NSLog(@"%@", dictionary);
-        bool *echo=[[dictionary valueForKey:@"success"] boolValue];
-        if(echo&&echo!=connected){
-            //if key exists 'success', then we are still connected as this method mirrors our ajax variables (adds a few info vars)
-            connected=true;
-            [self systemDidChangeConnectionStatus];
-        }
-        
-    } @catch(NSException *e){
-        //NSLog(@"%@: %@",[self class], e.userInfo);
-        
-        if(connected){
-            NSLog(@"%s: Offline Error",__PRETTY_FUNCTION__);
-            connected=false;
-            [self systemDidChangeConnectionStatus];
-        }
-        return false;
-    }
+-(void)confirmConnection{
     
-    return true;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+       
+ 
+        @try{
+            
+
+            if(!_json){
+                _json =[[JsonSocket alloc] initWithServer:server];
+            }
+            
+            
+            
+            NSDictionary *dictionary = (NSDictionary *)[self.json requestJsonTask:@"echo" WithParameters:@{@"success": [NSNumber numberWithBool:true]}];
+            //NSLog(@"%@", dictionary);
+            bool *echo=[[dictionary valueForKey:@"success"] boolValue];
+            if(echo&&echo!=connected){
+                //if key exists 'success', then we are still connected as this method mirrors our ajax variables (adds a few info vars)
+                connected=true;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self systemDidChangeConnectionStatus];
+                });
+               
+            }
+            
+        } @catch(NSException *e){
+            NSLog(@"%@: %@",[self class], e.userInfo);
+            
+            if(connected){
+                NSLog(@"%s: Offline Error",__PRETTY_FUNCTION__);
+                connected=false;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self systemDidChangeConnectionStatus];
+                });
+            }
+            
+        }
+        
+        
+    });
+    
+    
+    
+    
 }
 
 -(bool)attemptConnectionTo:(NSString *)url{
     
     _currentlyAttemptingConnection=true;
-     server=url;
+    server=url;
     
     @try{
         _json =[[JsonSocket alloc] initWithServer:server];
         NSLog(@"%s: Server connection appears successful",__PRETTY_FUNCTION__);
         connected=true;
-       
+        
     }
     @catch(NSException *e){
         NSLog(@"%s: %@",__PRETTY_FUNCTION__, e.userInfo);
         [[[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Unable to connect to server"] message:[NSString stringWithFormat:@"%@ Attempting to run in offline mode.", [e.userInfo valueForKey:@"NSLocalizedDescription"]] delegate:self cancelButtonTitle:@"continue" otherButtonTitles:nil] show];
         connected=false;
-    
+        
     }
     
     if(!_attemptedFirstConnection){
-    
-    [self systemDidChangeConnectionStatus];
+        
+        [self systemDidChangeConnectionStatus];
         _attemptedFirstConnection=true;
-    
+        
     }
     //connection was successful. start conenction loop.
     _currentlyAttemptingConnection=false;
@@ -234,7 +252,7 @@ static GeoliveServer *instance;
                 NSLog(@"Create Acount Failed: %@", registration);
                 completion([[NSError alloc] initWithDomain:@"Failed to create account" code:1 userInfo:nil]);
             }
-       
+            
         }];
         
         
@@ -253,7 +271,7 @@ static GeoliveServer *instance;
     
     NSLog(@"%s: Attempting Login [%ld, %ld]",__PRETTY_FUNCTION__,myDeviceId, myGeoliveId);
     if(myGeoliveId>=0){
-     
+        
         
         long myGeoliveId=[u getUsersGeoliveId];
         if(myDeviceId>0&&myGeoliveId>0){
@@ -381,7 +399,7 @@ static GeoliveServer *instance;
     UserDatabase *u=(UserDatabase *)[StoredParameters GetObjectForKey:@"UsersDatabase"];
     long myDeviceId=[u getDeviceId];
     long myGeoliveId=[u getUsersGeoliveId];
-
+    
     NSLog(@"%s: %@, %@", __PRETTY_FUNCTION__, [[self getJson] lastQuery],[[self getJson] lastResponse]);
     NSLog(@"Activation Type: %@",activation);
     if(activation!=nil&&[(NSNumber *)[activation valueForKey:@"success"] boolValue]==true){
@@ -441,7 +459,7 @@ static GeoliveServer *instance;
     
     
     return nil;
-
+    
 }
 
 
@@ -452,17 +470,17 @@ static GeoliveServer *instance;
     NSString *buttonTitle=[alertView buttonTitleAtIndex:buttonIndex];
     if([buttonTitle isEqualToString:@"activate"]) {
         NSString *email=[alertView textFieldAtIndex:0].text;
-
+        
         [self activateAccountWithEmailAddress:email withCompletion:^(NSError * err) {
             if(err){
-            
+                
                 [self showInvalidAlertViewForEmailActivationWithEmailAddress:email];
-            
+                
             }else{
-            
+                
                 [self showSuccessAlertViewForEmailActivationWithEmailAddress:email];
-            
-            
+                
+                
             }
         }];
         
@@ -481,7 +499,7 @@ static GeoliveServer *instance;
     [message setAlertViewStyle:UIAlertViewStylePlainTextInput];
     [message textFieldAtIndex:0].text=@"nickblackwell82@gmail.com";
     [message show];
-
+    
 }
 
 -(void)showInvalidAlertViewForEmailActivationWithEmailAddress:(NSString *)email{
@@ -532,7 +550,7 @@ static GeoliveServer *instance;
         completion([[NSError alloc] initWithDomain:@"Invalid Email" code:2 userInfo:nil]);
     }
     
-
+    
 }
 
 
@@ -614,16 +632,16 @@ static GeoliveServer *instance;
                 
                 [self loginDeviceWithCompletion:^(NSError * err) {
                     if(err){
-                    
+                        
                         completion(err);
                         
                     }else{
                         NSLog(@"%s: %@", __PRETTY_FUNCTION__, [[self getJson] lastQuery]);
                         NSLog(@"%s: %@", __PRETTY_FUNCTION__,[[self getJson] lastResponse]);
                         completion(nil);
-                       
+                        
                     }
-                     _currentlyAttemptinglogin=false;
+                    _currentlyAttemptinglogin=false;
                 }];
             }
         }];
@@ -632,7 +650,7 @@ static GeoliveServer *instance;
     }else{
         completion([[NSError alloc] initWithDomain:@"Failed connection to server" code:1 userInfo:nil]);
         _currentlyAttemptinglogin=false;
-
+        
     }
     
 }
@@ -642,17 +660,17 @@ static GeoliveServer *instance;
     
     
     [[self getJson] requestJsonTask:@"get_application_settings" WithParameters: @{@"plugin":@"IOSApplication"} completion:^(NSDictionary * settings) {
-    
+        
         NSLog(@"%@", settings);
         if(settings&&[settings isKindOfClass:[NSDictionary class]]&&[[settings objectForKey:@"settings"] isKindOfClass:[NSDictionary class]]){
             _applicationSettings=[self formatApplicationSettings:[settings objectForKey:@"settings"]];
             completion(nil, [settings objectForKey:@"settings"]);
             return;
         }
-    
+        
         completion([[NSError alloc] initWithDomain:@"Invalid Settings From Server" code:1 userInfo:nil],nil);
     }];
-
+    
 }
 
 -(NSDictionary *)formatApplicationSettings:(NSDictionary *)settings{
@@ -675,9 +693,9 @@ static GeoliveServer *instance;
 -(NSString *)getDefaultIcon{
     
     if(_applicationSettings&&[_applicationSettings objectForKey:@"form"]){
-    
+        
         return [[_applicationSettings objectForKey:@"form"] objectForKey:@"icon"];
-    
+        
     }
     
     return @"DEFAULT";
