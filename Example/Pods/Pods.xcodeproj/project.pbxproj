@@ -17,31 +17,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>00867E001DC19593E4FBA2EA700C9124</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>sqlite3.c</string>
-			<key>path</key>
-			<string>sqlite-amalgamation-3130000/sqlite3.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>008AF92627CCFA02C826D4C44F92DF45</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00867E001DC19593E4FBA2EA700C9124</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fno-objc-arc</string>
-			</dict>
-		</dict>
 		<key>04D7D5F5EB1DF67D443036763497A536</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -179,6 +154,21 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>10C0997C53553068EAA2FEE127C46595</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>374777D9211A51614B216D14CD9DEF55</string>
+				<string>511CB1C11BC7A933FFF73B93D9F60D23</string>
+				<string>24CA1281349D44AC294FDB1A3172CFD6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>common</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>12B2D3BA4DEA7655E581B19AF3F54467</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -286,6 +276,21 @@
 			<string>EE3655B929AAD2362146DF2B891ACF1C</string>
 			<key>targetProxy</key>
 			<string>E7A9BBA1E6640861C98FE1225AF4D26F</string>
+		</dict>
+		<key>24CA1281349D44AC294FDB1A3172CFD6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>sqlite3ext.h</string>
+			<key>path</key>
+			<string>sqlite-amalgamation-3140000/sqlite3ext.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>253F1833556B199EC704AA13481C3A31</key>
 		<dict>
@@ -458,19 +463,18 @@
 			<key>remoteInfo</key>
 			<string>IOSQlite</string>
 		</dict>
-		<key>36D18DA56CFB7A5DB22BFDEA9B7C9E07</key>
+		<key>374777D9211A51614B216D14CD9DEF55</key>
 		<dict>
-			<key>fileRef</key>
-			<string>FFAC0F199BFC2775BC99E3756CBC3E34</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>sqlite3.c</string>
+			<key>path</key>
+			<string>sqlite-amalgamation-3140000/sqlite3.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>37F0A6EF5857FC150641B227E7B321FF</key>
 		<dict>
@@ -679,6 +683,21 @@
 				</array>
 			</dict>
 		</dict>
+		<key>511CB1C11BC7A933FFF73B93D9F60D23</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>sqlite3.h</string>
+			<key>path</key>
+			<string>sqlite-amalgamation-3140000/sqlite3.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>533B2D39A2F9A14984CFF1B3509F5EFC</key>
 		<dict>
 			<key>baseConfigurationReference</key>
@@ -849,6 +868,20 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>5CCA49BD6DB0AF11713FCA91D9DF218C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>24CA1281349D44AC294FDB1A3172CFD6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>601D2088F0A6C85877E097D88C7BA30F</key>
 		<dict>
 			<key>containerPortal</key>
@@ -900,21 +933,6 @@
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>CacheDatabase.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>688D74D22A58EFE54FFE2FEF1CFC8A75</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>sqlite3.h</string>
-			<key>path</key>
-			<string>sqlite-amalgamation-3130000/sqlite3.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1094,7 +1112,7 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>BEC6E9AFE5933AFD927BF60293314CD2</string>
+				<string>10C0997C53553068EAA2FEE127C46595</string>
 				<string>6C028DD54DD3F729D9B45E2107A5E404</string>
 			</array>
 			<key>isa</key>
@@ -1185,6 +1203,20 @@
 		<dict>
 			<key>fileRef</key>
 			<string>199B3E70977C209B7E7F047691DF7F72</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>88A89D1A2A19908BC70E807077B842C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>511CB1C11BC7A933FFF73B93D9F60D23</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1794,21 +1826,6 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>BEC6E9AFE5933AFD927BF60293314CD2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00867E001DC19593E4FBA2EA700C9124</string>
-				<string>688D74D22A58EFE54FFE2FEF1CFC8A75</string>
-				<string>FFAC0F199BFC2775BC99E3756CBC3E34</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>common</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
 		<dict>
 			<key>children</key>
@@ -1856,7 +1873,7 @@
 			<key>files</key>
 			<array>
 				<string>6C92F3DC6DDA947E3F02FB75BD032B2F</string>
-				<string>008AF92627CCFA02C826D4C44F92DF45</string>
+				<string>C992B342AA49B8F7E4C562DB0A52F8FD</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
@@ -1889,6 +1906,18 @@
 			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C992B342AA49B8F7E4C562DB0A52F8FD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>374777D9211A51614B216D14CD9DEF55</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
 		</dict>
 		<key>CB32B93E64763596EB0F65768C5A32D7</key>
 		<dict>
@@ -2057,8 +2086,8 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>EA28AC79F3663841EB9C4FBBD8BB4E01</string>
-				<string>36D18DA56CFB7A5DB22BFDEA9B7C9E07</string>
+				<string>88A89D1A2A19908BC70E807077B842C9</string>
+				<string>5CCA49BD6DB0AF11713FCA91D9DF218C</string>
 			</array>
 			<key>isa</key>
 			<string>PBXHeadersBuildPhase</string>
@@ -2255,20 +2284,6 @@
 			<string>2F886355F02DA6CE4FCB30B13504906E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>EA28AC79F3663841EB9C4FBBD8BB4E01</key>
-		<dict>
-			<key>fileRef</key>
-			<string>688D74D22A58EFE54FFE2FEF1CFC8A75</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>EC615ED31FB9F1B90305885B602C6046</key>
 		<dict>
@@ -2472,21 +2487,6 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Debug</string>
-		</dict>
-		<key>FFAC0F199BFC2775BC99E3756CBC3E34</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>sqlite3ext.h</string>
-			<key>path</key>
-			<string>sqlite-amalgamation-3130000/sqlite3ext.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>
