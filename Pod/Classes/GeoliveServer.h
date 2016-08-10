@@ -55,4 +55,7 @@
 -(NSString *)getDefaultAttributeTable;
 
 
+-(long)getCurrentDeviceId;
+
+
 @end

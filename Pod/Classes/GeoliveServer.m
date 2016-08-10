@@ -179,6 +179,12 @@ static GeoliveServer *instance;
 }
 
 
+-(long)getCurrentDeviceId{
+    UserDatabase *u=(UserDatabase *)[StoredParameters GetObjectForKey:@"UsersDatabase"];
+    long myDeviceId=[u getDeviceId];
+    return myDeviceId;
+}
+
 -(void) registerDeviceWithCompletion:(void (^)(NSError *))completion{
     
     
