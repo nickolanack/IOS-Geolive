@@ -1,2495 +1,1113 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>002064892D9F63D85763A3DC0F388FD7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>04D7D5F5EB1DF67D443036763497A536</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>8C3D49BF5A1EE9512F711AC70D57CDB3</string>
-				<string>533B2D39A2F9A14984CFF1B3509F5EFC</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>053D8051C3ABEA76CC2B1B614E74D332</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D5B449A0F73BE8861A43DADD950B3512</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/IOSQlite/IOSQlite-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>054B757EC32580EFF4AF8D1EA46EF2C6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>671390CD9644B6BB96BD11D5D29C8A0C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>06DEFEA177346B7313FDFA5B4A02CBF9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2C8C704BD5BE45E19919B8A78AFEE874</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0C8DDED5A7EF6938B80CBD539F742E94</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7A92B5E47D59207D90F9DEAD202A914A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0ED64B82F64F98F6B386E2A42B467859</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D6B8976C4004A04C17786D2AB4C37BBB</string>
-			<key>remoteInfo</key>
-			<string>IOS-Geolive-IOS-Geolive</string>
-		</dict>
-		<key>0F85885A92785A714D5E1D6D25361657</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>547C7E7BA3F596809851D2374197215E</string>
-			<key>remoteInfo</key>
-			<string>IOSQlite</string>
-		</dict>
-		<key>0FD56377BB3B0EB966E04C0A2CFC6CD0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>104D7A85A1FFA80D5C95A7C65533D7E2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>sqlite3</string>
-			<key>target</key>
-			<string>AEF2F075239F83B5ECF202340F009531</string>
-			<key>targetProxy</key>
-			<string>72A4663FACB057A911C0BC924D1ECB47</string>
-		</dict>
-		<key>1051BCB899F6DB848B0779870D70EC14</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>43B8A42B927045991093A657ED3198FD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>10C0997C53553068EAA2FEE127C46595</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>374777D9211A51614B216D14CD9DEF55</string>
-				<string>511CB1C11BC7A933FFF73B93D9F60D23</string>
-				<string>24CA1281349D44AC294FDB1A3172CFD6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>common</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>12B2D3BA4DEA7655E581B19AF3F54467</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>BEA314C51BD6EF8E0750CF40A462F04C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>AB6ACF5B5CD97820048E246557B3BDE0</string>
-				<string>BA5D0FDE4F51C5462D7093C012FC9A54</string>
-				<string>9909F535F6FA6A6E49C40F84C5DB0F6A</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>2B26A4E2B62DD45BB9CB2053BD006BEB</string>
-				<string>8CA121DA666234C1AC449998D6AFE887</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>IOS-Geolive</string>
-			<key>productName</key>
-			<string>IOS-Geolive</string>
-			<key>productReference</key>
-			<string>7D874B53A3040DD2E52B31E7A0D2AC1A</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>13D585E5ADD3C4D26D5F77DF499FF357</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>JsonSocket.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>199B3E70977C209B7E7F047691DF7F72</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ResultSet.h</string>
-			<key>path</key>
-			<string>Pod/Classes/ResultSet.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>221980E3042715E11F5379410BE10181</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C551974C4D2DB7876D14FDB8DABDCDD9</string>
-			<key>buildPhases</key>
-			<array>
-				<string>3F106A7AA2A318E032944D8D84623EC3</string>
-				<string>1051BCB899F6DB848B0779870D70EC14</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>8BCD4110AB5E45223513AC8CD5EE0E59</string>
-				<string>9A27AAE90177FD84AC58245C28AD7B53</string>
-				<string>921C8809A4A26FAAE60B0A57D5A0BC21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-IOS-Geolive_Tests</string>
-			<key>productName</key>
-			<string>Pods-IOS-Geolive_Tests</string>
-			<key>productReference</key>
-			<string>2FED9622BB453946F4B5E6C562403543</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>221E17FA4491E0A011CF2D8A62D51D82</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>IOSQlite-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2411A2CFA8CF7613839F630B2F071EE7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>IOSQlite-IOSQlite</string>
-			<key>target</key>
-			<string>EE3655B929AAD2362146DF2B891ACF1C</string>
-			<key>targetProxy</key>
-			<string>E7A9BBA1E6640861C98FE1225AF4D26F</string>
-		</dict>
-		<key>24CA1281349D44AC294FDB1A3172CFD6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>sqlite3ext.h</string>
-			<key>path</key>
-			<string>sqlite-amalgamation-3140000/sqlite3ext.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>253F1833556B199EC704AA13481C3A31</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDE72FBB94FDFC8EAED9F0BAD8E69DB7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2761BFD2EF81D43DBCB853AFFA021F26</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libIOSQlite.a</string>
-			<key>path</key>
-			<string>libIOSQlite.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>29199ADE564089CAA2237D5815AD2769</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>StoredParameters.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2B0F7D2C18C0CD1458DD3A2E4912F748</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E3AA1C31A19A5D8DB01AC16F3E7A8F3C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2B26A4E2B62DD45BB9CB2053BD006BEB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>IOS-Geolive-IOS-Geolive</string>
-			<key>target</key>
-			<string>D6B8976C4004A04C17786D2AB4C37BBB</string>
-			<key>targetProxy</key>
-			<string>0ED64B82F64F98F6B386E2A42B467859</string>
-		</dict>
-		<key>2C8C704BD5BE45E19919B8A78AFEE874</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>StoredParameters.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9EB645C612834738B99727720210C23E</string>
-				<string>E39CD1E764776175CB82EEC82A6C9948</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2F886355F02DA6CE4FCB30B13504906E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>IOS-Geolive-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2FED9622BB453946F4B5E6C562403543</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-IOS-Geolive_Tests.a</string>
-			<key>path</key>
-			<string>libPods-IOS-Geolive_Tests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3198EC624659C0BCA55E21A0D8EFFC04</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>356B60D85F23CB4A0334C17FE2DFA12C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>37F0A6EF5857FC150641B227E7B321FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>357288BE33E050C5DC6893B4E4CF97E2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DatabaseStorage.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>364E61DFCFC0599C7E0A73A107893564</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>547C7E7BA3F596809851D2374197215E</string>
-			<key>remoteInfo</key>
-			<string>IOSQlite</string>
-		</dict>
-		<key>374777D9211A51614B216D14CD9DEF55</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>sqlite3.c</string>
-			<key>path</key>
-			<string>sqlite-amalgamation-3140000/sqlite3.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>37F0A6EF5857FC150641B227E7B321FF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>GeoliveServerDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3C270E99C8875039071D5FB3EF7691AB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>IOS-Geolive-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E4E89230EF59BC255123B67864ACF77</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>3E5BFAF9C481FA44142344F77B00B71B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>13D585E5ADD3C4D26D5F77DF499FF357</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F106A7AA2A318E032944D8D84623EC3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>896180DC405FA9D34B5856A98E42FC59</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>43B8A42B927045991093A657ED3198FD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>44117A16ABEFE692DEA482E9BA51244C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>JsonSocket.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>450CF1A7B52315CE61E84ACAA1A1D77B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ResultSet.m</string>
-			<key>path</key>
-			<string>Pod/Classes/ResultSet.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>482F702637839618AEAE29391CEE69FD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-IOS-Geolive_Tests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>48FAF903DF47239F365E09D162F6B917</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Database.h</string>
-			<key>path</key>
-			<string>Pod/Classes/Database.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>495A3F51EA2B26263FFAC811186C8628</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>AD2B1E349B20FE16C7701D4DACA35C0D</string>
-				<string>59F080C8E699E8909F4BE8B94C992E72</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>4A34007289678787664FCF2830F16824</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>053D8051C3ABEA76CC2B1B614E74D332</string>
-				<string>7A40C1026967C3330279C7262DA2F06A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>4A38B4707BE5A834B8EEB620D66628CB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DF48B7640ED33DC673E57F67CCDBDAED</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>4EAFBEF06D08F4409ED54C796D1F6C2E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>4FD328CE0551840431EDEEF0C4C087E4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F14AF5A7C3C93C747A5B3DBE35C782AB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>511CB1C11BC7A933FFF73B93D9F60D23</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>sqlite3.h</string>
-			<key>path</key>
-			<string>sqlite-amalgamation-3140000/sqlite3.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>533B2D39A2F9A14984CFF1B3509F5EFC</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D5B449A0F73BE8861A43DADD950B3512</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>IOSQlite</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>547C7E7BA3F596809851D2374197215E</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>4A34007289678787664FCF2830F16824</string>
-			<key>buildPhases</key>
-			<array>
-				<string>610157E27DCE16394174D55BD710EE55</string>
-				<string>9042C17C495FC212EB19E4907DC978DF</string>
-				<string>99E2A69EEA451C186533F6D6225F85AD</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>2411A2CFA8CF7613839F630B2F071EE7</string>
-				<string>104D7A85A1FFA80D5C95A7C65533D7E2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>IOSQlite</string>
-			<key>productName</key>
-			<string>IOSQlite</string>
-			<key>productReference</key>
-			<string>2761BFD2EF81D43DBCB853AFFA021F26</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>55582BC14905FECBFE11E0306748A054</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7CF25D21CD101C62730191D60ACD8D2D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>56676DBA1541EF1DD31F8A2E0C119F83</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BA37BA22B0C61DF0C411E32754F29B16</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>57642379879AAA6EEC2258FA76945311</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>98B5289D991B754A9A548F876C9F3020</string>
-				<string>BD10391CC0C6B09E4159D1A4C237E921</string>
-				<string>7D874B53A3040DD2E52B31E7A0D2AC1A</string>
-				<string>2761BFD2EF81D43DBCB853AFFA021F26</string>
-				<string>2FED9622BB453946F4B5E6C562403543</string>
-				<string>CF87B07FBC86AFA914BA4916931EB2A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5989B824D7BEAD95D19DAA2279DEDE68</key>
-		<dict>
-			<key>fileRef</key>
-			<string>44117A16ABEFE692DEA482E9BA51244C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>59F080C8E699E8909F4BE8B94C992E72</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6EC3B734C12D37BD4B754D5A31493DE5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>IOS-Geolive</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>5B0B13D69FB1B8859CB64D8F0358CEE4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>GeoliveServer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5C4E2289BDF3E8C04217D154D68F7ECE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C56D9F73471686F1CEDCBA006CC0DC72</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5CCA49BD6DB0AF11713FCA91D9DF218C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24CA1281349D44AC294FDB1A3172CFD6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>601D2088F0A6C85877E097D88C7BA30F</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>12B2D3BA4DEA7655E581B19AF3F54467</string>
-			<key>remoteInfo</key>
-			<string>IOS-Geolive</string>
-		</dict>
-		<key>610157E27DCE16394174D55BD710EE55</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B92008CB43BF541E28594F00C36F6277</string>
-				<string>98BB2680113E2843FE75D8A67CC176EA</string>
-				<string>9BCC25A8D13FDEA0BAD14DF312B3A240</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>623FC823BE19A3AECB60EC14D23932E1</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>AEF2F075239F83B5ECF202340F009531</string>
-			<key>remoteInfo</key>
-			<string>sqlite3</string>
-		</dict>
-		<key>671390CD9644B6BB96BD11D5D29C8A0C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CacheDatabase.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>69F064CFDC4611AD3EAFBF34104227D6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AA636F14F5CE7DEC61F1F01B32D63C76</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/sqlite3/sqlite3-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6AF160267E40B9838A84B8C319FEE220</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB5FFBDB9B989FE74C2F9D805F2A63B4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>6C028DD54DD3F729D9B45E2107A5E404</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AA636F14F5CE7DEC61F1F01B32D63C76</string>
-				<string>E20F27E224784828F64F67686AC99D03</string>
-				<string>D93844589FF934E723A1DE28588FB2FD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/sqlite3</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C92F3DC6DDA947E3F02FB75BD032B2F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E20F27E224784828F64F67686AC99D03</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6EC3B734C12D37BD4B754D5A31493DE5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>IOS-Geolive.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>715F8A7A77EB35AABD098E3A05CE503E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>IOSQlite-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>72A4663FACB057A911C0BC924D1ECB47</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>AEF2F075239F83B5ECF202340F009531</string>
-			<key>remoteInfo</key>
-			<string>sqlite3</string>
-		</dict>
-		<key>7A0543D640C1D664AAE3A0505DD999FD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>48FAF903DF47239F365E09D162F6B917</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>7A40C1026967C3330279C7262DA2F06A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D5B449A0F73BE8861A43DADD950B3512</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/IOSQlite/IOSQlite-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>7A92B5E47D59207D90F9DEAD202A914A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UserDatabase.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7CDF3D44ECF2DED8265E55BE2F44486F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>10C0997C53553068EAA2FEE127C46595</string>
-				<string>6C028DD54DD3F729D9B45E2107A5E404</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>sqlite3</string>
-			<key>path</key>
-			<string>sqlite3</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7CF25D21CD101C62730191D60ACD8D2D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-IOS-Geolive_Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7D874B53A3040DD2E52B31E7A0D2AC1A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libIOS-Geolive.a</string>
-			<key>path</key>
-			<string>libIOS-Geolive.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>2B0F7D2C18C0CD1458DD3A2E4912F748</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>C66C9B69E5C3FC2DF753B6B2162FCBDA</string>
-				<string>57642379879AAA6EEC2258FA76945311</string>
-				<string>253F1833556B199EC704AA13481C3A31</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7E282FEBC764C967BD83EB3D5C8C974D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>807D65E10AE569AFB378671EA73119BF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7EBF1100C002E689E2AC1F83DBB67D8B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UserDatabase.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>807D65E10AE569AFB378671EA73119BF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>defaultMarker.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8672B9E58B3EEA8D2AF985FCE928457A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>199B3E70977C209B7E7F047691DF7F72</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>88A89D1A2A19908BC70E807077B842C9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>511CB1C11BC7A933FFF73B93D9F60D23</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>896180DC405FA9D34B5856A98E42FC59</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ABC18F35E79EE146AE3069714AE6A380</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8BCD4110AB5E45223513AC8CD5EE0E59</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>IOS-Geolive</string>
-			<key>target</key>
-			<string>12B2D3BA4DEA7655E581B19AF3F54467</string>
-			<key>targetProxy</key>
-			<string>601D2088F0A6C85877E097D88C7BA30F</string>
-		</dict>
-		<key>8C3D49BF5A1EE9512F711AC70D57CDB3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D5B449A0F73BE8861A43DADD950B3512</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>IOSQlite</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>8CA121DA666234C1AC449998D6AFE887</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>IOSQlite</string>
-			<key>target</key>
-			<string>547C7E7BA3F596809851D2374197215E</string>
-			<key>targetProxy</key>
-			<string>364E61DFCFC0599C7E0A73A107893564</string>
-		</dict>
-		<key>9042C17C495FC212EB19E4907DC978DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AB51DEDA69DB65F71B5764997C9D1B04</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>921C8809A4A26FAAE60B0A57D5A0BC21</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>sqlite3</string>
-			<key>target</key>
-			<string>AEF2F075239F83B5ECF202340F009531</string>
-			<key>targetProxy</key>
-			<string>623FC823BE19A3AECB60EC14D23932E1</string>
-		</dict>
-		<key>963B6DC903D807ABBAE818DF6D322FB9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-IOS-Geolive_Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9688A3EE92A94ACD8AD0FA5752B20B6F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6EC3B734C12D37BD4B754D5A31493DE5</string>
-				<string>2F886355F02DA6CE4FCB30B13504906E</string>
-				<string>3C270E99C8875039071D5FB3EF7691AB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/IOS-Geolive</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>97B1913BC7B6064AB826578AC7D718DE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F12EADB24397E815C0BE644D071610FD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>98B5289D991B754A9A548F876C9F3020</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>IOS-Geolive.bundle</string>
-			<key>path</key>
-			<string>IOS-Geolive.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>98BB2680113E2843FE75D8A67CC176EA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>715F8A7A77EB35AABD098E3A05CE503E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9909F535F6FA6A6E49C40F84C5DB0F6A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>054B757EC32580EFF4AF8D1EA46EF2C6</string>
-				<string>56676DBA1541EF1DD31F8A2E0C119F83</string>
-				<string>97B1913BC7B6064AB826578AC7D718DE</string>
-				<string>D694C580F6B510E0F1CB62C69D7060E4</string>
-				<string>356B60D85F23CB4A0334C17FE2DFA12C</string>
-				<string>5989B824D7BEAD95D19DAA2279DEDE68</string>
-				<string>6AF160267E40B9838A84B8C319FEE220</string>
-				<string>A92930935BA44D732363C361E6AF3CA8</string>
-				<string>4FD328CE0551840431EDEEF0C4C087E4</string>
-				<string>FD69C8CD76A257681F277FED880AE20E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>99E2A69EEA451C186533F6D6225F85AD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>7A0543D640C1D664AAE3A0505DD999FD</string>
-				<string>8672B9E58B3EEA8D2AF985FCE928457A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9A27AAE90177FD84AC58245C28AD7B53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>IOSQlite</string>
-			<key>target</key>
-			<string>547C7E7BA3F596809851D2374197215E</string>
-			<key>targetProxy</key>
-			<string>0F85885A92785A714D5E1D6D25361657</string>
-		</dict>
-		<key>9BCC25A8D13FDEA0BAD14DF312B3A240</key>
-		<dict>
-			<key>fileRef</key>
-			<string>450CF1A7B52315CE61E84ACAA1A1D77B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9EAB00529872C04578D37FCFCBB98FB5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-IOS-Geolive_Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9EB645C612834738B99727720210C23E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A1DA86CC44988ABC87ABF86C6A888850</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A2B67F28FA70E60ABFC9337DE2C5B27F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>671390CD9644B6BB96BD11D5D29C8A0C</string>
-				<string>CB32B93E64763596EB0F65768C5A32D7</string>
-				<string>BA37BA22B0C61DF0C411E32754F29B16</string>
-				<string>C56D9F73471686F1CEDCBA006CC0DC72</string>
-				<string>F12EADB24397E815C0BE644D071610FD</string>
-				<string>357288BE33E050C5DC6893B4E4CF97E2</string>
-				<string>807D65E10AE569AFB378671EA73119BF</string>
-				<string>5B0B13D69FB1B8859CB64D8F0358CEE4</string>
-				<string>A719C8BEFE8C7168D874BACD698BE9CE</string>
-				<string>37F0A6EF5857FC150641B227E7B321FF</string>
-				<string>44117A16ABEFE692DEA482E9BA51244C</string>
-				<string>13D585E5ADD3C4D26D5F77DF499FF357</string>
-				<string>AB5FFBDB9B989FE74C2F9D805F2A63B4</string>
-				<string>29199ADE564089CAA2237D5815AD2769</string>
-				<string>2C8C704BD5BE45E19919B8A78AFEE874</string>
-				<string>F14AF5A7C3C93C747A5B3DBE35C782AB</string>
-				<string>7EBF1100C002E689E2AC1F83DBB67D8B</string>
-				<string>7A92B5E47D59207D90F9DEAD202A914A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A719C8BEFE8C7168D874BACD698BE9CE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>GeoliveServer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A92930935BA44D732363C361E6AF3CA8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>29199ADE564089CAA2237D5815AD2769</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>AA636F14F5CE7DEC61F1F01B32D63C76</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>sqlite3.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB51DEDA69DB65F71B5764997C9D1B04</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB5FFBDB9B989FE74C2F9D805F2A63B4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PermanentObjectStorage.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB6ACF5B5CD97820048E246557B3BDE0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>ED29F63786FC216B534A77BAAFE354E7</string>
-				<string>5C4E2289BDF3E8C04217D154D68F7ECE</string>
-				<string>BCDC3936788928BEBCFB662F40113C52</string>
-				<string>7E282FEBC764C967BD83EB3D5C8C974D</string>
-				<string>EE0CBDD01C0EDD94E1559D63885E0133</string>
-				<string>E8B656DB75F7992B6191C991C329CB08</string>
-				<string>3E5BFAF9C481FA44142344F77B00B71B</string>
-				<string>06DEFEA177346B7313FDFA5B4A02CBF9</string>
-				<string>0C8DDED5A7EF6938B80CBD539F742E94</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>ABC18F35E79EE146AE3069714AE6A380</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-IOS-Geolive_Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AD2B1E349B20FE16C7701D4DACA35C0D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6EC3B734C12D37BD4B754D5A31493DE5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>IOS-Geolive</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>AEF2F075239F83B5ECF202340F009531</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>DF0B47BB3A5C54CED39EB05767893EC7</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C554BCC45A6DFCF394CE0A9425071D83</string>
-				<string>C2977863345E0407E98824DC0508FAA5</string>
-				<string>D81D39EE5230FAAB917F2433F2A70079</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>sqlite3</string>
-			<key>productName</key>
-			<string>sqlite3</string>
-			<key>productReference</key>
-			<string>CF87B07FBC86AFA914BA4916931EB2A0</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>B029DCA1D34B018D39C1DBFDCFE7E2C2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Database.m</string>
-			<key>path</key>
-			<string>Pod/Classes/Database.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B92008CB43BF541E28594F00C36F6277</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B029DCA1D34B018D39C1DBFDCFE7E2C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BA37BA22B0C61DF0C411E32754F29B16</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ConnectionListener.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BA5D0FDE4F51C5462D7093C012FC9A54</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BB4E613B1B1E9FB6DB2DE7C97C6BB969</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>BB4E613B1B1E9FB6DB2DE7C97C6BB969</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BBDA5A8026C5C0660FDD9F3853CE9B80</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-IOS-Geolive_Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BCDC3936788928BEBCFB662F40113C52</key>
-		<dict>
-			<key>fileRef</key>
-			<string>357288BE33E050C5DC6893B4E4CF97E2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BD10391CC0C6B09E4159D1A4C237E921</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>IOSQlite.bundle</string>
-			<key>path</key>
-			<string>IOSQlite.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BEA314C51BD6EF8E0750CF40A462F04C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FDC0CF1058FD148B5BE0B21435B26C7D</string>
-				<string>F3C36BB6064EF64E05CBC11646FF74CD</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3E4E89230EF59BC255123B67864ACF77</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C2977863345E0407E98824DC0508FAA5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>002064892D9F63D85763A3DC0F388FD7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C551974C4D2DB7876D14FDB8DABDCDD9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>55582BC14905FECBFE11E0306748A054</string>
-				<string>4A38B4707BE5A834B8EEB620D66628CB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C554BCC45A6DFCF394CE0A9425071D83</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6C92F3DC6DDA947E3F02FB75BD032B2F</string>
-				<string>C992B342AA49B8F7E4C562DB0A52F8FD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C56D9F73471686F1CEDCBA006CC0DC72</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ConnectionListener.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C66C9B69E5C3FC2DF753B6B2162FCBDA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EC615ED31FB9F1B90305885B602C6046</string>
-				<string>7CDF3D44ECF2DED8265E55BE2F44486F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C992B342AA49B8F7E4C562DB0A52F8FD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>374777D9211A51614B216D14CD9DEF55</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fno-objc-arc</string>
-			</dict>
-		</dict>
-		<key>CB32B93E64763596EB0F65768C5A32D7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CacheDatabase.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDE72FBB94FDFC8EAED9F0BAD8E69DB7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>963B6DC903D807ABBAE818DF6D322FB9</string>
-				<string>9EAB00529872C04578D37FCFCBB98FB5</string>
-				<string>ABC18F35E79EE146AE3069714AE6A380</string>
-				<string>482F702637839618AEAE29391CEE69FD</string>
-				<string>BBDA5A8026C5C0660FDD9F3853CE9B80</string>
-				<string>7CF25D21CD101C62730191D60ACD8D2D</string>
-				<string>DF48B7640ED33DC673E57F67CCDBDAED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-IOS-Geolive_Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-IOS-Geolive_Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CF87B07FBC86AFA914BA4916931EB2A0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libsqlite3.a</string>
-			<key>path</key>
-			<string>libsqlite3.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0700</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>57642379879AAA6EEC2258FA76945311</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>12B2D3BA4DEA7655E581B19AF3F54467</string>
-				<string>D6B8976C4004A04C17786D2AB4C37BBB</string>
-				<string>547C7E7BA3F596809851D2374197215E</string>
-				<string>EE3655B929AAD2362146DF2B891ACF1C</string>
-				<string>221980E3042715E11F5379410BE10181</string>
-				<string>AEF2F075239F83B5ECF202340F009531</string>
-			</array>
-		</dict>
-		<key>D581026223954EDFF15BF7DD5677C21E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D5B449A0F73BE8861A43DADD950B3512</string>
-				<string>715F8A7A77EB35AABD098E3A05CE503E</string>
-				<string>221E17FA4491E0A011CF2D8A62D51D82</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/IOSQlite</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5B449A0F73BE8861A43DADD950B3512</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>IOSQlite.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D694C580F6B510E0F1CB62C69D7060E4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5B0B13D69FB1B8859CB64D8F0358CEE4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>D6B8976C4004A04C17786D2AB4C37BBB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>495A3F51EA2B26263FFAC811186C8628</string>
-			<key>buildPhases</key>
-			<array>
-				<string>4EAFBEF06D08F4409ED54C796D1F6C2E</string>
-				<string>A1DA86CC44988ABC87ABF86C6A888850</string>
-				<string>3198EC624659C0BCA55E21A0D8EFFC04</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>IOS-Geolive-IOS-Geolive</string>
-			<key>productName</key>
-			<string>IOS-Geolive-IOS-Geolive</string>
-			<key>productReference</key>
-			<string>98B5289D991B754A9A548F876C9F3020</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>D81D39EE5230FAAB917F2433F2A70079</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>88A89D1A2A19908BC70E807077B842C9</string>
-				<string>5CCA49BD6DB0AF11713FCA91D9DF218C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D93844589FF934E723A1DE28588FB2FD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>sqlite3-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0B47BB3A5C54CED39EB05767893EC7</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E5C432EBF05EEA552457B813649FE863</string>
-				<string>69F064CFDC4611AD3EAFBF34104227D6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>DF48B7640ED33DC673E57F67CCDBDAED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-IOS-Geolive_Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E20F27E224784828F64F67686AC99D03</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>sqlite3-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E39CD1E764776175CB82EEC82A6C9948</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E3AA1C31A19A5D8DB01AC16F3E7A8F3C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F94A3BD51FB5667D458BA617125E5703</string>
-				<string>9688A3EE92A94ACD8AD0FA5752B20B6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>IOS-Geolive</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5C432EBF05EEA552457B813649FE863</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AA636F14F5CE7DEC61F1F01B32D63C76</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/sqlite3/sqlite3-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E7A9BBA1E6640861C98FE1225AF4D26F</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>EE3655B929AAD2362146DF2B891ACF1C</string>
-			<key>remoteInfo</key>
-			<string>IOSQlite-IOSQlite</string>
-		</dict>
-		<key>E8B656DB75F7992B6191C991C329CB08</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2F886355F02DA6CE4FCB30B13504906E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EC615ED31FB9F1B90305885B602C6046</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>48FAF903DF47239F365E09D162F6B917</string>
-				<string>B029DCA1D34B018D39C1DBFDCFE7E2C2</string>
-				<string>199B3E70977C209B7E7F047691DF7F72</string>
-				<string>450CF1A7B52315CE61E84ACAA1A1D77B</string>
-				<string>D581026223954EDFF15BF7DD5677C21E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>IOSQlite</string>
-			<key>path</key>
-			<string>IOSQlite</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED29F63786FC216B534A77BAAFE354E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB32B93E64763596EB0F65768C5A32D7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EE0CBDD01C0EDD94E1559D63885E0133</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A719C8BEFE8C7168D874BACD698BE9CE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EE3655B929AAD2362146DF2B891ACF1C</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>04D7D5F5EB1DF67D443036763497A536</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F8A1572F5C0CA89A96A1FE71BF35007D</string>
-				<string>F3E9382846CB87C9BBDBA14058CE4013</string>
-				<string>0FD56377BB3B0EB966E04C0A2CFC6CD0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>IOSQlite-IOSQlite</string>
-			<key>productName</key>
-			<string>IOSQlite-IOSQlite</string>
-			<key>productReference</key>
-			<string>BD10391CC0C6B09E4159D1A4C237E921</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>F12EADB24397E815C0BE644D071610FD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DatabaseStorage.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F14AF5A7C3C93C747A5B3DBE35C782AB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SystemEventDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F3C36BB6064EF64E05CBC11646FF74CD</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6EC3B734C12D37BD4B754D5A31493DE5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/IOS-Geolive/IOS-Geolive-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>F3E9382846CB87C9BBDBA14058CE4013</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F8A1572F5C0CA89A96A1FE71BF35007D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F94A3BD51FB5667D458BA617125E5703</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A2B67F28FA70E60ABFC9337DE2C5B27F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pod</string>
-			<key>path</key>
-			<string>Pod</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FD69C8CD76A257681F277FED880AE20E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7EBF1100C002E689E2AC1F83DBB67D8B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>FDC0CF1058FD148B5BE0B21435B26C7D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6EC3B734C12D37BD4B754D5A31493DE5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/IOS-Geolive/IOS-Geolive-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AC18C50E6759A63BF32D5549E9E55F3 /* GeoliveServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB6E043744930009A3A1D20AD57539 /* GeoliveServer.m */; };
+		14BE35089F30960784A45640A0D06EF7 /* sqlite3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F27E224784828F64F67686AC99D03 /* sqlite3-dummy.m */; };
+		24F1D041E59E2649346E29D57562AE07 /* ResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 54D6C7E0A278EAB2E073C3A105106BEE /* ResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25AEC23548711D2D025D13BBE03CE4FF /* StoredParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 9539FC262222F26E46FA7169C433D398 /* StoredParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28332FB36B48EB96EEF2B17D60B97251 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		3860215FEFA8A80E5D6B5BBD646A87C3 /* IOS-Geolive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F29C02E7D91DF6176A9251E76A7F67CF /* IOS-Geolive-dummy.m */; };
+		3CC1FF09488D139359B175D325741CA2 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F53CB69C73807CC9F57197409C5FD6A /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465808A5D8B6900977C03DDFB3E81684 /* defaultMarker.png in Sources */ = {isa = PBXBuildFile; fileRef = F18BE3B706F870265F1A1F26CB5DA98C /* defaultMarker.png */; };
+		46DF8EA5616A9EAB1BFF61454C7268A1 /* ResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CBBCEBE04398F13CE8F1B395D4696B /* ResultSet.m */; };
+		488D9F1FB083DA74FED736B89AD4A210 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		4AB060134CC7666C58CC34810A8BEED9 /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = CCADA7B3DE2707F803C005BD84DB8D02 /* Database.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D7BB9BDE159F95308233D6541662503 /* UserDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9FE499B298874819E61D9575746FB6 /* UserDatabase.m */; };
+		67327250D315B449792B45B0E44174D6 /* SystemEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ADFC364D493BD471895F8FC85D9473F9 /* SystemEventDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		747A8315A23B045AD6D30AC393EEF71B /* sqlite3ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 33C8E82EA4E8339D3A92ECFAE71552F1 /* sqlite3ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E4A8AE3E5EDF936A3458D5E95FFF4CB /* GeoliveServerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 60D42B821FA65206EF37B45B21B7A104 /* GeoliveServerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8734AAFB0974AF48429C51E21B5F09D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		892C3C8DB13E066C8AB6DB0BAB92B990 /* IOSQlite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 865590C12B94B4CCD5D0A80D1959BBD2 /* IOSQlite-dummy.m */; };
+		896180DC405FA9D34B5856A98E42FC59 /* Pods-IOS-Geolive_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC18F35E79EE146AE3069714AE6A380 /* Pods-IOS-Geolive_Tests-dummy.m */; };
+		95569EAC5E10AE2F8F20A3E14DF9624A /* StoredParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8A844FB89C8C9150FDA13919C61A4 /* StoredParameters.m */; };
+		9BE9DF282868EBF7B95BCFE8B0FBCC46 /* ConnectionListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 7431AEFC649B368A38F84AC7821A609C /* ConnectionListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A64647A9A4A4AA4449A21855FAE92394 /* GeoliveServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 14FBB3AC43A8D3444C7168937A9E16AD /* GeoliveServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B19C731F10266BC0A5B561954AE3575C /* CacheDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F0D5E307AA30AA8F87B17CCBABDF1 /* CacheDatabase.m */; };
+		B39F58ADD039EDCE636A4E8BD665C1C1 /* DatabaseStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4102130D2DF06D97A3D41EA591621928 /* DatabaseStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4116B41D36359AD0899318063BF8205 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 84369ED24D7D2E666A4CE521C8412DFB /* sqlite3.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B61826A350C2EBAE7B3AF04CBBCE1883 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = E96B15C90BEB36633A0A64C66BBD94B4 /* Database.m */; };
+		BEB5042993D7C98FF64408FBFA37501D /* CacheDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4993EB68320BA67BA6508F687E5D14D8 /* CacheDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB2B35A066F85D7863BCF32255E4D54C /* PermanentObjectStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E8EAB090DECD190583F2E236D25EBE /* PermanentObjectStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7E64D64E5D565EA66FA1843ADF1CDF9 /* UserDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 078E69DCFA9F167809133BDC5C379686 /* UserDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED68B15C65E99CE06C34DB5CEAF7DF34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		EF56B48B0CBCED92CC6BB2CF46268E08 /* ConnectionListener.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD0FFF9B5F529507E5CA0BAC568C4A2 /* ConnectionListener.m */; };
+		F8076CAA432988774F16EEE3C3D92EC6 /* JsonSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DEE21D4FA67941A63FC2A4E8C0E0FD /* JsonSocket.m */; };
+		F8E99ED2B553059EAA51488BC030BEB0 /* JsonSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D289AA8E074C46767E03DB5957BAA6F /* JsonSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCFBF77A39A8C6E24343AF9391BCDE4F /* DatabaseStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = F49A1383EB205B67D2680197498B57FD /* DatabaseStorage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F85885A92785A714D5E1D6D25361657 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 079E29E7B5528E8872FFC19DF93D7A12;
+			remoteInfo = IOSQlite;
+		};
+		2DF361BD0CB77916871AA0EFF367994D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7E5684A35403501B4B8E6D9838E2560;
+			remoteInfo = sqlite3;
+		};
+		330337D39920D5559EE321B269AA93AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFB7D45FE71F7449E89A53FC5BC18284;
+			remoteInfo = "IOSQlite-IOSQlite";
+		};
+		601D2088F0A6C85877E097D88C7BA30F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C64EBA12D4F4C3E1F411E31E9928FAEF;
+			remoteInfo = "IOS-Geolive";
+		};
+		623FC823BE19A3AECB60EC14D23932E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7E5684A35403501B4B8E6D9838E2560;
+			remoteInfo = sqlite3;
+		};
+		8DE9441C671AA45FA575CB2AD8CE7AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A57EF85A8BD586644376C8007DE9229;
+			remoteInfo = "IOS-Geolive-IOS-Geolive";
+		};
+		B9568C5301F83C7B1CEF676F6F9E3E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 079E29E7B5528E8872FFC19DF93D7A12;
+			remoteInfo = IOSQlite;
+		};
+		D3D4C50FEF145E72F3A4395E5D06CB97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7E5684A35403501B4B8E6D9838E2560;
+			remoteInfo = sqlite3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		078E69DCFA9F167809133BDC5C379686 /* UserDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UserDatabase.h; sourceTree = "<group>"; };
+		14FBB3AC43A8D3444C7168937A9E16AD /* GeoliveServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeoliveServer.h; sourceTree = "<group>"; };
+		2761BFD2EF81D43DBCB853AFFA021F26 /* libIOSQlite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIOSQlite.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		29DCAA70379BA8E9E59B632F120C10FD /* ResourceBundle-IOS-Geolive-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-IOS-Geolive-Info.plist"; sourceTree = "<group>"; };
+		2C9FE499B298874819E61D9575746FB6 /* UserDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UserDatabase.m; sourceTree = "<group>"; };
+		2FED9622BB453946F4B5E6C562403543 /* libPods-IOS-Geolive_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOS-Geolive_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33C8E82EA4E8339D3A92ECFAE71552F1 /* sqlite3ext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqlite3ext.h; path = "sqlite-amalgamation-3140200/sqlite3ext.h"; sourceTree = "<group>"; };
+		3D6A85DFE890A865C27D0BBE4C7AC6E0 /* IOS-Geolive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "IOS-Geolive.xcconfig"; sourceTree = "<group>"; };
+		4102130D2DF06D97A3D41EA591621928 /* DatabaseStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DatabaseStorage.h; sourceTree = "<group>"; };
+		482F702637839618AEAE29391CEE69FD /* Pods-IOS-Geolive_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IOS-Geolive_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		4993EB68320BA67BA6508F687E5D14D8 /* CacheDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CacheDatabase.h; sourceTree = "<group>"; };
+		54D6C7E0A278EAB2E073C3A105106BEE /* ResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ResultSet.h; path = Pod/Classes/ResultSet.h; sourceTree = "<group>"; };
+		5D289AA8E074C46767E03DB5957BAA6F /* JsonSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JsonSocket.h; sourceTree = "<group>"; };
+		5F53CB69C73807CC9F57197409C5FD6A /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = "sqlite-amalgamation-3140200/sqlite3.h"; sourceTree = "<group>"; };
+		60D42B821FA65206EF37B45B21B7A104 /* GeoliveServerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GeoliveServerDelegate.h; sourceTree = "<group>"; };
+		7431AEFC649B368A38F84AC7821A609C /* ConnectionListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConnectionListener.h; sourceTree = "<group>"; };
+		77C8A844FB89C8C9150FDA13919C61A4 /* StoredParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StoredParameters.m; sourceTree = "<group>"; };
+		7CF25D21CD101C62730191D60ACD8D2D /* Pods-IOS-Geolive_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOS-Geolive_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D874B53A3040DD2E52B31E7A0D2AC1A /* libIOS-Geolive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libIOS-Geolive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83AD68FFF161984A457B52DE57343E8A /* IOSQlite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IOSQlite.xcconfig; sourceTree = "<group>"; };
+		84369ED24D7D2E666A4CE521C8412DFB /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sqlite3.c; path = "sqlite-amalgamation-3140200/sqlite3.c"; sourceTree = "<group>"; };
+		865590C12B94B4CCD5D0A80D1959BBD2 /* IOSQlite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IOSQlite-dummy.m"; sourceTree = "<group>"; };
+		8C2F0D5E307AA30AA8F87B17CCBABDF1 /* CacheDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CacheDatabase.m; sourceTree = "<group>"; };
+		8DCB6E043744930009A3A1D20AD57539 /* GeoliveServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GeoliveServer.m; sourceTree = "<group>"; };
+		92DEE21D4FA67941A63FC2A4E8C0E0FD /* JsonSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JsonSocket.m; sourceTree = "<group>"; };
+		935B6228199D3176667754FA64F9B1FD /* IOS-Geolive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IOS-Geolive-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9539FC262222F26E46FA7169C433D398 /* StoredParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StoredParameters.h; sourceTree = "<group>"; };
+		963B6DC903D807ABBAE818DF6D322FB9 /* Pods-IOS-Geolive_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IOS-Geolive_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		98B5289D991B754A9A548F876C9F3020 /* IOS-Geolive.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS-Geolive.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EAB00529872C04578D37FCFCBB98FB5 /* Pods-IOS-Geolive_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IOS-Geolive_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA636F14F5CE7DEC61F1F01B32D63C76 /* sqlite3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = sqlite3.xcconfig; sourceTree = "<group>"; };
+		ABC18F35E79EE146AE3069714AE6A380 /* Pods-IOS-Geolive_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IOS-Geolive_Tests-dummy.m"; sourceTree = "<group>"; };
+		ADFC364D493BD471895F8FC85D9473F9 /* SystemEventDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SystemEventDelegate.h; sourceTree = "<group>"; };
+		BBDA5A8026C5C0660FDD9F3853CE9B80 /* Pods-IOS-Geolive_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IOS-Geolive_Tests-resources.sh"; sourceTree = "<group>"; };
+		BD10391CC0C6B09E4159D1A4C237E921 /* IOSQlite.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSQlite.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5E8EAB090DECD190583F2E236D25EBE /* PermanentObjectStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PermanentObjectStorage.h; sourceTree = "<group>"; };
+		CCADA7B3DE2707F803C005BD84DB8D02 /* Database.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Database.h; path = Pod/Classes/Database.h; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF87B07FBC86AFA914BA4916931EB2A0 /* libsqlite3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsqlite3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93844589FF934E723A1DE28588FB2FD /* sqlite3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "sqlite3-prefix.pch"; sourceTree = "<group>"; };
+		DAD0FFF9B5F529507E5CA0BAC568C4A2 /* ConnectionListener.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ConnectionListener.m; sourceTree = "<group>"; };
+		DF48B7640ED33DC673E57F67CCDBDAED /* Pods-IOS-Geolive_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOS-Geolive_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E20F27E224784828F64F67686AC99D03 /* sqlite3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "sqlite3-dummy.m"; sourceTree = "<group>"; };
+		E96B15C90BEB36633A0A64C66BBD94B4 /* Database.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Database.m; path = Pod/Classes/Database.m; sourceTree = "<group>"; };
+		F18BE3B706F870265F1A1F26CB5DA98C /* defaultMarker.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = defaultMarker.png; sourceTree = "<group>"; };
+		F20A9F3C1D2E48DD36E03286DFC60EA5 /* IOSQlite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IOSQlite-prefix.pch"; sourceTree = "<group>"; };
+		F29C02E7D91DF6176A9251E76A7F67CF /* IOS-Geolive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IOS-Geolive-dummy.m"; sourceTree = "<group>"; };
+		F49A1383EB205B67D2680197498B57FD /* DatabaseStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DatabaseStorage.m; sourceTree = "<group>"; };
+		F7CBBCEBE04398F13CE8F1B395D4696B /* ResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ResultSet.m; path = Pod/Classes/ResultSet.m; sourceTree = "<group>"; };
+		FCEFC6EFEA7E0297F9BCD4467A1E781F /* ResourceBundle-IOSQlite-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-IOSQlite-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1051BCB899F6DB848B0779870D70EC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28332FB36B48EB96EEF2B17D60B97251 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		129D7E077C76DE922048464F21FB6968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED68B15C65E99CE06C34DB5CEAF7DF34 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB86E7DCC472E62A3B64E36595F5607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488D9F1FB083DA74FED736B89AD4A210 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E3592594E8850114B5FBA6C7C086F85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21CD7F4AA4C93263843AFBDEEFE6772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8734AAFB0974AF48429C51E21B5F09D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF764995317A24549A25AF27FA07163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C332DFA6EB561C98881A50B9E8EEBF7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4993EB68320BA67BA6508F687E5D14D8 /* CacheDatabase.h */,
+				8C2F0D5E307AA30AA8F87B17CCBABDF1 /* CacheDatabase.m */,
+				7431AEFC649B368A38F84AC7821A609C /* ConnectionListener.h */,
+				DAD0FFF9B5F529507E5CA0BAC568C4A2 /* ConnectionListener.m */,
+				4102130D2DF06D97A3D41EA591621928 /* DatabaseStorage.h */,
+				F49A1383EB205B67D2680197498B57FD /* DatabaseStorage.m */,
+				F18BE3B706F870265F1A1F26CB5DA98C /* defaultMarker.png */,
+				14FBB3AC43A8D3444C7168937A9E16AD /* GeoliveServer.h */,
+				8DCB6E043744930009A3A1D20AD57539 /* GeoliveServer.m */,
+				60D42B821FA65206EF37B45B21B7A104 /* GeoliveServerDelegate.h */,
+				5D289AA8E074C46767E03DB5957BAA6F /* JsonSocket.h */,
+				92DEE21D4FA67941A63FC2A4E8C0E0FD /* JsonSocket.m */,
+				C5E8EAB090DECD190583F2E236D25EBE /* PermanentObjectStorage.h */,
+				9539FC262222F26E46FA7169C433D398 /* StoredParameters.h */,
+				77C8A844FB89C8C9150FDA13919C61A4 /* StoredParameters.m */,
+				ADFC364D493BD471895F8FC85D9473F9 /* SystemEventDelegate.h */,
+				078E69DCFA9F167809133BDC5C379686 /* UserDatabase.h */,
+				2C9FE499B298874819E61D9575746FB6 /* UserDatabase.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		253F1833556B199EC704AA13481C3A31 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDE72FBB94FDFC8EAED9F0BAD8E69DB7 /* Pods-IOS-Geolive_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		26DAF8EFB8FBA1B095BFD939B5832002 /* IOSQlite */ = {
+			isa = PBXGroup;
+			children = (
+				CCADA7B3DE2707F803C005BD84DB8D02 /* Database.h */,
+				E96B15C90BEB36633A0A64C66BBD94B4 /* Database.m */,
+				54D6C7E0A278EAB2E073C3A105106BEE /* ResultSet.h */,
+				F7CBBCEBE04398F13CE8F1B395D4696B /* ResultSet.m */,
+				41C0C283D1A5FA7AC2CDD50AF8D1DE65 /* Support Files */,
+			);
+			path = IOSQlite;
+			sourceTree = "<group>";
+		};
+		2B0F7D2C18C0CD1458DD3A2E4912F748 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F96A80AB119717ABEBDEFE2FE413CE1 /* IOS-Geolive */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		41C0C283D1A5FA7AC2CDD50AF8D1DE65 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				83AD68FFF161984A457B52DE57343E8A /* IOSQlite.xcconfig */,
+				865590C12B94B4CCD5D0A80D1959BBD2 /* IOSQlite-dummy.m */,
+				F20A9F3C1D2E48DD36E03286DFC60EA5 /* IOSQlite-prefix.pch */,
+				FCEFC6EFEA7E0297F9BCD4467A1E781F /* ResourceBundle-IOSQlite-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IOSQlite";
+			sourceTree = "<group>";
+		};
+		57642379879AAA6EEC2258FA76945311 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98B5289D991B754A9A548F876C9F3020 /* IOS-Geolive.bundle */,
+				BD10391CC0C6B09E4159D1A4C237E921 /* IOSQlite.bundle */,
+				7D874B53A3040DD2E52B31E7A0D2AC1A /* libIOS-Geolive.a */,
+				2761BFD2EF81D43DBCB853AFFA021F26 /* libIOSQlite.a */,
+				2FED9622BB453946F4B5E6C562403543 /* libPods-IOS-Geolive_Tests.a */,
+				CF87B07FBC86AFA914BA4916931EB2A0 /* libsqlite3.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C028DD54DD3F729D9B45E2107A5E404 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA636F14F5CE7DEC61F1F01B32D63C76 /* sqlite3.xcconfig */,
+				E20F27E224784828F64F67686AC99D03 /* sqlite3-dummy.m */,
+				D93844589FF934E723A1DE28588FB2FD /* sqlite3-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/sqlite3";
+			sourceTree = "<group>";
+		};
+		7CDF3D44ECF2DED8265E55BE2F44486F /* sqlite3 */ = {
+			isa = PBXGroup;
+			children = (
+				E46B50F59C242A10B3DE6601E9BEEE62 /* common */,
+				6C028DD54DD3F729D9B45E2107A5E404 /* Support Files */,
+			);
+			path = sqlite3;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				2B0F7D2C18C0CD1458DD3A2E4912F748 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C66C9B69E5C3FC2DF753B6B2162FCBDA /* Pods */,
+				57642379879AAA6EEC2258FA76945311 /* Products */,
+				253F1833556B199EC704AA13481C3A31 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8F96A80AB119717ABEBDEFE2FE413CE1 /* IOS-Geolive */ = {
+			isa = PBXGroup;
+			children = (
+				F2CF19050D7D2B61FC905EEC5B6C8EFF /* Pod */,
+				9C6DE6D7A5B4501DB8F870D64B3B762B /* Support Files */,
+			);
+			name = "IOS-Geolive";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9C6DE6D7A5B4501DB8F870D64B3B762B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D6A85DFE890A865C27D0BBE4C7AC6E0 /* IOS-Geolive.xcconfig */,
+				F29C02E7D91DF6176A9251E76A7F67CF /* IOS-Geolive-dummy.m */,
+				935B6228199D3176667754FA64F9B1FD /* IOS-Geolive-prefix.pch */,
+				29DCAA70379BA8E9E59B632F120C10FD /* ResourceBundle-IOS-Geolive-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/IOS-Geolive";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C66C9B69E5C3FC2DF753B6B2162FCBDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26DAF8EFB8FBA1B095BFD939B5832002 /* IOSQlite */,
+				7CDF3D44ECF2DED8265E55BE2F44486F /* sqlite3 */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CDE72FBB94FDFC8EAED9F0BAD8E69DB7 /* Pods-IOS-Geolive_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				963B6DC903D807ABBAE818DF6D322FB9 /* Pods-IOS-Geolive_Tests-acknowledgements.markdown */,
+				9EAB00529872C04578D37FCFCBB98FB5 /* Pods-IOS-Geolive_Tests-acknowledgements.plist */,
+				ABC18F35E79EE146AE3069714AE6A380 /* Pods-IOS-Geolive_Tests-dummy.m */,
+				482F702637839618AEAE29391CEE69FD /* Pods-IOS-Geolive_Tests-frameworks.sh */,
+				BBDA5A8026C5C0660FDD9F3853CE9B80 /* Pods-IOS-Geolive_Tests-resources.sh */,
+				7CF25D21CD101C62730191D60ACD8D2D /* Pods-IOS-Geolive_Tests.debug.xcconfig */,
+				DF48B7640ED33DC673E57F67CCDBDAED /* Pods-IOS-Geolive_Tests.release.xcconfig */,
+			);
+			name = "Pods-IOS-Geolive_Tests";
+			path = "Target Support Files/Pods-IOS-Geolive_Tests";
+			sourceTree = "<group>";
+		};
+		E46B50F59C242A10B3DE6601E9BEEE62 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				84369ED24D7D2E666A4CE521C8412DFB /* sqlite3.c */,
+				5F53CB69C73807CC9F57197409C5FD6A /* sqlite3.h */,
+				33C8E82EA4E8339D3A92ECFAE71552F1 /* sqlite3ext.h */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		F2CF19050D7D2B61FC905EEC5B6C8EFF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0C332DFA6EB561C98881A50B9E8EEBF7 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		96CF2C154672105112B6DDC51EBABC53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC1FF09488D139359B175D325741CA2 /* sqlite3.h in Headers */,
+				747A8315A23B045AD6D30AC393EEF71B /* sqlite3ext.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46211447A2F811696CFF29BB3BC35B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AB060134CC7666C58CC34810A8BEED9 /* Database.h in Headers */,
+				24F1D041E59E2649346E29D57562AE07 /* ResultSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F419D9F0765EB7C6A12E7ABE38A6E99F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB5042993D7C98FF64408FBFA37501D /* CacheDatabase.h in Headers */,
+				9BE9DF282868EBF7B95BCFE8B0FBCC46 /* ConnectionListener.h in Headers */,
+				B39F58ADD039EDCE636A4E8BD665C1C1 /* DatabaseStorage.h in Headers */,
+				A64647A9A4A4AA4449A21855FAE92394 /* GeoliveServer.h in Headers */,
+				7E4A8AE3E5EDF936A3458D5E95FFF4CB /* GeoliveServerDelegate.h in Headers */,
+				F8E99ED2B553059EAA51488BC030BEB0 /* JsonSocket.h in Headers */,
+				CB2B35A066F85D7863BCF32255E4D54C /* PermanentObjectStorage.h in Headers */,
+				25AEC23548711D2D025D13BBE03CE4FF /* StoredParameters.h in Headers */,
+				67327250D315B449792B45B0E44174D6 /* SystemEventDelegate.h in Headers */,
+				E7E64D64E5D565EA66FA1843ADF1CDF9 /* UserDatabase.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		079E29E7B5528E8872FFC19DF93D7A12 /* IOSQlite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3EDA9415FC456E6E1D0BF27477449B3 /* Build configuration list for PBXNativeTarget "IOSQlite" */;
+			buildPhases = (
+				DF0228F3E93EF8C9BD4621A997075225 /* Sources */,
+				3CB86E7DCC472E62A3B64E36595F5607 /* Frameworks */,
+				B46211447A2F811696CFF29BB3BC35B1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7100B404FDF066E50C986A480CF6E8F0 /* PBXTargetDependency */,
+				EB4B63BD3B577FBE8F39C0C7C867D49C /* PBXTargetDependency */,
+			);
+			name = IOSQlite;
+			productName = IOSQlite;
+			productReference = 2761BFD2EF81D43DBCB853AFFA021F26 /* libIOSQlite.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		221980E3042715E11F5379410BE10181 /* Pods-IOS-Geolive_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C551974C4D2DB7876D14FDB8DABDCDD9 /* Build configuration list for PBXNativeTarget "Pods-IOS-Geolive_Tests" */;
+			buildPhases = (
+				3F106A7AA2A318E032944D8D84623EC3 /* Sources */,
+				1051BCB899F6DB848B0779870D70EC14 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BCD4110AB5E45223513AC8CD5EE0E59 /* PBXTargetDependency */,
+				9A27AAE90177FD84AC58245C28AD7B53 /* PBXTargetDependency */,
+				921C8809A4A26FAAE60B0A57D5A0BC21 /* PBXTargetDependency */,
+			);
+			name = "Pods-IOS-Geolive_Tests";
+			productName = "Pods-IOS-Geolive_Tests";
+			productReference = 2FED9622BB453946F4B5E6C562403543 /* libPods-IOS-Geolive_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8A57EF85A8BD586644376C8007DE9229 /* IOS-Geolive-IOS-Geolive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5A2181AE4D393F3278E7AA932A98DBF /* Build configuration list for PBXNativeTarget "IOS-Geolive-IOS-Geolive" */;
+			buildPhases = (
+				24301756CD3FDEC9507A81F5737CD823 /* Sources */,
+				EAF764995317A24549A25AF27FA07163 /* Frameworks */,
+				BF2ED7271E1BC4E4AEBE43119C46C570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IOS-Geolive-IOS-Geolive";
+			productName = "IOS-Geolive-IOS-Geolive";
+			productReference = 98B5289D991B754A9A548F876C9F3020 /* IOS-Geolive.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C64EBA12D4F4C3E1F411E31E9928FAEF /* IOS-Geolive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F04EA220B7522C6C2E803FDD59D80A0 /* Build configuration list for PBXNativeTarget "IOS-Geolive" */;
+			buildPhases = (
+				71C4058CCA1492B3411903799D84EE0D /* Sources */,
+				129D7E077C76DE922048464F21FB6968 /* Frameworks */,
+				F419D9F0765EB7C6A12E7ABE38A6E99F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70AEC4E877C9192AB7D59967C44D083D /* PBXTargetDependency */,
+				76DC6BEB1A986C9FE8A1B869DE47D32E /* PBXTargetDependency */,
+				0B859C0CF8D96B7F7A2835CCE3F363C2 /* PBXTargetDependency */,
+			);
+			name = "IOS-Geolive";
+			productName = "IOS-Geolive";
+			productReference = 7D874B53A3040DD2E52B31E7A0D2AC1A /* libIOS-Geolive.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CFB7D45FE71F7449E89A53FC5BC18284 /* IOSQlite-IOSQlite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1207A8C73F6D33D6B14B4480F02CE4BA /* Build configuration list for PBXNativeTarget "IOSQlite-IOSQlite" */;
+			buildPhases = (
+				8DE4609D9A730863EE55D2C21565757F /* Sources */,
+				4E3592594E8850114B5FBA6C7C086F85 /* Frameworks */,
+				8B26408DCCAAF832B7A6E54E91DCFB46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IOSQlite-IOSQlite";
+			productName = "IOSQlite-IOSQlite";
+			productReference = BD10391CC0C6B09E4159D1A4C237E921 /* IOSQlite.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D7E5684A35403501B4B8E6D9838E2560 /* sqlite3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C130CEA04EE08AC32154FCE59C225C24 /* Build configuration list for PBXNativeTarget "sqlite3" */;
+			buildPhases = (
+				40CDF9CD3153AA6E9E627338F39F9D33 /* Sources */,
+				D21CD7F4AA4C93263843AFBDEEFE6772 /* Frameworks */,
+				96CF2C154672105112B6DDC51EBABC53 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sqlite3;
+			productName = sqlite3;
+			productReference = CF87B07FBC86AFA914BA4916931EB2A0 /* libsqlite3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 57642379879AAA6EEC2258FA76945311 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C64EBA12D4F4C3E1F411E31E9928FAEF /* IOS-Geolive */,
+				8A57EF85A8BD586644376C8007DE9229 /* IOS-Geolive-IOS-Geolive */,
+				079E29E7B5528E8872FFC19DF93D7A12 /* IOSQlite */,
+				CFB7D45FE71F7449E89A53FC5BC18284 /* IOSQlite-IOSQlite */,
+				221980E3042715E11F5379410BE10181 /* Pods-IOS-Geolive_Tests */,
+				D7E5684A35403501B4B8E6D9838E2560 /* sqlite3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B26408DCCAAF832B7A6E54E91DCFB46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2ED7271E1BC4E4AEBE43119C46C570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24301756CD3FDEC9507A81F5737CD823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F106A7AA2A318E032944D8D84623EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896180DC405FA9D34B5856A98E42FC59 /* Pods-IOS-Geolive_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CDF9CD3153AA6E9E627338F39F9D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BE35089F30960784A45640A0D06EF7 /* sqlite3-dummy.m in Sources */,
+				B4116B41D36359AD0899318063BF8205 /* sqlite3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71C4058CCA1492B3411903799D84EE0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19C731F10266BC0A5B561954AE3575C /* CacheDatabase.m in Sources */,
+				EF56B48B0CBCED92CC6BB2CF46268E08 /* ConnectionListener.m in Sources */,
+				FCFBF77A39A8C6E24343AF9391BCDE4F /* DatabaseStorage.m in Sources */,
+				465808A5D8B6900977C03DDFB3E81684 /* defaultMarker.png in Sources */,
+				0AC18C50E6759A63BF32D5549E9E55F3 /* GeoliveServer.m in Sources */,
+				3860215FEFA8A80E5D6B5BBD646A87C3 /* IOS-Geolive-dummy.m in Sources */,
+				F8076CAA432988774F16EEE3C3D92EC6 /* JsonSocket.m in Sources */,
+				95569EAC5E10AE2F8F20A3E14DF9624A /* StoredParameters.m in Sources */,
+				5D7BB9BDE159F95308233D6541662503 /* UserDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE4609D9A730863EE55D2C21565757F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0228F3E93EF8C9BD4621A997075225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61826A350C2EBAE7B3AF04CBBCE1883 /* Database.m in Sources */,
+				892C3C8DB13E066C8AB6DB0BAB92B990 /* IOSQlite-dummy.m in Sources */,
+				46DF8EA5616A9EAB1BFF61454C7268A1 /* ResultSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B859C0CF8D96B7F7A2835CCE3F363C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlite3;
+			target = D7E5684A35403501B4B8E6D9838E2560 /* sqlite3 */;
+			targetProxy = D3D4C50FEF145E72F3A4395E5D06CB97 /* PBXContainerItemProxy */;
+		};
+		70AEC4E877C9192AB7D59967C44D083D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "IOS-Geolive-IOS-Geolive";
+			target = 8A57EF85A8BD586644376C8007DE9229 /* IOS-Geolive-IOS-Geolive */;
+			targetProxy = 8DE9441C671AA45FA575CB2AD8CE7AF8 /* PBXContainerItemProxy */;
+		};
+		7100B404FDF066E50C986A480CF6E8F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "IOSQlite-IOSQlite";
+			target = CFB7D45FE71F7449E89A53FC5BC18284 /* IOSQlite-IOSQlite */;
+			targetProxy = 330337D39920D5559EE321B269AA93AC /* PBXContainerItemProxy */;
+		};
+		76DC6BEB1A986C9FE8A1B869DE47D32E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IOSQlite;
+			target = 079E29E7B5528E8872FFC19DF93D7A12 /* IOSQlite */;
+			targetProxy = B9568C5301F83C7B1CEF676F6F9E3E5C /* PBXContainerItemProxy */;
+		};
+		8BCD4110AB5E45223513AC8CD5EE0E59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "IOS-Geolive";
+			target = C64EBA12D4F4C3E1F411E31E9928FAEF /* IOS-Geolive */;
+			targetProxy = 601D2088F0A6C85877E097D88C7BA30F /* PBXContainerItemProxy */;
+		};
+		921C8809A4A26FAAE60B0A57D5A0BC21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlite3;
+			target = D7E5684A35403501B4B8E6D9838E2560 /* sqlite3 */;
+			targetProxy = 623FC823BE19A3AECB60EC14D23932E1 /* PBXContainerItemProxy */;
+		};
+		9A27AAE90177FD84AC58245C28AD7B53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IOSQlite;
+			target = 079E29E7B5528E8872FFC19DF93D7A12 /* IOSQlite */;
+			targetProxy = 0F85885A92785A714D5E1D6D25361657 /* PBXContainerItemProxy */;
+		};
+		EB4B63BD3B577FBE8F39C0C7C867D49C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlite3;
+			target = D7E5684A35403501B4B8E6D9838E2560 /* sqlite3 */;
+			targetProxy = 2DF361BD0CB77916871AA0EFF367994D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B3C5F0BE9BBFF2729D6354BFE2FA12F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF48B7640ED33DC673E57F67CCDBDAED /* Pods-IOS-Geolive_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0F09FB57C5B79A697D3D7153EB021401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6A85DFE890A865C27D0BBE4C7AC6E0 /* IOS-Geolive.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IOS-Geolive";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/IOS-Geolive/ResourceBundle-IOS-Geolive-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				PRODUCT_NAME = "IOS-Geolive";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		146E662F1A41D0106A95BB9437C9A905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA636F14F5CE7DEC61F1F01B32D63C76 /* sqlite3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/sqlite3/sqlite3-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7A0AD693DDA67649A9505A582F95228A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6A85DFE890A865C27D0BBE4C7AC6E0 /* IOS-Geolive.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IOS-Geolive/IOS-Geolive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8437C251CD54CD8B60725ED66C9C9B99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6A85DFE890A865C27D0BBE4C7AC6E0 /* IOS-Geolive.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IOS-Geolive/IOS-Geolive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		86F7264A978A32A5A6EBAB9369E35594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83AD68FFF161984A457B52DE57343E8A /* IOSQlite.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IOSQlite/IOSQlite-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		87310A48B49809550EA5ECF182FBAA7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83AD68FFF161984A457B52DE57343E8A /* IOSQlite.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IOSQlite";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/IOSQlite/ResourceBundle-IOSQlite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				PRODUCT_NAME = IOSQlite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		912EACD20B6CC676D2B6AD8C37B1E679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83AD68FFF161984A457B52DE57343E8A /* IOSQlite.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IOSQlite";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/IOSQlite/ResourceBundle-IOSQlite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				PRODUCT_NAME = IOSQlite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A03E5DEF2543E93505C2E75F0CD89C45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF25D21CD101C62730191D60ACD8D2D /* Pods-IOS-Geolive_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A435E3C35B2666C25C53422D898980A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A4851367A0690A93FF748BB02034D514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83AD68FFF161984A457B52DE57343E8A /* IOSQlite.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IOSQlite/IOSQlite-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DA5E0DAD898618672A91655C287A505A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA636F14F5CE7DEC61F1F01B32D63C76 /* sqlite3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/sqlite3/sqlite3-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F2C4F47FC8AD76198661C5EFDE751899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F40C48F9E71338836A62B68C737E4B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6A85DFE890A865C27D0BBE4C7AC6E0 /* IOS-Geolive.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IOS-Geolive";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/IOS-Geolive/ResourceBundle-IOS-Geolive-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				PRODUCT_NAME = "IOS-Geolive";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1207A8C73F6D33D6B14B4480F02CE4BA /* Build configuration list for PBXNativeTarget "IOSQlite-IOSQlite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912EACD20B6CC676D2B6AD8C37B1E679 /* Debug */,
+				87310A48B49809550EA5ECF182FBAA7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A435E3C35B2666C25C53422D898980A7 /* Debug */,
+				F2C4F47FC8AD76198661C5EFDE751899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F04EA220B7522C6C2E803FDD59D80A0 /* Build configuration list for PBXNativeTarget "IOS-Geolive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A0AD693DDA67649A9505A582F95228A /* Debug */,
+				8437C251CD54CD8B60725ED66C9C9B99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C130CEA04EE08AC32154FCE59C225C24 /* Build configuration list for PBXNativeTarget "sqlite3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				146E662F1A41D0106A95BB9437C9A905 /* Debug */,
+				DA5E0DAD898618672A91655C287A505A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C551974C4D2DB7876D14FDB8DABDCDD9 /* Build configuration list for PBXNativeTarget "Pods-IOS-Geolive_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03E5DEF2543E93505C2E75F0CD89C45 /* Debug */,
+				0B3C5F0BE9BBFF2729D6354BFE2FA12F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3EDA9415FC456E6E1D0BF27477449B3 /* Build configuration list for PBXNativeTarget "IOSQlite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F7264A978A32A5A6EBAB9369E35594 /* Debug */,
+				A4851367A0690A93FF748BB02034D514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5A2181AE4D393F3278E7AA932A98DBF /* Build configuration list for PBXNativeTarget "IOS-Geolive-IOS-Geolive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F09FB57C5B79A697D3D7153EB021401 /* Debug */,
+				F40C48F9E71338836A62B68C737E4B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
